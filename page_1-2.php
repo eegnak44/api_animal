@@ -30,6 +30,6 @@
 <div>
     page 1-2
 </div>
-<input type="button" value="home" onclick="location.href='http://alamo-develop.co.kr:8090/test_main_1029.php'">
+<input type="button" value="home" onclick="location.href='http://34.80.159.83/main.php'">
 </body>
 </html>

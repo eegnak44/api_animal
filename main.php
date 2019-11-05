@@ -14,13 +14,8 @@
 <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!--<script src="/common/js/jquery-3.4.1.min.js"></script>-->
-<!--<script src="/common/js/jquery-migrate-1.4.1.min.js"></script>-->
-<!--<script src="/office/common/js/jq/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 <link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/base/jquery-ui.css">
-<!--<script src="/common/js/jquery.form.js"></script>-->
-<!--<link href="/office/common/css/style_table_search.css?v=20180220" rel="stylesheet" type="text/css">-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="/main.css">
 
@@ -71,7 +66,7 @@
 <div id = 'contentsDiv'>
 
 </div>
-<form action="test_main_page_1-1.php" method="get">
+<form action="page_1-1.php" method="get">
     <div class = 'choice_div'>
         선택지 영역<br>
         <button type="button" name="button" id = 'choiceBtn1' value="1" >선택지11111111111111111</button>
