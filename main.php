@@ -59,7 +59,7 @@
 <br>
 <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
     이미지영역
-    <img src="/dog021.gif">
+    <img src="/img/dog021.gif">
 
 </div>
 <br>
