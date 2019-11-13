@@ -25,30 +25,30 @@
     $(document).ready(function(){
         var btnVal = '';
         var index = '';
-        $(".testBtn2").click(function(){
-            var index = $(this).attr('value');
-            console.log(index);
-            $("#contentsDiv").text('1');
-        });
-
-        $(".choice_div button").click(function () {
-            index = $(this).attr('value');
-            // console.log(index);
-
-            // if(index == 1){
-            //     // alert('1');
-            //     window.location.href = 'http://34.80.159.83/page_1-1.php?value='+index;
-            // } else if(index == 2){
-            //     // alert('2');
-            //     window.location.href = 'http://34.80.159.83/page_1-2.php?value='+index;
-            // } else if(index == 3){
-            //     // alert('3');
-            //     window.location.href = 'http://34.80.159.83/page_1-3.php?value='+index;
-            // }
-            if(index){
-                window.location.href = 'http://34.80.159.83/page_1-1.php?value='+index;
-            }
-        });
+        // $(".testBtn2").click(function(){
+        //     var index = $(this).attr('value');
+        //     console.log(index);
+        //     $("#contentsDiv").text('1');
+        // });
+        //
+        // $(".choice_div button").click(function () {
+        //     index = $(this).attr('value');
+        //     // console.log(index);
+        //
+        //     // if(index == 1){
+        //     //     // alert('1');
+        //     //     window.location.href = 'http://34.80.159.83/page_1-2.php?value='+index;
+        //     // } else if(index == 2){
+        //     //     // alert('2');
+        //     //     window.location.href = 'http://34.80.159.83/page_1-2.php?value='+index;
+        //     // } else if(index == 3){
+        //     //     // alert('3');
+        //     //     window.location.href = 'http://34.80.159.83/page_1-3.php?value='+index;
+        //     // }
+        //     if(index){
+        //         window.location.href = 'http://34.80.159.83/page_1-2.php?value='+index;
+        //     }
+        // });
 
     });
 
@@ -60,14 +60,21 @@
     반려종 허용 테스트
 </title>
 <body>
-<p>어느날 큰 지진이 일어났다. 쓰나미가 일어나고 집이 무너지기 시작했다. 밖에서 큰 폭발음이 들렸다. <br>
-나는 방공호로 대피했다. 시간이 흐르고 잠잠해 진 후, 밖으로 나온 나는 라디오의 신호를 가까스로 잡을 수 있었다.<br>
-“살아남은 자들은 광장으로 모이세요" 도시 외곽에 사는 나는 갈 길이 멀다. 채비를 하고 집 밖으로 나와 광장으로 향했다.
+<p>나는 얼마나 관용(寬容)적인 사람일까? <br>
+    이 테스트는 가까운 미래를 배경으로 펼쳐지는 이야기를 따라 진행되며, <br>
+    응답 후 당신의 반려 허용 단계에 대하여 진단한다. 당신은 주인공이 되어 주어진 상황 속에서 인간과 비인간, <br>
+    사물과 관념적 대상과 어떻게 관계를 맺고 반려하며 살아갈 수 있는지 선택한다.  <br>
+    반려의 의미를 찾기 위한 모험을 떠날 준비가 되었다면 시작 버튼을 클릭한다.<br>
 </p>
 <br>
 <p>
-    지진이 일어나고 오염 물질이 땅 위를 뒤덮기 시작하자 사람들은 자신이 키우던 개들을 두고 떠나갔다.<br>
-    이 외곽지역에 남은 사람은 없고 위에 병들고 배고픈 개들만이 떠돌고 있을 뿐이었다.
+    “우리들은 본질적으로 반려종이다. 우리는 상대방을 서로의 살 속에 만들어 낸다. <br>
+    구체적인 차이에 있어서 서로에게 현저하게 타자인 우리들은 서로의 살 속에 사랑이라 불리는 고약한 발달성의 감염을 나타낸다. <br>
+    이 사랑은 역사적인 일탈이고, 자연문화적인 유산이다.” <br>
+</p>
+
+<p>
+    도나 해러웨이 "<반려종선언>" 중에서…
 </p>
 <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
     이미지영역
@@ -80,29 +87,9 @@
 </div>
 <form action="page_1-1.php" method="get">
     <div class = 'choice_div'>
-<!--        <button type="button" name="button" id = 'choiceBtn1' value="1" >개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다. </button>-->
-<!--        <button type="button" name="button" id = 'choiceBtn2' value="2" >측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</button>-->
-<!--        <button type="button" name="button" id = 'choiceBtn3' value="3" >음식을 나누어주고 치료해준 후 떠난다.</button><br>-->
-<!--        <button type="button" name="button" id = 'choiceBtn4' value="4" >떠돌이 개를 다독여 함께 여행을 시작한다.</button><br>-->
-        <input type="radio" name ="value" value="1">개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다.</input><br>
-        <input type="radio" name ="value" value="2">측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</input><br>
-        <input type="radio" name ="value" value="3">음식을 나누어주고 치료해준 후 떠난다.</input><br>
-        <input type="radio" name ="value" value="4">떠돌이 개를 다독여 함께 여행을 시작한다.</input><br>
-
-        <input type="submit" value="next"><br>
+        <input type="submit" value="시작"><br>
     </div>
 </form>
-<!--<div class = "testBtn1" value = '1' style="border-left: 1px grey;">선택지1</div>-->
-<!--<div class = 'testBtn2'>-->
-<!--    <a href="/test_main_page_1.php" class="btn btn-secondary" value="1">선택지1</a>-->
-<!--</div>-->
-<!--<div>-->
-<!--    <ul>-->
-<!--        <li>1</li>-->
-<!--    </ul>-->
-<!--    <ul>-->
-<!--        <li>2</li>-->
-<!--    </ul>-->
-<!--</div>-->
+
 </body>
 </html>
