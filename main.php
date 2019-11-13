@@ -107,9 +107,9 @@ $conn->close();
 </title>
 
 <body>
-<div id = 'titleDiv' style="margin: auto; padding: 150px; width:1000px;">
-    <p style="font-size: 40px;">반려종 허용 테스트</p>
-</div>
+<!--<div id = 'titleDiv' style="margin: auto; padding: 150px; width:1000px;">-->
+<!--    <p style="font-size: 40px;">반려종 허용 테스트</p>-->
+<!--</div>-->
 <br>
 <div id = 'contentsDiv' style="margin: auto; padding: 150px; width:1000px;">
 
@@ -121,18 +121,11 @@ $conn->close();
         반려의 의미를 찾기 위한 모험을 떠날 준비가 되었다면 시작 버튼을 클릭한다.<br>
     </p>
 
-    <p>
-        “우리들은 본질적으로 반려종이다. 우리는 상대방을 서로의 살 속에 만들어 낸다. <br>
-        구체적인 차이에 있어서 서로에게 현저하게 타자인 우리들은 서로의 살 속에 사랑이라 불리는 고약한 발달성의 감염을 나타낸다. <br>
-        이 사랑은 역사적인 일탈이고, 자연문화적인 유산이다.” <br>
-    </p>
     <br>
     <br>
     <br>
     <br>
-    <p>
-        도나 해러웨이 <반려종선언> 중에서…
-    </p>
+
 </div>
 <!--<div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
 <!--    이미지영역-->
