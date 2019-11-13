@@ -6,6 +6,46 @@
  * Time: 오후 2:23
  */
 //echo "main";
+$mysql_hostname = 'localhost';
+$mysql_username = 'root';
+$mysql_password = '6034265';
+$mysql_database = 'animal';
+$mysql_port = '16612';
+$mysql_charset = 'utf8';
+
+//
+////1. DB 연결
+$connect = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
+
+
+/**
+ * Created by PhpStorm.
+ * User: chris
+ * Date: 2019-10-29
+ * Time: 오후 2:23
+ */
+//echo "main";
+var_dump($_REQUEST['value']);
+var_dump($_SERVER["REMOTE_ADDR"]);
+
+$ip = $_SERVER["REMOTE_ADDR"];
+
+
+$query = "insert into accountTB (IP, reg_date) values('{$ip}', now();)";
+
+//4. 쿼리 실행
+$result = $connect->query($query) or die($this->_connect->error);
+
+//$query2 = "select last_insert_id() as ID from accountTB order by ID desc limit 1";
+//
+//$result = $connect->query($query) or die($this->_connect->error);
+
+while($row = $result->fetch_array())
+{
+    var_dump($row);
+}
+
+
 ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

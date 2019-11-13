@@ -1,4 +1,36 @@
+<? include "DB/mysqli_CONN.php" ?>
 <?php
+//
+//$mysql_hostname = 'localhost';
+//$mysql_username = 'root';
+//$mysql_password = '6034265';
+//$mysql_database = 'animal';
+//$mysql_port = '16612';
+//$mysql_charset = 'utf8';
+//
+////
+//////1. DB 연결
+//$connect = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
+//
+//
+///**
+// * Created by PhpStorm.
+// * User: chris
+// * Date: 2019-10-29
+// * Time: 오후 2:23
+// */
+////echo "main";
+//var_dump($_REQUEST['value']);
+//var_dump($_SERVER["REMOTE_ADDR"]);
+//
+//$ip = $_SERVER["REMOTE_ADDR"];
+//
+//
+//$query = "insert into accountTB (IP) values('{$ip}')";
+//
+////4. 쿼리 실행
+//$result = $connect->query($query) or die($this->_connect->error);
+
 /**
  * Created by PhpStorm.
  * User: chris

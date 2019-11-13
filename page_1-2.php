@@ -1,14 +1,32 @@
+<?// include "DB/mysqli_CONN.php" ?>
 <?php
-/**
- * Created by PhpStorm.
- * User: chris
- * Date: 2019-10-29
- * Time: 오후 2:23
- */
-//echo "main";
-var_dump($_REQUEST);
-var_dump($_SERVER["REMOTE_ADDR"]);
-var_dump($_SERVER["REMOTE_HOST"]);
+//$mysql_hostname = 'localhost';
+//$mysql_username = 'root';
+//$mysql_password = '6034265';
+//$mysql_database = 'animal';
+//$mysql_port = '16612';
+//$mysql_charset = 'utf8';
+//
+////
+//////1. DB 연결
+//$connect = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
+//
+//
+///**
+// * Created by PhpStorm.
+// * User: chris
+// * Date: 2019-10-29
+// * Time: 오후 2:23
+// */
+////echo "main";
+//var_dump($_REQUEST['value']);
+//var_dump($_SERVER["REMOTE_ADDR"]);
+//
+//$query = 'select \'complete\' as col from dual ';
+//
+////4. 쿼리 실행
+//$result = $connect->query($query) or die($this->_connect->error);
+//
 
 ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">

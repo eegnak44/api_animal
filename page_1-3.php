@@ -1,3 +1,4 @@
+<? include "DB/mysqli_CONN.php" ?>
 <?php
 /**
  * Created by PhpStorm.

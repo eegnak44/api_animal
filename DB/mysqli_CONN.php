@@ -1,9 +1,5 @@
 <?php
-/**
-* mysqli 클래스 방식
-* 샘플예제 입니다. 대충 어떻게 동작되는지 공부하시기에 좋게 정리해놓았습니다.
-* 각각의 값을 변경하고 연결테스트 하기에도 좋습니다.
-*/
+
 
 //0. 설정
 $mysql_hostname = 'localhost';
@@ -13,9 +9,10 @@ $mysql_database = 'animal';
 $mysql_port = '16612';
 $mysql_charset = 'utf8';
 
-
-//1. DB 연결
+//
+////1. DB 연결
 $connect = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
+
 
 if($connect->connect_errno){
 echo '[연결실패] : '.$connect->connect_error.'';
@@ -41,7 +38,7 @@ while($row = $result->fetch_array())
 echo $row['col'].'';
 }
 
-//6. 연결 종료
+////6. 연결 종료
 $connect->close();
 
 ?>
