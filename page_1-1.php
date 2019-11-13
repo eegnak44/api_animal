@@ -96,12 +96,11 @@
             <p></p>
 
         </div>
-        <div class = 'moveBtn_div'>
-            <input type="submit" value="다음">
-            <input type="submit" value="뒤로" onclick="goBack()">
-        </div>
-    </form>
 
+    </form>
+    <div class = 'moveBtn_div'>
+        <input type="submit" value="뒤로" onclick="goBack()">
+    </div>
 </div>
 
 <!--<div class = "testBtn1" value = '1' style="border-left: 1px grey;">선택지1</div>-->
