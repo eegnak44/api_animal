@@ -105,8 +105,11 @@ $conn->close();
 <title>
     반려종 허용 테스트
 </title>
+
 <body>
 <div id = 'contentsDiv' style="margin: auto; padding: 150px; width:1000px;">
+    <p style="size: 20px;">반려종 허용 테스트</p>
+
     <p>나는 얼마나 관용(寬容)적인 사람일까? <br>
         이 테스트는 가까운 미래를 배경으로 펼쳐지는 이야기를 따라 진행되며, <br>
         응답 후 당신의 반려 허용 단계에 대하여 진단한다. 당신은 주인공이 되어 주어진 상황 속에서 인간과 비인간, <br>
