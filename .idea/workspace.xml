@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1573607183566" duration="291000" />
+      <workItem from="1573607183566" duration="824000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit">
       <created>1572915981423</created>
@@ -102,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572922200949</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="챕터 1 시작">
+      <created>1573607611912</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573607611912</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2nd commit" />
     <MESSAGE value="project file commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="project file commit" />
+    <MESSAGE value="챕터 1 시작" />
+    <option name="LAST_COMMIT_MESSAGE" value="챕터 1 시작" />
   </component>
 </project>

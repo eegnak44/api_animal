@@ -57,11 +57,15 @@
     반려종 허용 테스트
 </title>
 <body>
-<p>어느날 큰 지진이 일어났다. 쓰나미가 일어나고 집이 무너지기 시작했다. 밖에서 큰 폭발음이 들렸다. 나는 방공호로 대피했다.
-시간이 흐르고 잠잠해 진 후, 밖으로 나온 나는 라디오의 신호를 가까스로 잡을 수 있었다.
+<p>어느날 큰 지진이 일어났다. 쓰나미가 일어나고 집이 무너지기 시작했다. 밖에서 큰 폭발음이 들렸다. <br>
+나는 방공호로 대피했다. 시간이 흐르고 잠잠해 진 후, 밖으로 나온 나는 라디오의 신호를 가까스로 잡을 수 있었다.<br>
 “살아남은 자들은 광장으로 모이세요" 도시 외곽에 사는 나는 갈 길이 멀다. 채비를 하고 집 밖으로 나와 광장으로 향했다.
 </p>
 <br>
+<p>
+    지진이 일어나고 오염 물질이 땅 위를 뒤덮기 시작하자 사람들은 자신이 키우던 개들을 두고 떠나갔다.<br>
+    이 외곽지역에 남은 사람은 없고 위에 병들고 배고픈 개들만이 떠돌고 있을 뿐이었다.
+</p>
 <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
     이미지영역
     <img src="/img/dog021.gif">
@@ -74,9 +78,10 @@
 <form action="page_1-1.php" method="get">
     <div class = 'choice_div'>
         선택지 영역<br>
-        <button type="button" name="button" id = 'choiceBtn1' value="1" >선택지11111111111111111</button>
-        <button type="button" name="button" id = 'choiceBtn2' value="2" >선택지22222222222222222</button>
-        <button type="button" name="button" id = 'choiceBtn3' value="3" >선택지33333333333333333</button><br>
+        <button type="button" name="button" id = 'choiceBtn1' value="1" >개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다. </button>
+        <button type="button" name="button" id = 'choiceBtn2' value="2" >측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</button>
+        <button type="button" name="button" id = 'choiceBtn3' value="3" >음식을 나누어주고 치료해준 후 떠난다.</button><br>
+        <button type="button" name="button" id = 'choiceBtn4' value="4" >떠돌이 개를 다독여 함께 여행을 시작한다.</button><br>
     </div>
 </form>
 <!--<div class = "testBtn1" value = '1' style="border-left: 1px grey;">선택지1</div>-->
