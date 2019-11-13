@@ -25,8 +25,8 @@ $connect = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_
  * Time: 오후 2:23
  */
 //echo "main";
-var_dump($_REQUEST['value']);
-var_dump($_SERVER["REMOTE_ADDR"]);
+//var_dump($_REQUEST['value']);
+//var_dump($_SERVER["REMOTE_ADDR"]);
 
 $ip = $_SERVER["REMOTE_ADDR"];
 
