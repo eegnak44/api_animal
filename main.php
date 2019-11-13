@@ -78,10 +78,14 @@
 <form action="page_1-1.php" method="get">
     <div class = 'choice_div'>
         선택지 영역<br>
-        <button type="button" name="button" id = 'choiceBtn1' value="1" >개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다. </button>
-        <button type="button" name="button" id = 'choiceBtn2' value="2" >측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</button>
-        <button type="button" name="button" id = 'choiceBtn3' value="3" >음식을 나누어주고 치료해준 후 떠난다.</button><br>
-        <button type="button" name="button" id = 'choiceBtn4' value="4" >떠돌이 개를 다독여 함께 여행을 시작한다.</button><br>
+<!--        <button type="button" name="button" id = 'choiceBtn1' value="1" >개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다. </button>-->
+<!--        <button type="button" name="button" id = 'choiceBtn2' value="2" >측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</button>-->
+<!--        <button type="button" name="button" id = 'choiceBtn3' value="3" >음식을 나누어주고 치료해준 후 떠난다.</button><br>-->
+<!--        <button type="button" name="button" id = 'choiceBtn4' value="4" >떠돌이 개를 다독여 함께 여행을 시작한다.</button><br>-->
+        <input type="radio" name ="button" value="개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다.">
+        <input type="radio" name ="button" value="측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.">
+        <input type="radio" name ="button" value="음식을 나누어주고 치료해준 후 떠난다..">
+        <input type="radio" name ="button" value="떠돌이 개를 다독여 함께 여행을 시작한다.">
     </div>
 </form>
 <!--<div class = "testBtn1" value = '1' style="border-left: 1px grey;">선택지1</div>-->
