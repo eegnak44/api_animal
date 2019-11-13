@@ -107,8 +107,12 @@ $conn->close();
 </title>
 
 <body>
+<div id = 'titleDiv' style="margin: auto; padding: 150px; width:1000px;">
+    <p style="font-size: 40px;">반려종 허용 테스트</p>
+</div>
+<br>
 <div id = 'contentsDiv' style="margin: auto; padding: 150px; width:1000px;">
-    <p style="size: 20px;">반려종 허용 테스트</p>
+
 
     <p>나는 얼마나 관용(寬容)적인 사람일까? <br>
         이 테스트는 가까운 미래를 배경으로 펼쳐지는 이야기를 따라 진행되며, <br>
