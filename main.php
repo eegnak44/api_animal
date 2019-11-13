@@ -29,7 +29,7 @@ $conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_dat
 //var_dump($_SERVER["REMOTE_ADDR"]);
 
 $ip = $_SERVER["REMOTE_ADDR"];
-
+$id = '';
 
 //4. 쿼리 실행
 
@@ -55,7 +55,6 @@ while($row = $result2->fetch_array())
 $conn->close();
 
 
-echo $id;
 ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -74,6 +73,7 @@ echo $id;
 
     $(document).ready(function(){
         var btnVal = '';
+        var id = <?=$id;?>
         var index = '';
         // $(".testBtn2").click(function(){
         //     var index = $(this).attr('value');
@@ -140,6 +140,7 @@ echo $id;
 
 <form action="page_1-1.php" method="get">
     <div class = 'choice_div' style="margin: auto; width:50px;">
+        <input type="hidden" name = 'id' value="<?=$id?>">
         <input type="submit" value="시작"><br>
     </div>
 </form>
