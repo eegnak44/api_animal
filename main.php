@@ -15,7 +15,7 @@ $mysql_charset = 'utf8';
 
 //
 ////1. DB 연결
-$connect = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
+$conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
 
 
 /**
@@ -31,12 +31,23 @@ $connect = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_
 $ip = $_SERVER["REMOTE_ADDR"];
 
 
+//4. 쿼리 실행
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 $query = "insert into accountTB (IP, reg_date) values('{$ip}', now();)";
 
-//4. 쿼리 실행
-$result = $connect->query($query) or die($this->_connect->error);
+if ($conn->query($query) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $query . "<br>" . $conn->error;
+}
 
-var_dump($result);
+$conn->close();
+
+
 //$query2 = "select last_insert_id() as ID from accountTB order by ID desc limit 1";
 //
 //$result = $connect->query($query) or die($this->_connect->error);
