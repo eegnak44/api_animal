@@ -74,19 +74,19 @@
 </p>
 
 <p>
-    도나 해러웨이 "<반려종선언>" 중에서…
+    도나 해러웨이 <반려종선언> 중에서…
 </p>
-<div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
-    이미지영역
-    <img src="/img/dog021.gif">
-
-</div>
+<!--<div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
+<!--    이미지영역-->
+<!--    <img src="/img/dog021.gif">-->
+<!---->
+<!--</div>-->
 <br>
 <div id = 'contentsDiv'>
 
 </div>
 <form action="page_1-1.php" method="get">
-    <div class = 'choice_div'>
+    <div class = 'choice_div' style="margin: auto; width:50px;">
         <input type="submit" value="시작"><br>
     </div>
 </form>
