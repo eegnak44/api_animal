@@ -57,7 +57,7 @@ $id = $_REQUEST['id'];
 
     $(document).ready(function(){
         var value = '';
-        var id = '';
+        var id = <?=$id;?>;
         $(".choice_div button").click(function () {
             value = $(this).attr('value');
 
