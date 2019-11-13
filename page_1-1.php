@@ -1,7 +1,7 @@
 <? include "DB/mysqli_CONN.php" ?>
 <?php
 
-var_dump($_REQUEST);
+$id = $_REQUEST['id'];
 //
 //$mysql_hostname = 'localhost';
 //$mysql_username = 'root';
@@ -28,7 +28,7 @@ var_dump($_REQUEST);
 //$ip = $_SERVER["REMOTE_ADDR"];
 //
 //
-//$query = "insert into accountTB (IP) values('{$ip}')";
+//$query = "insert into play_dataTB (IP) values('{$ip}')";
 //
 ////4. 쿼리 실행
 //$result = $connect->query($query) or die($this->_connect->error);
@@ -57,30 +57,12 @@ var_dump($_REQUEST);
 <script>
 
     $(document).ready(function(){
-        var btnVal = '';
-        var index = '';
-        $(".testBtn2").click(function(){
-            var index = $(this).attr('value');
-            console.log(index);
-            $("#contentsDiv").text('1');
-        });
-
+        var value = '';
         $(".choice_div button").click(function () {
-            index = $(this).attr('value');
-            // console.log(index);
+            value = $(this).attr('value');
 
-            // if(index == 1){
-            //     // alert('1');
-            //     window.location.href = 'http://34.80.159.83/page_1-2.php?value='+index;
-            // } else if(index == 2){
-            //     // alert('2');
-            //     window.location.href = 'http://34.80.159.83/page_1-2.php?value='+index;
-            // } else if(index == 3){
-            //     // alert('3');
-            //     window.location.href = 'http://34.80.159.83/page_1-3.php?value='+index;
-            // }
-            if(index){
-                window.location.href = 'http://34.80.159.83/page_1-2.php?value='+index;
+            if(value){
+                window.location.href = 'http://34.80.159.83/page_1-2.php?value='+value;
             }
         });
 

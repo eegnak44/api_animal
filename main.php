@@ -37,11 +37,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$query = "insert into accountTB (IP, reg_date) values('{$ip}', now())";
+$query = "insert into play_dataTB (IP, reg_date) values('{$ip}', now())";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
-$query2 = "select last_insert_id() as ID from accountTB order by ID desc limit 1";
+$query2 = "select last_insert_id() as ID from play_dataTB order by ID desc limit 1";
 //
 $result2 = $conn->query($query2) or die($this->_connect->error);
 
