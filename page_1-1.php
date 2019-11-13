@@ -77,7 +77,12 @@
         <img src="/img/dog021.gif">
 
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <form action="page_1-2.php" method="get">
         <div class = 'choice_div'>
             <!--        <button type="button" name="button" id = 'choiceBtn1' value="1" >개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다. </button>-->
