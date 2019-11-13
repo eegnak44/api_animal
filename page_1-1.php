@@ -1,4 +1,3 @@
-<? include "DB/mysqli_CONN.php" ?>
 <?php
 
 $id = $_REQUEST['id'];
@@ -58,11 +57,13 @@ $id = $_REQUEST['id'];
 
     $(document).ready(function(){
         var value = '';
+        var id = '';
         $(".choice_div button").click(function () {
             value = $(this).attr('value');
 
             if(value){
-                window.location.href = 'http://34.80.159.83/page_1-2.php?value='+value;
+                window.location.href = 'http://34.80.159.83/page_1-2.php?id='+id+'&value='+value;
+                // window.location.href = 'http://34.80.159.83/page_1-2.php;
             }
         });
 
@@ -101,21 +102,17 @@ $id = $_REQUEST['id'];
     <br>
     <form action="page_1-2.php" method="get">
         <div class = 'choice_div'>
-                    <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다.</button><br>
-                    <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</button><br>
-                    <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">음식을 나누어주고 치료해준 후 떠난다.</button><br>
-                    <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">떠돌이 개를 다독여 함께 여행을 시작한다.</button><br>
-<!--            <input type="radio" name ="value" value="1">개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다.</input><br>-->
-<!--            <input type="radio" name ="value" value="2">측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</input><br>-->
-<!--            <input type="radio" name ="value" value="3">음식을 나누어주고 치료해준 후 떠난다.</input><br>-->
-<!--            <input type="radio" name ="value" value="4">떠돌이 개를 다독여 함께 여행을 시작한다.</input><br>-->
-            <p></p>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">음식을 나누어주고 치료해준 후 떠난다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">떠돌이 개를 다독여 함께 여행을 시작한다.</button><br>
+<!--            <input type="hidden" name = 'id' value="--><?//=$id?><!--">-->
 
         </div>
-
     </form>
     <br>
     <div class = 'moveBtn_div'>
+
         <input type="submit" value="뒤로" onclick="goBack()">
     </div>
 </div>
