@@ -1,5 +1,7 @@
 <? include "DB/mysqli_CONN.php" ?>
 <?php
+
+var_dump($_REQUEST);
 //
 //$mysql_hostname = 'localhost';
 //$mysql_username = 'root';
