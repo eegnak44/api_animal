@@ -107,9 +107,9 @@ $conn->close();
 </title>
 
 <body>
-<!--<div id = 'titleDiv' style="margin: auto; padding: 150px; width:1000px;">-->
-<!--    <p style="font-size: 40px;">반려종 허용 테스트</p>-->
-<!--</div>-->
+<div id = 'titleDiv' style="margin: auto; padding: 150px; width:1000px;">
+    <p style="font-size: 40px;">반려종 허용 테스트</p>
+</div>
 <br>
 <div id = 'contentsDiv' style="margin: auto; padding: 150px; width:1000px;">
 
