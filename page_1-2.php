@@ -38,7 +38,7 @@ $result = $conn->query($query) or die($this->_connect->error);
 <script>
 
     $(document).ready(function(){
-        var id = <?=$id;?>
+        var id = <?=$id;?>;
         var value = '';
 
         $(".choice_div button").click(function () {
