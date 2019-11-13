@@ -18,7 +18,7 @@ $conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_dat
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$query = "UPDATE play_dataTB SET one_to_two = '{$value}' WHERE ID = '{$id}'";
+$query = "UPDATE play_dataTB SET one_to_three = '{$value}' WHERE ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
@@ -47,7 +47,7 @@ $result = $conn->query($query) or die($this->_connect->error);
             value = $(this).attr('value');
 
             if(value){
-                window.location.href = 'http://34.80.159.83/page_2-1.php?id='+id+'&value='+value;
+                window.location.href = 'http://34.80.159.83/page_2-2.php?id='+id+'&value='+value;
             }
         });
 
@@ -68,14 +68,17 @@ $result = $conn->query($query) or die($this->_connect->error);
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
 
-    <p>외곽 지역을 벗어나기 전, 나는 잠시 쉬고 싶었다. <br>
-        마침, 외곽의 경계에 멀끔한 집 한채를 발견했다. <br>
-        라디오의 소리를 듣지 못한 도망치지 못했다. <br>
-        그는 나에게 흔쾌히 방 한켠을 내주었는데, 자세히 보니 그의 피부에는 붉은 반점들이 나 있었다. <br>
-        그는 얼마전 무너진 원자력 발전소에서 일하던 노동자였다. <br>
+    <p>
+    외곽 지역에서 너무 많은 시간을 소비하고 온 것 같다. <br>
+    나는 바쁜 걸음을 재촉하며 광장으로 나아갔다. 그러나 도시의 진입로에는 한 무리의 사람들이 움막을 짓고 살아가고 있었다. <br>
+    “광장으로 오라"는 라디오 소리를 듣지 못한 모양이다. <br>
+    시간이 얼마 남지 않았지만, 나는 이들에게 광장으로 함께 가자고 제안하고자 한다.
     </p>
     <br>
 
+    <p>
+        첫번째 움막에는 얼마전 한국으로 귀화한 북한 사람들이 살고 있었다.
+    </p>
     <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
         이미지영역
         <img src="/img/dog021.gif">
@@ -83,12 +86,12 @@ $result = $conn->query($query) or die($this->_connect->error);
     </div>
     <br>
     <br>
-    <form action="page_2-1.php" method="get">
+    <form action="page_2-2.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">그가 방사능에 피폭되었음을 확신하였다. <br>나는 2차 피해를 우려해 그를 그의 방에 가두고 도망쳤다. </button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">그가 치료를 받아 고통에서 조금이라도 벗어날 수 있도록 의료 시설에 신고하였으나, <br>나는 더이상 머물고 싶지 않아 급히 그 집을 떠났다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">그는 힘든 나에게 기꺼이 방을 내준 자였다. 그에게 가까이 가지 않았지만, <br>그의 호의를 고마워 하며 나는 나의 식량을 조금 나누어 주었다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">나는 그 집에 머물러 선량한 그에게 온갖 의료지식을 동원하여 몇일간 간호해주었고 <br>그는 고통스러웠지만 나와 함께한 몇일간 행복했다고 말한 후 눈을 감았다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">소식을 전해주지 않는다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">간단한 소식만 전해준다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">친구가 되어 동행한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">반려관계를 맺고 동행한다.</button><br>
         </div>
     </form>
     <br>
