@@ -60,7 +60,7 @@
     반려종 허용 테스트
 </title>
 <body>
-<div id = 'mainContents'>
+<div id = 'mainContents' style="margin: auto; padding: 150px; width:1000px;">
     <p>나는 얼마나 관용(寬容)적인 사람일까? <br>
         이 테스트는 가까운 미래를 배경으로 펼쳐지는 이야기를 따라 진행되며, <br>
         응답 후 당신의 반려 허용 단계에 대하여 진단한다. 당신은 주인공이 되어 주어진 상황 속에서 인간과 비인간, <br>
@@ -73,10 +73,11 @@
         구체적인 차이에 있어서 서로에게 현저하게 타자인 우리들은 서로의 살 속에 사랑이라 불리는 고약한 발달성의 감염을 나타낸다. <br>
         이 사랑은 역사적인 일탈이고, 자연문화적인 유산이다.” <br>
     </p>
+
+    <p>
+        도나 해러웨이 <반려종선언> 중에서…
+    </p>
 </div>
-<p>
-    도나 해러웨이 <반려종선언> 중에서…
-</p>
 <!--<div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
 <!--    이미지영역-->
 <!--    <img src="/img/dog021.gif">-->
