@@ -37,7 +37,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$query = "insert into accountTB (IP, reg_date) values('{$ip}', now();)";
+$query = "insert into accountTB (IP, reg_date) values('{$ip}', now())";
 
 if ($conn->query($query) === TRUE) {
     echo "New record created successfully";
