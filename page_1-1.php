@@ -52,6 +52,10 @@
 
     });
 
+    function goBack() {
+        window.history.back();
+    }
+
 </script>
 
 
@@ -89,8 +93,12 @@
 <!--            <input type="radio" name ="value" value="2">측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</input><br>-->
 <!--            <input type="radio" name ="value" value="3">음식을 나누어주고 치료해준 후 떠난다.</input><br>-->
 <!--            <input type="radio" name ="value" value="4">떠돌이 개를 다독여 함께 여행을 시작한다.</input><br>-->
+            <p></p>
 
-            <input type="submit" value="next"><br>
+        </div>
+        <div class = 'moveBtn_div'>
+            <input type="submit" value="다음">
+            <input type="submit" value="뒤로" onclick="goBack()">
         </div>
     </form>
 
