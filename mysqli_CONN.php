@@ -6,7 +6,7 @@
 */
 
 //0. 설정
-$mysql_hostname = '34.80.159.83';
+$mysql_hostname = 'localhost';
 $mysql_username = 'root';
 $mysql_password = '6034265';
 $mysql_database = 'animal';
