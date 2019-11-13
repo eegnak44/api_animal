@@ -39,23 +39,18 @@ if ($conn->connect_error) {
 
 $query = "insert into accountTB (IP, reg_date) values('{$ip}', now())";
 
-if ($conn->query($query) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $query . "<br>" . $conn->error;
-}
+$result = $conn->query($query) or die($this->_connect->error);
+
+$query2 = "select last_insert_id() as ID from accountTB order by ID desc limit 1";
+//
+$result2 = $connect->query($query2) or die($this->_connect->error);
 
 $conn->close();
 
-
-//$query2 = "select last_insert_id() as ID from accountTB order by ID desc limit 1";
-//
-//$result = $connect->query($query) or die($this->_connect->error);
-
-//while($row = $result->fetch_array())
-//{
-//    var_dump($row);
-//}
+while($row = $result2->fetch_array())
+{
+    var_dump($row);
+}
 
 
 ?>
