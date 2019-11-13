@@ -1,18 +1,28 @@
 <?// include "DB/mysqli_CONN.php" ?>
 <?php
+
+$id = $_REQUEST['id'];
+$value = $_REQUEST['value'];
+
 var_dump($_REQUEST);
-//$mysql_hostname = 'localhost';
-//$mysql_username = 'root';
-//$mysql_password = '6034265';
-//$mysql_database = 'animal';
-//$mysql_port = '16612';
-//$mysql_charset = 'utf8';
+$mysql_hostname = 'localhost';
+$mysql_username = 'root';
+$mysql_password = '6034265';
+$mysql_database = 'animal';
+$mysql_port = '16612';
+$mysql_charset = 'utf8';
+
+
+$conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
 //
-////
-//////1. DB 연결
-//$connect = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
-//
-//
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$query = "UPDATE play_dataTB SET one_to_one = '{$value}' WHERE ID = '{$id}'";
+
+$result = $conn->query($query) or die($this->_connect->error);
+
 ///**
 // * Created by PhpStorm.
 // * User: chris

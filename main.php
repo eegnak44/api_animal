@@ -13,8 +13,7 @@ $mysql_database = 'animal';
 $mysql_port = '16612';
 $mysql_charset = 'utf8';
 
-//
-////1. DB 연결
+
 $conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
 
 
