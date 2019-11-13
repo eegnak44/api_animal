@@ -82,10 +82,10 @@
     <br>
     <form action="page_1-3.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" >나는 고양이가 너무 싫었다. 고양이에게 돌을 던져 쫓아냈다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" >고양이는 귀여웠지만, 새끼를 낳고 나면 뒷처리가 귀찮을 것 같으니 조용히 갈 길을 갔다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" >고양이에게 담요와 음식을 나누어 주고 나는 곧 광장으로 향했다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" >나는 그 고양이가 아기를 낳고 그 아기들이 건강하게 클 때까지 보살피며 버려진 외곽 지역에 머물렀다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">나는 고양이가 너무 싫었다. 고양이에게 돌을 던져 쫓아냈다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">고양이는 귀여웠지만, 새끼를 낳고 나면 뒷처리가 귀찮을 것 같으니 조용히 갈 길을 갔다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">고양이에게 담요와 음식을 나누어 주고 나는 곧 광장으로 향했다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">나는 그 고양이가 아기를 낳고 그 아기들이 건강하게 클 때까지 보살피며 버려진 외곽 지역에 머물렀다.</button><br>
             <!--            <input type="radio" name ="value" value="1">개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다.</input><br>-->
             <!--            <input type="radio" name ="value" value="2">측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</input><br>-->
             <!--            <input type="radio" name ="value" value="3">음식을 나누어주고 치료해준 후 떠난다.</input><br>-->
