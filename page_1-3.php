@@ -85,9 +85,9 @@
     <form action="page_2-1.php" method="get">
         <div class = 'choice_div'>
             <button type="button" name="button" id = 'choiceBtn1' value="1" >그가 방사능에 피폭되었음을 확신하였다. 나는 2차 피해를 우려해 그를 그의 방에 가두고 도망쳤다. </button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" >그가 치료를 받아 고통에서 조금이라도 벗어날 수 있도록 의료 시설에 신고하였으나, 나는 더이상 머물고 싶지 않아 급히 그 집을 떠났다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" >그는 힘든 나에게 기꺼이 방을 내준 자였다. 그에게 가까이 가지 않았지만, 그의 호의를 고마워 하며 나는 나의 식량을 조금 나누어 주었다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" >나는 그 집에 머물러 선량한 그에게 온갖 의료지식을 동원하여 몇일간 간호해주었고 그는 고통스러웠지만 나와 함께한 몇일간 행복했다고 말한 후 눈을 감았다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" >그가 치료를 받아 고통에서 조금이라도 벗어날 수 있도록 의료 시설에 신고하였으나, <br>나는 더이상 머물고 싶지 않아 급히 그 집을 떠났다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" >그는 힘든 나에게 기꺼이 방을 내준 자였다. 그에게 가까이 가지 않았지만, <br>그의 호의를 고마워 하며 나는 나의 식량을 조금 나누어 주었다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" >나는 그 집에 머물러 선량한 그에게 온갖 의료지식을 동원하여 몇일간 간호해주었고 <br>그는 고통스러웠지만 나와 함께한 몇일간 행복했다고 말한 후 눈을 감았다. </button><br>
             <!--            <input type="radio" name ="value" value="1">개가 병이 옮을 수 있으니, 격리하거나 안락사 시킨다.</input><br>-->
             <!--            <input type="radio" name ="value" value="2">측은하긴 하지만, 개에게 까지 도움을 줄 여유가 없다.</input><br>-->
             <!--            <input type="radio" name ="value" value="3">음식을 나누어주고 치료해준 후 떠난다.</input><br>-->
