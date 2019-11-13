@@ -43,7 +43,7 @@ $result = $conn->query($query) or die($this->_connect->error);
 
 $query2 = "select last_insert_id() as ID from accountTB order by ID desc limit 1";
 //
-$result2 = $connect->query($query2) or die($this->_connect->error);
+$result2 = $conn->query($query2) or die($this->_connect->error);
 
 
 
