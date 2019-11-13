@@ -36,14 +36,15 @@ $query = "insert into accountTB (IP, reg_date) values('{$ip}', now();)";
 //4. 쿼리 실행
 $result = $connect->query($query) or die($this->_connect->error);
 
+var_dump($result);
 //$query2 = "select last_insert_id() as ID from accountTB order by ID desc limit 1";
 //
 //$result = $connect->query($query) or die($this->_connect->error);
 
-while($row = $result->fetch_array())
-{
-    var_dump($row);
-}
+//while($row = $result->fetch_array())
+//{
+//    var_dump($row);
+//}
 
 
 ?>
