@@ -1,6 +1,3 @@
-<? include "common.php"?>
-
-
 <?php
 /**
  * Created by PhpStorm.
