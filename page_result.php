@@ -27,6 +27,18 @@ $query = "UPDATE play_dataTB SET five_to_three = '{$value}', finish_date = now()
 $result = $conn->query($query) or die($this->_connect->error);
 
 
+
+$query2 = "SELECT * FROM play_dataTB where ID = '{$id}'";
+
+$result2 = $conn->query($query2) or die($this->_connect->error);
+
+
+while($row = $result2->fetch_array())
+{
+    //$id = $row['ID'];
+    echo $row;
+}
+
 echo "result page";
 
 ?>
