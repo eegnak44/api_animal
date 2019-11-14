@@ -22,7 +22,7 @@ $conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_dat
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$query = "UPDATE play_dataTB SET five_to_three = '{$value}' WHERE ID = '{$id}'";
+$query = "UPDATE play_dataTB SET five_to_three = '{$value}', finish_date = now() WHERE ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
