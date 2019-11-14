@@ -18,7 +18,7 @@ $conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_dat
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$query = "UPDATE play_dataTB SET three_to_one = '{$value}' WHERE ID = '{$id}'";
+$query = "UPDATE play_dataTB SET five_to_one = '{$value}' WHERE ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
@@ -47,7 +47,7 @@ $result = $conn->query($query) or die($this->_connect->error);
             value = $(this).attr('value');
 
             if(value){
-                window.location.href = 'http://34.80.159.83/page_3-3.php?id='+id+'&value='+value;
+                window.location.href = 'http://34.80.159.83/page_5-3.php?id='+id+'&value='+value;
             }
         });
 
@@ -67,12 +67,12 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-    <p style="font-size: 30px;">chapter3. 광장</p>
+    <p style="font-size: 30px;">chapter5. 행성 7H</p>
     <br>
     <p>
-        우주선B에는 한 무리의 중산층 가족들이 타고 있었다. 이 곳에서는 질서를 중요시한다. <br>
-        정확한 역할분담이 이루어지고 있었다. 미래 행성에서의 삶에 대한 기획 회의 및 우주선 운전, <br>
-        적으로 부터 방어의 의무 등은 남성의 몫이었고, 자녀 양육과 교육, 식사 준비, 우주선 청소 등 허드렛일은 모두 여성의 몫이다. <br>
+        거미들은 온갖 해로운 벌레를 잡는 역할을 한다. <br>
+        그러나 기계 사이에 복잡하게 쳐진 거미줄은 가끔 기계의 오류를 일으키고 공간을 지저분하게 만들었다.<br>
+        거미를 어떻게 해야 할까? <br>
     </p>
     <br>
     <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
@@ -82,12 +82,12 @@ $result = $conn->query($query) or die($this->_connect->error);
     <!--    </div>-->
     <br>
     <br>
-    <form action="page_3-3.php" method="get">
+    <form action="page_5-3.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">나는 또 다시 그런 세상에서 살고 싶지 않다.  </button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">나는 이들이 정해놓은 규칙이 마음에 들지 않지만, <br>다른 우주선보다는 합리적인 것 같아 머물기로 했다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">나는 이들이 정해놓은 질서에 따라 사는 것이 편하고 익숙하다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">나도 가족을 만들어 이들과 동화되어 살아가고 싶다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">거미가 보일 때마다 모든 거미와 거미줄을 제거한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">가끔 거미줄을 제거하고, 나의 삶에 불편함이 없을 정도로 개체수를 유지시켜 준다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">거미는 이로운 곤충이다. 제거하는 것보다 그냥 두는 것이 더 좋을 것이다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">거미를 계속 보다보니 귀엽고 영리해보인다. <br>가끔 먹이도 잡아주면서 서로 도움이 되는 관계를 형성한다.</button><br>
         </div>
     </form>
     <br>

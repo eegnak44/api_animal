@@ -47,7 +47,7 @@ $id = $_REQUEST['id'];
             value = $(this).attr('value');
 
             if(value){
-                window.location.href = 'http://34.80.159.83/page_3-2.php?id='+id+'&value='+value;
+                window.location.href = 'http://34.80.159.83/page_4-2.php?id='+id+'&value='+value;
             }
         });
 
@@ -67,12 +67,11 @@ $id = $_REQUEST['id'];
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-    <p style="font-size: 30px;">chapter3. 광장</p>
+    <p style="font-size: 30px;">chapter5. 행성 7H</p>
     <br>
     <p>
-        우주선A는 각 분야의 전문가들, 소위 엘리트들이 타고 있었다. 부유한 그들의 우주선은 매우 안락하고 세련되었다. <br>
-        그러나 이들과 대화하다보니 나와 정치적 견해가 다르다는 것을 알 수 있었다. <br>
-        그들과 나는 심각한 정치 토론을 하기 시작했고, 말이 통하지 않자 서로 언성을 높이기도 했다.<br>
+        우주선 안에는 음식물 쓰레기가 쌓여가고 그 주변으로 초파리가 날아 다닌다. <br>
+        초파리는 음식물 쓰레기 안에 알을 낳고 번식하여 개체수가 늘어났다.<br>
     </p>
     <br>
     <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
@@ -82,12 +81,12 @@ $id = $_REQUEST['id'];
     <!--    </div>-->
     <br>
     <br>
-    <form action="page_3-2.php" method="get">
+    <form action="page_5-2.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">정치 견해가 다른 사람들과는 하루도 함께 할 수 없다. </button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">이 곳엔 다른 곳보다도 시설이 좋기 때문에, <br>불만이 있더라도 그냥 조용히 이 우주선에 탈 것이다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">이 곳엔 다른 곳보다도 지적인 사람들이 모여있으므로, 이들이 말하는 것이 옳을지도 모른다. <br>나는 이들과 함께하기 위해 나는 정치적 입장도 바꿀 수 있다</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">나는 이들과 토론을 통해 정치적 견해를 좁히고, <br>함께 잘 살아갈 자신이 있다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">귀찮은 초파리. 모든 초파리를 제거할 수 있도록 벌레약을 개발하여 잡는다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">굳이 모두 잡으려고 하지 않고, 초파리가 내 앞에서 귀찮게 할 때만 잡는다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">초파리들도 살고자 이 우주선까지 살아돌아왔는데, 죽일 필요까진 없는 것 같다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">빠른 시간 진화하는 이들의 유전적 특성들을 분석하여 우주선이 이동하는 동안 진화에 대한 연구를 진행한다. </button><br>
         </div>
     </form>
     <br>

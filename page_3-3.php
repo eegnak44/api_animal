@@ -67,7 +67,7 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-    <p style="font-size: 30px;">chapter2. 무너진 경계</p>
+    <p style="font-size: 30px;">chapter3. 광장</p>
     <br>
     <p>
         우주선C에는 다양한 이들이 타고 있었다. 페미니스트 여성, 퀴어, 예술가, 노숙자, 동물 등..<br>

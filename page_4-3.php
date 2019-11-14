@@ -18,7 +18,7 @@ $conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_dat
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$query = "UPDATE play_dataTB SET three_to_one = '{$value}' WHERE ID = '{$id}'";
+$query = "UPDATE play_dataTB SET four_to_two = '{$value}' WHERE ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
@@ -47,7 +47,7 @@ $result = $conn->query($query) or die($this->_connect->error);
             value = $(this).attr('value');
 
             if(value){
-                window.location.href = 'http://34.80.159.83/page_3-3.php?id='+id+'&value='+value;
+                window.location.href = 'http://34.80.159.83/page_5.php?id='+id+'&value='+value;
             }
         });
 
@@ -67,12 +67,12 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-    <p style="font-size: 30px;">chapter3. 광장</p>
+    <p style="font-size: 30px;">chapter4. 우주선</p>
     <br>
     <p>
-        우주선B에는 한 무리의 중산층 가족들이 타고 있었다. 이 곳에서는 질서를 중요시한다. <br>
-        정확한 역할분담이 이루어지고 있었다. 미래 행성에서의 삶에 대한 기획 회의 및 우주선 운전, <br>
-        적으로 부터 방어의 의무 등은 남성의 몫이었고, 자녀 양육과 교육, 식사 준비, 우주선 청소 등 허드렛일은 모두 여성의 몫이다. <br>
+        바퀴벌레는 왕성한 번식력으로 우주선 지하세계를 장악했다. <br>
+        지구를 떠난지 오래된 인류에게 식량이 다 떨어졌다. <br>
+        이 단백질 덩어리 곤충을 식량으로 채택하여야만 살 수 있다. <br>
     </p>
     <br>
     <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
@@ -82,12 +82,12 @@ $result = $conn->query($query) or die($this->_connect->error);
     <!--    </div>-->
     <br>
     <br>
-    <form action="page_3-3.php" method="get">
+    <form action="page_5.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">나는 또 다시 그런 세상에서 살고 싶지 않다.  </button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">나는 이들이 정해놓은 규칙이 마음에 들지 않지만, <br>다른 우주선보다는 합리적인 것 같아 머물기로 했다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">나는 이들이 정해놓은 질서에 따라 사는 것이 편하고 익숙하다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">나도 가족을 만들어 이들과 동화되어 살아가고 싶다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">바퀴벌레는 더럽기 때문에 먹을 수 없다. <br> 바퀴벌레를 격리시키고 살충제를 뿌린다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">징그럽긴 하지만 음식으로 만들어 <br>간헐적으로 먹을 수 있다고 생각한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">바퀴벌레도 생명이다. <br> 그들을 먹을 수는 없지만 자유롭게 번식하고 살 수 있게 그냥 둔다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">그들이 살기 좋은 환경을 만들어 놓고 <br>본격적으로 바퀴벌레를 사육하며 미래 식량을 위한 레시피들을 개발한다.</button><br>
         </div>
     </form>
     <br>
