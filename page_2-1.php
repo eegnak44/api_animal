@@ -67,19 +67,12 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-    <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
+    <p style="font-size: 30px;">chapter2. 무너진 경계</p>
     <br>
-    <p>
-    외곽 지역에서 너무 많은 시간을 소비하고 온 것 같다. <br>
-    나는 바쁜 걸음을 재촉하며 광장으로 나아갔다. 그러나 도시의 진입로에는 한 무리의 사람들이 움막을 짓고 살아가고 있었다. <br>
-    “광장으로 오라"는 라디오 소리를 듣지 못한 모양이다. <br>
-    시간이 얼마 남지 않았지만, 나는 이들에게 광장으로 함께 가자고 제안하고자 한다.
-    </p>
-    <br>
-
     <p>
         첫번째 움막에는 얼마전 한국으로 귀화한 북한 사람들이 살고 있었다.
     </p>
+    <br>
 <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
 <!--        이미지영역-->
 <!--        <img src="/img/dog021.gif">-->
@@ -98,6 +91,11 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <div class = 'moveBtn_div'>
         <input type="submit" value="뒤로" onclick="goBack()">
+        <?php
+        if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){?>
+            <input type="submit" value="home" onclick="goHome()">
+        <?}
+        ?>
     </div>
 </div>
 

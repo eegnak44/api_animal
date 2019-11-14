@@ -67,7 +67,7 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-    <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
+    <p style="font-size: 30px;">chapter2. 무너진 경계</p>
     <br>
     <p>
         두번째 움막에는 김치 공장에서 근무하는 외국인 노동자들이 살고 있었다. <br>
@@ -93,6 +93,11 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <div class = 'moveBtn_div'>
         <input type="submit" value="뒤로" onclick="goBack()">
+        <?php
+        if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){?>
+            <input type="submit" value="home" onclick="goHome()">
+        <?}
+        ?>
     </div>
 </div>
 

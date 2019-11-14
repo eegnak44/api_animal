@@ -47,7 +47,7 @@ $result = $conn->query($query) or die($this->_connect->error);
             value = $(this).attr('value');
 
             if(value){
-                window.location.href = 'http://34.80.159.83/page_3-1.php?id='+id+'&value='+value;
+                window.location.href = 'http://34.80.159.83/page_3.php?id='+id+'&value='+value;
             }
         });
 
@@ -67,7 +67,7 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-    <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
+    <p style="font-size: 30px;">chapter2. 무너진 경계</p>
     <br>
     <p>
         세번째 움막에는 이슬람 난민들이 살고 있었다. <br>
@@ -82,7 +82,7 @@ $result = $conn->query($query) or die($this->_connect->error);
 <!--    </div>-->
     <br>
     <br>
-    <form action="page_3-1.php" method="get">
+    <form action="page_3.php" method="get">
         <div class = 'choice_div'>
             <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">소식을 전해주지 않는다.</button><br>
             <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">간단한 소식만 전해준다.</button><br>
@@ -93,6 +93,11 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <div class = 'moveBtn_div'>
         <input type="submit" value="뒤로" onclick="goBack()">
+        <?php
+        if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){?>
+            <input type="submit" value="home" onclick="goHome()">
+        <?}
+        ?>
     </div>
 </div>
 

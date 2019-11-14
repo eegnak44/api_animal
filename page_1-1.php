@@ -73,6 +73,10 @@ $id = $_REQUEST['id'];
         window.history.back();
     }
 
+    function goHome() {
+        window.location.href = 'http://34.80.159.83/main.php';
+    }
+
 </script>
 
 
@@ -108,8 +112,12 @@ $id = $_REQUEST['id'];
     </form>
     <br>
     <div class = 'moveBtn_div'>
-
         <input type="submit" value="뒤로" onclick="goBack()">
+        <?php
+            if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){?>
+                <input type="submit" value="home" onclick="goHome()">
+            <?}
+        ?>
     </div>
 </div>
 

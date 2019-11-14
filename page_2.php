@@ -85,6 +85,11 @@ $result = $conn->query($query) or die($this->_connect->error);
             <input type="hidden" name = 'id' value="<?=$id?>">
             <input type="submit" value="무너진 경계로 입장"><br>
         </div>
+        <?php
+        if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){?>
+            <input type="submit" value="home" onclick="goHome()">
+        <?}
+        ?>
     </form>
     <br>
 </div>
