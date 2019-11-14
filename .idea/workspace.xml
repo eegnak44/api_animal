@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/page_1-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_1-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_1-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_1-2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_1-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_1-3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_2-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_2-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_2-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_2-2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_2-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_2-3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_2.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="112" column="6" lean-forward="true" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+            <state relative-caret-position="62">
+              <caret line="84" column="122" selection-start-line="84" selection-start-column="122" selection-end-line="84" selection-end-column="122" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -109,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="86" column="14" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+            <state relative-caret-position="422">
+              <caret line="68" selection-start-line="68" selection-end-line="68" selection-end-column="122" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -196,14 +191,14 @@
         <option value="$PROJECT_DIR$/mysqli_CONN.php" />
         <option value="$PROJECT_DIR$/DB/mysqli_CONN.php" />
         <option value="$PROJECT_DIR$/main.php" />
-        <option value="$PROJECT_DIR$/page_1.php" />
         <option value="$PROJECT_DIR$/page_1-2.php" />
         <option value="$PROJECT_DIR$/page_1-3.php" />
-        <option value="$PROJECT_DIR$/page_2.php" />
         <option value="$PROJECT_DIR$/page_2-1.php" />
         <option value="$PROJECT_DIR$/page_2-2.php" />
         <option value="$PROJECT_DIR$/page_2-3.php" />
         <option value="$PROJECT_DIR$/page_1-1.php" />
+        <option value="$PROJECT_DIR$/page_2.php" />
+        <option value="$PROJECT_DIR$/page_1.php" />
       </list>
     </option>
   </component>
@@ -296,20 +291,6 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-    </task>
-    <task id="LOCAL-00013" summary="챕터 1, 메인 페이지 구성">
-      <created>1573611202293</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1573611202293</updated>
-    </task>
-    <task id="LOCAL-00014" summary="챕터 1, 메인 페이지 구성">
-      <created>1573611266807</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1573611266807</updated>
     </task>
     <task id="LOCAL-00015" summary="챕터 1, 메인 페이지 구성">
       <created>1573611438456</created>
@@ -640,14 +621,29 @@
       <option name="project" value="LOCAL" />
       <updated>1573704095259</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="결과 칭호 이미지 업로드">
+      <created>1573704641898</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1573704641899</updated>
+    </task>
+    <task id="LOCAL-00063" summary="챕터2 메인 변경">
+      <created>1573704726059</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1573704726059</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30977000" />
+    <option name="totallyTimeSpent" value="31301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -683,7 +679,9 @@
     <MESSAGE value="main 오타 수정" />
     <MESSAGE value="이미지파일 업로드" />
     <MESSAGE value="챕터 메인페이지, 챕터 1-1 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="챕터 메인페이지, 챕터 1-1 변경" />
+    <MESSAGE value="결과 칭호 이미지 업로드" />
+    <MESSAGE value="챕터2 메인 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="챕터2 메인 변경" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_commit.php">
@@ -841,8 +839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="86" column="14" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+        <state relative-caret-position="422">
+          <caret line="68" selection-start-line="68" selection-end-line="68" selection-end-column="122" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -852,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="112" column="6" lean-forward="true" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+        <state relative-caret-position="62">
+          <caret line="84" column="122" selection-start-line="84" selection-start-column="122" selection-end-line="84" selection-end-column="122" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

@@ -96,9 +96,6 @@ $id = $_REQUEST['id'];
         도시 외곽에 사는 나는 갈 길이 멀다. 채비를 하고 집 밖으로 나와 광장으로 향했다.
     </p>
     <br>
-
-    <br>
-    <br>
     <form action="page_1-1.php" method="get">
         <div class = 'choice_div' style="margin: auto; width:50px;">
             <input type="hidden" name = 'id' value="<?=$id?>">
