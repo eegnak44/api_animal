@@ -80,12 +80,13 @@ $query2 = "SELECT * FROM play_dataTB where ID = '{$id}'";
 
 $result2 = $conn->query($query2) or die($this->_connect->error);
 
+debug_var($result2);
 
-while($row = $result2->fetch_array())
-{
+//while($row = $result2->fetch_array())
+//{
     //$id = $row['ID'];
-    debug_var($row);
-}
+//    debug_var($row);
+//}
 
 echo "result page";
 
