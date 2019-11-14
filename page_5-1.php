@@ -47,7 +47,7 @@ $id = $_REQUEST['id'];
             value = $(this).attr('value');
 
             if(value){
-                window.location.href = 'http://34.80.159.83/page_4-2.php?id='+id+'&value='+value;
+                window.location.href = 'http://34.80.159.83/page_5-2.php?id='+id+'&value='+value;
             }
         });
 
