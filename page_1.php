@@ -82,10 +82,9 @@ $id = $_REQUEST['id'];
 </title>
 <body>
 
-<div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
+<div id = 'contentsDiv' style="margin: auto; padding: 50px; width:1000px;">
 
-    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
-        이미지영역
+    <div id = 'imgDiv'>
         <img src="/img/chapter/firework-chapter1.jpg">
     </div>
 
@@ -107,10 +106,10 @@ $id = $_REQUEST['id'];
         </div>
     </form>
     <br>
-    <div class = 'moveBtn_div'>
-
-        <input type="submit" value="뒤로" onclick="goBack()">
-    </div>
+<!--    <div class = 'moveBtn_div'>-->
+<!---->
+<!--        <input type="submit" value="뒤로" onclick="goBack()">-->
+<!--    </div>-->
 </div>
 
 <!--<div class = "testBtn1" value = '1' style="border-left: 1px grey;">선택지1</div>-->

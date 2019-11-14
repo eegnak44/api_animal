@@ -83,6 +83,7 @@ $id = $_REQUEST['id'];
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
+    <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
 
     <p>
         지진이 일어나고 오염 물질이 땅 위를 뒤덮기 시작하자 사람들은 자신이 키우던 개들을 두고 떠나갔다.<br>
