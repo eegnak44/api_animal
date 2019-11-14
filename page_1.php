@@ -82,14 +82,15 @@ $id = $_REQUEST['id'];
 </title>
 <body>
 
-<div id = 'contentsDiv' style = "margin: auto; padding-top: 100px;width:1000px;padding-right: 100px;padding-left: 100px;">
+<div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
 
     <div id = 'imgDiv'>
         <img src="/img/chapter/firework-chapter1.jpg">
     </div>
 
     <p>어느날 큰 지진이 일어났다. 쓰나미가 일어나고 집이 무너지기 시작했다. 밖에서 큰 폭발음이 들렸다. <br>
-        나는 방공호로 대피했다. 시간이 흐르고 잠잠해 진 후, 밖으로 나온 나는 라디오의 신호를 가까스로 잡을 수 있었다.<br>
+        나는 방공호로 대피했다.<br>
+        시간이 흐르고 잠잠해 진 후, 밖으로 나온 나는 라디오의 신호를 가까스로 잡을 수 있었다.<br>
         <br>
         “살아남은 자들은 광장으로 모이세요" <br>
         <br>
