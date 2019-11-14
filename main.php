@@ -134,7 +134,7 @@ $conn->close();
 <!--</div>-->
 <br>
 
-<form action="page_1-1.php" method="get">
+<form action="page_1.php" method="get">
     <div class = 'choice_div' style="margin: auto; width:50px;">
         <input type="hidden" name = 'id' value="<?=$id?>">
         <input type="submit" value="시작"><br>
