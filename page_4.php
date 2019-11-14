@@ -18,7 +18,7 @@ $conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_dat
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$query = "UPDATE play_dataTB SET one_to_three = '{$value}' WHERE ID = '{$id}'";
+$query = "UPDATE play_dataTB SET three_to_three = '{$value}' WHERE ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
@@ -47,7 +47,7 @@ $result = $conn->query($query) or die($this->_connect->error);
             value = $(this).attr('value');
 
             if(value){
-                window.location.href = 'http://34.80.159.83/page_2-1.php?id='+id+'&value='+value;
+                window.location.href = 'http://34.80.159.83/page_4-1.php?id='+id+'&value='+value;
             }
         });
 
@@ -68,21 +68,16 @@ $result = $conn->query($query) or die($this->_connect->error);
 
 <div id = 'contentsDiv' style = "margin: auto; padding-top: 100px;width:1000px;padding-right: 100px;padding-left: 100px;">
     <div id = 'imgDiv'>
-        <img src="/img/chapter/firework-chapter2.jpg">
+        <img src="/img/chapter/firework-chapter4.jpg">
     </div>
-    <p>
-        외곽 지역에서 너무 많은 시간을 소비하고 온 것 같다. <br>
-        나는 바쁜 걸음을 재촉하며 광장으로 나아갔다.<br>
-        그러나 도시의 진입로에는 한 무리의 사람들이 움막을 짓고 살아가고 있었다. <br>
-        “광장으로 오라"는 라디오 소리를 듣지 못한 모양이다. <br>
-        시간이 얼마 남지 않았지만, 나는 이들에게 광장으로 함께 가자고 제안하고자 한다.
-    </p>
+        <p>행성7H로 향하는 우주선 안,<br>
+        사람들 뿐만 아니라 수 많은 벌레들이 우주선 안으로 따라 들어왔다.</p>
     <br>
 
-    <form action="page_2-1.php" method="get">
+    <form action="page_4-1.php" method="get">
         <div class = 'choice_div' style="margin: auto; width:50px;">
             <input type="hidden" name = 'id' value="<?=$id?>">
-            <input type="submit" value="무너진 경계로 입장"><br>
+            <input type="submit" value="우주선으로 입장"><br>
         </div>
     </form>
     <br>

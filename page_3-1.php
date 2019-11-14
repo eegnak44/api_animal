@@ -47,7 +47,7 @@ $id = $_REQUEST['id'];
             value = $(this).attr('value');
 
             if(value){
-                window.location.href = 'http://34.80.159.83/page_2-2.php?id='+id+'&value='+value;
+                window.location.href = 'http://34.80.159.83/page_3-2.php?id='+id+'&value='+value;
             }
         });
 
@@ -70,22 +70,24 @@ $id = $_REQUEST['id'];
     <p style="font-size: 30px;">chapter2. 무너진 경계</p>
     <br>
     <p>
-        첫번째 움막에는 얼마전 한국으로 귀화한 북한 사람들이 살고 있었다.
+        우주선A는 각 분야의 전문가들, 소위 엘리트들이 타고 있었다. 부유한 그들의 우주선은 매우 안락하고 세련되었다. <br>
+        그러나 이들과 대화하다보니 나와 정치적 견해가 다르다는 것을 알 수 있었다. <br>
+        그들과 나는 심각한 정치 토론을 하기 시작했고, 말이 통하지 않자 서로 언성을 높이기도 했다.<br>
     </p>
     <br>
-<!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
-<!--        이미지영역-->
-<!--        <img src="/img/dog021.gif">-->
-<!---->
-<!--    </div>-->
+    <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
+    <!--        이미지영역-->
+    <!--        <img src="/img/dog021.gif">-->
+    <!---->
+    <!--    </div>-->
     <br>
     <br>
-    <form action="page_2-2.php" method="get">
+    <form action="page_3-2.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">소식을 전해주지 않는다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">간단한 소식만 전해준다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">친구가 되어 동행한다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">반려관계를 맺고 동행한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">정치 견해가 다른 사람들과는 하루도 함께 할 수 없다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">이 곳엔 다른 곳보다도 시설이 좋기 때문에, <br>불만이 있더라도 그냥 조용히 이 우주선에 탈 것이다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">이 곳엔 다른 곳보다도 지적인 사람들이 모여있으므로, 이들이 말하는 것이 옳을지도 모른다. <br>나는 이들과 함께하기 위해 나는 정치적 입장도 바꿀 수 있다</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">나는 이들과 토론을 통해 정치적 견해를 좁히고, <br>함께 잘 살아갈 자신이 있다.</button><br>
         </div>
     </form>
     <br>
