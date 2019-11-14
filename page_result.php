@@ -36,7 +36,7 @@ $result2 = $conn->query($query2) or die($this->_connect->error);
 while($row = $result2->fetch_array())
 {
     //$id = $row['ID'];
-    echo $row;
+    var_dump($row);
 }
 
 echo "result page";
