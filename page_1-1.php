@@ -107,17 +107,11 @@ $id = $_REQUEST['id'];
             <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">음식을 나누어주고 치료해준 후 떠난다.</button><br>
             <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">떠돌이 개를 다독여 함께 여행을 시작한다.</button><br>
 <!--            <input type="hidden" name = 'id' value="--><?//=$id?><!--">-->
-
         </div>
     </form>
     <br>
     <div class = 'moveBtn_div'>
         <input type="submit" value="뒤로" onclick="goBack()">
-<!--        --><?php
-//            if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){?>
-<!--                <input type="submit" value="home" onclick="goHome()">-->
-<!--            --><?//}
-//        ?>
     </div>
 </div>
 
