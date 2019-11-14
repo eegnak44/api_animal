@@ -1,44 +1,49 @@
 <?php
 
+class DB {
 
-//0. 설정
-$mysql_hostname = 'localhost';
-$mysql_username = 'root';
-$mysql_password = '6034265';
-$mysql_database = 'animal';
-$mysql_port = '16612';
-$mysql_charset = 'utf8';
+    function multi_query($query)
+    {
+        return @mysqli_multi_query($this->db,$query) or die( ( $this->debug ) ? mysqli_error( $this->db ) : "Error : excute multi query" ) ;
+    }
 
-//
-////1. DB 연결
-$connect = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
+    function getMultiArray($sql)
+    {
 
+        $isResult = $this->multi_query($sql) ;
 
-if($connect->connect_errno){
-echo '[연결실패] : '.$connect->connect_error.'';
-} else {
-//echo '[연결성공]';
+        if( $isResult )
+        {
+            $pack = Array() ;
+            $multiNum = 0 ;
+
+            do
+            {
+                if ($this->result = $this->db->store_result())
+                {
+                    $set = Array() ;
+                    $i = 0 ;
+                    while( $row = $this->next_row() )
+                    {
+                        $set[$i] = $row ;
+                        $i ++ ;
+                    }
+
+                    $this->result->close();
+
+                    $pack[$multiNum] = $set ;
+                    $multiNum ++ ;
+                }
+            }
+            while( $this->next_result() );
+        }
+
+//			$this->db->close();
+
+        return $pack ;
+
+    }
 }
 
-//2. 문자셋 지정
-if(! $connect->set_charset($mysql_charset))// (php >= 5.0.5)
-{
-echo '[문자열변경실패] : '.$connect->connect_error;
-}
-
-//3. 쿼리 생성
-$query = ' select \'complete\' as col from dual ';
-
-//4. 쿼리 실행
-$result = $connect->query($query) or die($this->_connect->error);
-
-//5. 결과 처리
-while($row = $result->fetch_array())
-{
-echo $row['col'].'';
-}
-
-////6. 연결 종료
-$connect->close();
 
 ?>

@@ -22,6 +22,18 @@ $query = "UPDATE play_dataTB SET one_to_three = '{$value}' WHERE ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
+$query2 = "SELECT one_to_one, one_to_two, one_to_three from play_dataTB where ID = '{$id}'";
+
+$result2 = $conn->query($query2) or die($this->_connect->error);
+
+while($row = $result2->fetch_array())
+{
+    //$id = $row['ID'];
+    echo $row['one_to_one'];
+    echo $row['one_to_two'];
+    echo $row['one_to_three'];
+}
+
 
 ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">

@@ -80,53 +80,15 @@ $query2 = "SELECT * FROM play_dataTB where ID = '{$id}'";
 
 $result2 = $conn->query($query2) or die($this->_connect->error);
 
-function getMultiArray($sql)
+
+
+//debug_var($row);
+
+while($row = $result2->fetch_array())
 {
-
-    $isResult = $this->multi_query($sql) ;
-
-    if( $isResult )
-    {
-        $pack = Array() ;
-        $multiNum = 0 ;
-
-        do
-        {
-            if ($this->result = $this->db->store_result())
-            {
-                $set = Array() ;
-                $i = 0 ;
-                while( $row = $this->next_row() )
-                {
-                    $set[$i] = $row ;
-                    $i ++ ;
-                }
-
-                $this->result->close();
-
-                $pack[$multiNum] = $set ;
-                $multiNum ++ ;
-            }
-        }
-        while( $this->next_result() );
-    }
-
-//			$this->db->close();
-
-    return $pack ;
-
-}
-
-
-$row = getMultiArray($query2);
-
-debug_var($row);
-
-//while($row = $result2->fetch_array())
-//{
     //$id = $row['ID'];
-//    debug_var($row);
-//}
+    debug_var($row);
+}
 
 echo "result page";
 
