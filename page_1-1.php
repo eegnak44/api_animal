@@ -113,11 +113,11 @@ $id = $_REQUEST['id'];
     <br>
     <div class = 'moveBtn_div'>
         <input type="submit" value="뒤로" onclick="goBack()">
-        <?php
-            if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){?>
-                <input type="submit" value="home" onclick="goHome()">
-            <?}
-        ?>
+<!--        --><?php
+//            if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){?>
+<!--                <input type="submit" value="home" onclick="goHome()">-->
+<!--            --><?//}
+//        ?>
     </div>
 </div>
 
