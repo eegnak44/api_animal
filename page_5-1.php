@@ -70,8 +70,8 @@ $id = $_REQUEST['id'];
     <p style="font-size: 30px;">chapter5. 행성 7H</p>
     <br>
     <p>
-        우주선 안에는 음식물 쓰레기가 쌓여가고 그 주변으로 초파리가 날아 다닌다. <br>
-        초파리는 음식물 쓰레기 안에 알을 낳고 번식하여 개체수가 늘어났다.<br>
+        인류가 우주선을 타고오는 동안 함께 온 인공지능 로봇은 나날이 발전하여 인간의 지능을 뛰어넘었다. <br>
+        어느날 로봇은 나의 통제권에서 벗어나 나를 관찰하기 시작한다.
     </p>
     <br>
     <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
@@ -83,10 +83,10 @@ $id = $_REQUEST['id'];
     <br>
     <form action="page_5-2.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">귀찮은 초파리. 모든 초파리를 제거할 수 있도록 벌레약을 개발하여 잡는다. </button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">굳이 모두 잡으려고 하지 않고, 초파리가 내 앞에서 귀찮게 할 때만 잡는다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">초파리들도 살고자 이 우주선까지 살아돌아왔는데, 죽일 필요까진 없는 것 같다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">빠른 시간 진화하는 이들의 유전적 특성들을 분석하여 우주선이 이동하는 동안 진화에 대한 연구를 진행한다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">로봇을 부숴버린다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">로봇이 혐오스럽지만, 인류의 역사를 담은 로봇의 데이터는 소중하기 때문에 <br>적당한 거리를 유지하며 지낸다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">로봇의 지성에 감탄하며, 그에게 더욱 더 의지한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">로봇을 나와 동등한 인격체로서 대하며, <br>로봇과 대화를 나누어 친구로 지내고자 노력한다.</button><br>
         </div>
     </form>
     <br>
