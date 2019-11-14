@@ -1,3 +1,5 @@
+<? include "common.php"?>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -36,7 +38,7 @@ $result2 = $conn->query($query2) or die($this->_connect->error);
 while($row = $result2->fetch_array())
 {
     //$id = $row['ID'];
-    var_dump($row);
+    debug_var($row);
 }
 
 echo "result page";

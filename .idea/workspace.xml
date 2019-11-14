@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_result.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+            <state relative-caret-position="527">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -234,20 +233,6 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-    </task>
-    <task id="LOCAL-00023" summary="챕터 1, 메인 페이지 구성">
-      <created>1573618916351</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1573618916351</updated>
-    </task>
-    <task id="LOCAL-00024" summary="챕터 1, 메인 페이지 구성">
-      <created>1573619024595</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1573619024595</updated>
     </task>
     <task id="LOCAL-00025" summary="챕터 1, 메인 페이지 구성">
       <created>1573619142905</created>
@@ -578,14 +563,28 @@
       <option name="project" value="LOCAL" />
       <updated>1573710011816</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="챕터 5-3 까지 구성">
+      <created>1573727429973</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1573727429974</updated>
+    </task>
+    <task id="LOCAL-00073" summary="챕터 5-3 까지 구성">
+      <created>1573727659467</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1573727659467</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39262000" />
+    <option name="totallyTimeSpent" value="39764000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
@@ -881,8 +880,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="527">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
