@@ -66,7 +66,7 @@ $result = $conn->query($query) or die($this->_connect->error);
 </title>
 <body>
 
-<div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
+<div id = 'contentsDiv' style = "margin: auto; padding-top: 100px;width:1000px;padding-right: 100px;padding-left: 100px;">
     <div id = 'imgDiv'>
         <img src="/img/chapter/firework-chapter2.jpg">
     </div>
