@@ -67,18 +67,19 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-
+    <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
+    <br>
     <p>
         두번째 움막에는 김치 공장에서 근무하는 외국인 노동자들이 살고 있었다. <br>
         고된 노동에 지친 이들은 이 지역에서 불법체류 중인 것으로 보인다.<br>
     </p>
     <br>
 
-    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
-        이미지영역
-        <img src="/img/dog021.gif">
-
-    </div>
+<!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
+<!--        이미지영역-->
+<!--        <img src="/img/dog021.gif">-->
+<!---->
+<!--    </div>-->
     <br>
     <br>
     <form action="page_2-3.php" method="get">

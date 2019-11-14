@@ -67,7 +67,8 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-
+    <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
+    <br>
     <p>
     외곽 지역에서 너무 많은 시간을 소비하고 온 것 같다. <br>
     나는 바쁜 걸음을 재촉하며 광장으로 나아갔다. 그러나 도시의 진입로에는 한 무리의 사람들이 움막을 짓고 살아가고 있었다. <br>
@@ -79,11 +80,11 @@ $result = $conn->query($query) or die($this->_connect->error);
     <p>
         첫번째 움막에는 얼마전 한국으로 귀화한 북한 사람들이 살고 있었다.
     </p>
-    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
-        이미지영역
-        <img src="/img/dog021.gif">
-
-    </div>
+<!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
+<!--        이미지영역-->
+<!--        <img src="/img/dog021.gif">-->
+<!---->
+<!--    </div>-->
     <br>
     <br>
     <form action="page_2-2.php" method="get">

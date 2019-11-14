@@ -67,18 +67,19 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-
+    <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
+    <br>
     <p>
         세번째 움막에는 이슬람 난민들이 살고 있었다. <br>
         이들에게 알라의 경전은 목숨보다 소중한 것이다. <br>
     </p>
     <br>
-
-    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
-        이미지영역
-        <img src="/img/dog021.gif">
-
-    </div>
+<!---->
+<!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
+<!--        이미지영역-->
+<!--        <img src="/img/dog021.gif">-->
+<!---->
+<!--    </div>-->
     <br>
     <br>
     <form action="page_3-1.php" method="get">

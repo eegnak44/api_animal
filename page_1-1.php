@@ -84,16 +84,16 @@ $id = $_REQUEST['id'];
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
     <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
-
+    <br>
     <p>
         지진이 일어나고 오염 물질이 땅 위를 뒤덮기 시작하자 사람들은 자신이 키우던 개들을 두고 떠나갔다.<br>
         이 외곽지역에 남은 사람은 없고 위에 병들고 배고픈 개들만이 떠돌고 있을 뿐이었다.
     </p>
-    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
-        이미지영역
-        <img src="/img/dog021.gif">
-
-    </div>
+<!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
+<!--        이미지영역-->
+<!--        <img src="/img/dog021.gif">-->
+<!---->
+<!--    </div>-->
     <br>
     <br>
     <form action="page_1-2.php" method="get">
@@ -113,17 +113,5 @@ $id = $_REQUEST['id'];
     </div>
 </div>
 
-<!--<div class = "testBtn1" value = '1' style="border-left: 1px grey;">선택지1</div>-->
-<!--<div class = 'testBtn2'>-->
-<!--    <a href="/test_main_page_1.php" class="btn btn-secondary" value="1">선택지1</a>-->
-<!--</div>-->
-<!--<div>-->
-<!--    <ul>-->
-<!--        <li>1</li>-->
-<!--    </ul>-->
-<!--    <ul>-->
-<!--        <li>2</li>-->
-<!--    </ul>-->
-<!--</div>-->
 </body>
 </html>

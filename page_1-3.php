@@ -67,7 +67,8 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-
+    <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
+    <br>
     <p>외곽 지역을 벗어나기 전, 나는 잠시 쉬고 싶었다. <br>
         마침, 외곽의 경계에 멀끔한 집 한채를 발견했다. <br>
         라디오의 소리를 듣지 못한 도망치지 못했다. <br>
@@ -75,12 +76,11 @@ $result = $conn->query($query) or die($this->_connect->error);
         그는 얼마전 무너진 원자력 발전소에서 일하던 노동자였다. <br>
     </p>
     <br>
-
-    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
-        이미지영역
-        <img src="/img/dog021.gif">
-
-    </div>
+<!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
+<!--        이미지영역-->
+<!--        <img src="/img/dog021.gif">-->
+<!---->
+<!--    </div>-->
     <br>
     <br>
     <form action="page_2.php" method="get">

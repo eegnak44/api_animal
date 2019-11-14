@@ -65,18 +65,18 @@ $result = $conn->query($query) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
-
+    <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
+    <br>
     <p>나는 급히 이 지역을 벗어나기 위해 빠른 걸음으로 걸었다. <br>
         그런데, 길거리에서 까만 고양이를 발견한다. <br>
         살펴보니 고양이는 임신한 상태였고, 몇 일 내로 아기를 낳을 것 같았다.
     </p>
     <br>
-
-    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>
-        이미지영역
-        <img src="/img/dog021.gif">
-
-    </div>
+<!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
+<!--        이미지영역-->
+<!--        <img src="/img/dog021.gif">-->
+<!---->
+<!--    </div>-->
     <br>
     <br>
     <form action="page_1-3.php" method="get">
