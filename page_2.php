@@ -50,7 +50,7 @@ function getGrade($value1, $value2, $value3){
         $val1_score = 5;
     }
 
-    echo $val1_score;
+    $result = $val1_score;
 //    $tmpResult1 = ($val1_score + $val2_score + $val3_score);
 //    echo $tmpResult1;
 
@@ -84,7 +84,7 @@ function getGrade($value1, $value2, $value3){
 //        $result = 'C';
 //    }
 //
-//    return $result;
+    return $result;
 }
 
 var_dump(getGrade($row['one_to_one'], $row['one_to_two'], $row['one_to_three']));
