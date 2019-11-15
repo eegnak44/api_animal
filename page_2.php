@@ -76,7 +76,7 @@ function getGrade($value1, $value2, $value3){
 //        echo $val3_score.'<br>';
     }
     $tmpResult = (($val1_score + $val2_score) + $val3_score);
-    echo $tmpResult;
+//    echo $tmpResult;
 //    echo $tmpResult1.'<br>';
 //    echo $tmpResult2.'<br>';
 //    echo $tmpResult3.'<br>';
@@ -84,14 +84,14 @@ function getGrade($value1, $value2, $value3){
 //    $tmpResult = ($val1_score + $val2_score + $val3_score);//1,2,4
 //    echo $tmpResult;
 ////
-//    if($tmpResult <= 3){
-//        $result = 'A';
-//    } else if($tmpResult <= 11){
-//        $result = 'B';
-//    } else {
-//        $result = 'C';
-//    }
-////
+    if($tmpResult <= 3){
+        $result = 'A';
+    } else if($tmpResult <= 11){
+        $result = 'B';
+    } else {
+        $result = 'C';
+    }
+
     return $result;
 }
 
