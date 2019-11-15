@@ -3,6 +3,10 @@
 
 $id = $_REQUEST['id'];
 $value = $_REQUEST['value'];
+$value1 = '';
+$value2 = '';
+$value3 = '';
+
 
 $mysql_hostname = 'localhost';
 $mysql_username = 'root';
@@ -29,9 +33,9 @@ $result2 = $conn->query($query2) or die($this->_connect->error);
 while($row = $result2->fetch_array())
 {
     //$id = $row['ID'];
-    echo $row['one_to_one']."<br>";
-    echo $row['one_to_two']."<br>";
-    echo $row['one_to_three']."<br>";
+    $value1 = $row['one_to_one'];
+    $value2 = $row['one_to_two'];
+    $value3 = $row['one_to_three'];
 }
 
 function getGrade($value1, $value2, $value3){
@@ -87,7 +91,7 @@ function getGrade($value1, $value2, $value3){
     return $result;
 }
 
-var_dump(getGrade($row['one_to_one'], $row['one_to_two'], $row['one_to_three']));
+getGrade($value1, $value2, $value3);
 
 
 
