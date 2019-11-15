@@ -29,9 +29,9 @@ $result2 = $conn->query($query2) or die($this->_connect->error);
 while($row = $result2->fetch_array())
 {
     //$id = $row['ID'];
-    echo $row['one_to_one'];
-    echo $row['one_to_two'];
-    echo $row['one_to_three'];
+//    echo $row['one_to_one'];
+//    echo $row['one_to_two'];
+//    echo $row['one_to_three'];
 }
 
 function getGrade($value1, $value2, $value3){
@@ -65,18 +65,18 @@ function getGrade($value1, $value2, $value3){
 //        echo $val3_score;
     }
 
-    $tmpResult = ($val1_score + $val2_score + $val3_score);
+    $tmpResult = ($val1_score + $val2_score + $val3_score);//1,2,4
     echo $tmpResult;
-
-    if($tmpResult <= 3){
-        $result = 'A';
-    } else if($tmpResult <= 11){
-        $result = 'B';
-    } else {
-        $result = 'C';
-    }
-
-    return $result;
+//
+//    if($tmpResult <= 3){
+//        $result = 'A';
+//    } else if($tmpResult <= 11){
+//        $result = 'B';
+//    } else {
+//        $result = 'C';
+//    }
+//
+//    return $result;
 }
 
 var_dump(getGrade($row['one_to_one'], $row['one_to_two'], $row['one_to_three']));
