@@ -40,6 +40,16 @@ function getGrade($value1, $value2, $value3){
     $val2_score = '';
     $val3_score = '';
 
+//
+//    if($value1 == 1) {
+//        $val1_score = 0;
+//    } else if($value2 == 2){
+//        $val1_score = 1;
+//    } else if($value3 == 3){
+//        $val1_score = 4;
+//    } else {
+//        $val1_score = 5;
+//    }
     for($i = 1; $i < 4; $i++){
         if(${'value'.$i} == '1'){
             ${'val'.$i.'_score'} = 0;
@@ -50,12 +60,13 @@ function getGrade($value1, $value2, $value3){
         } else {
             ${'val'.$i.'_score'} = 5;
         }
-        echo $val1_score;
-        echo $val2_score;
-        echo $val3_score;
+//        echo $val1_score;
+//        echo $val2_score;
+//        echo $val3_score;
     }
 
     $tmpResult = ($val1_score + $val2_score + $val3_score);
+    echo $tmpResult;
 
     if($tmpResult <= 3){
         $result = 'A';
