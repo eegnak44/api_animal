@@ -183,10 +183,11 @@ if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
         $res_style = $resultStyle[4];
     } else if($gradeArr[4] == 'C'){
         $res_style = $resultStyle[5];
-    } else if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeArr[2] == 'C' && $gradeArr[3] == 'C' && $gradeArr[4] == 'C'){
-        $res_style = $resultStyle[7];
     }
 
+    if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeArr[2] == 'C' && $gradeArr[3] == 'C' && $gradeArr[4] == 'C'){
+        $res_style = $resultStyle[7];
+    }
 
 
     echo $res_style;
