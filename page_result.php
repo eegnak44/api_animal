@@ -167,11 +167,11 @@ if(in_array('A', $gradeArr)){
 }
 if(in_array('B', $gradeArr)){
     $gradeBCnt++;
-    debug_var($gradeACnt);
+    debug_var($gradeBCnt);
 }
 if(in_array('C', $gradeArr)){
     $gradeCCnt++;
-    debug_var($gradeACnt);
+    debug_var($gradeCCnt);
 }
 
 
