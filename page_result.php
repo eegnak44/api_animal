@@ -159,6 +159,7 @@ $gradeBCnt = 0;
 $gradeCCnt = 0;
 $res_style = '';
 if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
+    $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
 
     for($i = 0; $i < sizeof($gradeArr); $i++){
         if($gradeArr[$i] == 'A'){
@@ -183,7 +184,8 @@ if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
     } else if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeArr[2] == 'C' && $gradeArr[3] == 'C' && $gradeArr[4] == 'C'){
         $res_style = $resultStyle[7];
     }
-    $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
+
+
 
     echo $res_style;
 
