@@ -75,12 +75,6 @@ $query = "UPDATE play_dataTB SET five_to_three = '{$value}', finish_date = now()
 $result = $conn->query($query) or die($this->_connect->error);
 
 
-
-//$query2 = "SELECT * FROM play_dataTB where ID = '{$id}'";
-//
-//$result2 = $conn->query($query2) or die($this->_connect->error);
-
-
 $value1 = '';
 $value2 = '';
 $value3 = '';
@@ -134,13 +128,19 @@ $query3 = "UPDATE play_dataTB SET chapter_five = '{$getGradeVal}' where ID = '{$
 
 $result3 = $conn->query($query3) or die($this->_connect->error);
 
+
+
+$resultQuery = "SELECT * from play_dataTB where ID = '{$id}'";
+$res = $conn->query($resultQuery) or die($this->_connect->error);
+
+
+
 ////debug_var($row);
 //
-//while($row = $result2->fetch_array())
-//{
-//    //$id = $row['ID'];
-//    debug_var($row);
-//}
+while($row = $res->fetch_array())
+{
+    debug_var($row);
+}
 //
 //echo "result page";
 
