@@ -139,13 +139,14 @@ $res = $conn->query($resultQuery) or die($this->_connect->error);
 //
 while($row = $res->fetch_array())
 {
-    debug_var($row);
+//    debug_var($row);
+    $resObj = $row;
 }
 //
 //echo "result page";
 
-
-
-
+for($i = 0; $i < 24; $i++){
+    debug_var($resObj[$i]);
+}
 
 ?>
