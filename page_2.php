@@ -95,8 +95,8 @@ function getGrade($value1, $value2, $value3){
     return $result;
 }
 
-getGrade($value1, $value2, $value3);
-
+$getGradeVal = getGrade($value1, $value2, $value3);
+echo $getGradeVal;
 
 
 //$query3 = "UPDATE play_dataTB SET chapter_one = '{$grade}' where ID = '{$id}'";
