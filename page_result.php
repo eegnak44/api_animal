@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
 /**
  * Created by PhpStorm.
@@ -159,6 +160,7 @@ $gradeBCnt = 0;
 $gradeCCnt = 0;
 $res_style = '';
 if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
+
     $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
 
     for($i = 0; $i < sizeof($gradeArr); $i++){
