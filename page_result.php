@@ -144,11 +144,7 @@ while($row = $res->fetch_array())
 }
 //
 //echo "result page";
-debug_var($resObj['chapter_one']);
-debug_var($resObj['chapter_two']);
-debug_var($resObj['chapter_three']);
-debug_var($resObj['chapter_four']);
-debug_var($resObj['chapter_five']);
+
 
 $gradeArr = Array(5);
 $gradeArr[0] = $resObj['chapter_one'];
@@ -161,18 +157,27 @@ $gradeArr[4] = $resObj['chapter_five'];
 $gradeACnt = 0;
 $gradeBCnt = 0;
 $gradeCCnt = 0;
-if(in_array('A', $gradeArr)){
-    $gradeACnt++;
-    debug_var($gradeACnt);
+if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
+    debug_var($resObj['chapter_one']);
+    debug_var($resObj['chapter_two']);
+    debug_var($resObj['chapter_three']);
+    debug_var($resObj['chapter_four']);
+    debug_var($resObj['chapter_five']);
+
+    if(in_array('A', $gradeArr)){
+        $gradeACnt++;
+        debug_var($gradeACnt);
+    }
+    if(in_array('B', $gradeArr)){
+        $gradeBCnt++;
+        debug_var($gradeBCnt);
+    }
+    if(in_array('C', $gradeArr)){
+        $gradeCCnt++;
+        debug_var($gradeCCnt);
+    }
 }
-if(in_array('B', $gradeArr)){
-    $gradeBCnt++;
-    debug_var($gradeBCnt);
-}
-if(in_array('C', $gradeArr)){
-    $gradeCCnt++;
-    debug_var($gradeCCnt);
-}
+
 
 
 
