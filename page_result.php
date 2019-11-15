@@ -157,12 +157,8 @@ $gradeArr[4] = $resObj['chapter_five'];
 $gradeACnt = 0;
 $gradeBCnt = 0;
 $gradeCCnt = 0;
+$res_style = '';
 if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
-    debug_var($resObj['chapter_one']);
-    debug_var($resObj['chapter_two']);
-    debug_var($resObj['chapter_three']);
-    debug_var($resObj['chapter_four']);
-    debug_var($resObj['chapter_five']);
 
     for($i = 0; $i < sizeof($gradeArr); $i++){
         if($gradeArr[$i] == 'A'){
@@ -173,15 +169,26 @@ if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
             $gradeCCnt++;
         }
     }
-    debug_var($gradeACnt);
-    debug_var($gradeBCnt);
-    debug_var($gradeCCnt);
+
+    if($gradeArr[0] == 'C'){
+        $res_style = $resultStyle[1];
+    } else if($gradeArr[1] == 'C'){
+        $res_style = $resultStyle[2];
+    } else if($gradeArr[2] == 'C'){
+        $res_style = $resultStyle[3];
+    } else if($gradeArr[3] == 'C'){
+        $res_style = $resultStyle[4];
+    } else if($gradeArr[4] == 'C'){
+        $res_style = $resultStyle[5];
+    } else if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeArr[2] == 'C' && $gradeArr[3] == 'C' && $gradeArr[4] == 'C'){
+        $res_style = $resultStyle[7];
+    }
 
 }
 
+$resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
 
-
-
+echo $res_style;
 
 //for($i = 0; $i < 24; $i++){
 //    debug_var($resObj[$i]);
