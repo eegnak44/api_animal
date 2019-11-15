@@ -67,7 +67,7 @@ $mysql_charset = 'utf8';
 
 $conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
 //
-
+$resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -159,34 +159,31 @@ $gradeACnt = 0;
 $gradeBCnt = 0;
 $gradeCCnt = 0;
 $res_style = '';
-if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
 
-    $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
 
-    for($i = 0; $i < sizeof($gradeArr); $i++){
-        if($gradeArr[$i] == 'A'){
-            $gradeACnt++;
-        } else if($gradeArr[$i] == 'B'){
-            $gradeBCnt++;
-        } else if($gradeArr[$i] == 'C'){
-            $gradeCCnt++;
-        }
+for($i = 0; $i < sizeof($gradeArr); $i++){
+    if($gradeArr[$i] == 'A'){
+        $gradeACnt++;
+    } else if($gradeArr[$i] == 'B'){
+        $gradeBCnt++;
+    } else if($gradeArr[$i] == 'C'){
+        $gradeCCnt++;
     }
-
-    if($gradeArr[0] == 'C'){
-        $res_style = $resultStyle[1];
-    } else if($gradeArr[1] == 'C'){
-        $res_style = $resultStyle[2];
-    } else if($gradeArr[2] == 'C'){
-        $res_style = $resultStyle[3];
-    } else if($gradeArr[3] == 'C'){
-        $res_style = $resultStyle[4];
-    } else if($gradeArr[4] == 'C'){
-        $res_style = $resultStyle[5];
-    }
-
-
 }
+
+if($gradeArr[0] == 'C'){
+    $res_style = $resultStyle[1];
+} else if($gradeArr[1] == 'C'){
+    $res_style = $resultStyle[2];
+} else if($gradeArr[2] == 'C'){
+    $res_style = $resultStyle[3];
+} else if($gradeArr[3] == 'C'){
+    $res_style = $resultStyle[4];
+} else if($gradeArr[4] == 'C'){
+    $res_style = $resultStyle[5];
+}
+
+
 
 if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeArr[2] == 'C' && $gradeArr[3] == 'C' && $gradeArr[4] == 'C'){
     $res_style = $resultStyle[7];
