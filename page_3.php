@@ -3,6 +3,9 @@
 
 $id = $_REQUEST['id'];
 $value = $_REQUEST['value'];
+$value1 = '';
+$value2 = '';
+$value3 = '';
 
 $mysql_hostname = 'localhost';
 $mysql_username = 'root';
@@ -21,6 +24,58 @@ if ($conn->connect_error) {
 $query = "UPDATE play_dataTB SET two_to_three = '{$value}' WHERE ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
+
+
+$query2 = "SELECT two_to_one, two_to_two, two_to_three from play_dataTB where ID = '{$id}'";
+
+$result2 = $conn->query($query2) or die($this->_connect->error);
+
+while($row = $result2->fetch_array())
+{
+    //$id = $row['ID'];
+    $value1 = $row['two_to_one'];
+    $value2 = $row['two_to_two'];
+    $value3 = $row['two_to_three'];
+}
+
+function getGrade($value1, $value2, $value3){
+    $result = '';
+    $val1_score = '';
+    $val2_score = '';
+    $val3_score = '';
+    $tmpResult = '';
+
+    for($i = 1; $i < 4; $i++){
+        if(${'value'.$i} == '1'){
+            ${'val'.$i.'_score'} = 0;
+        } else if(${'value'.$i} == '2'){
+            ${'val'.$i.'_score'} = 1;
+        } else if(${'value'.$i} == '3'){
+            ${'val'.$i.'_score'} = 4;
+        } else if(${'value'.$i} == '4'){
+            ${'val'.$i.'_score'} = 5;
+        }
+    }
+    $tmpResult = (($val1_score + $val2_score) + $val3_score);
+
+    if($tmpResult <= 3){
+        $result = 'A';
+    } else if($tmpResult <= 11){
+        $result = 'B';
+    } else {
+        $result = 'C';
+    }
+
+    return $result;
+}
+
+$getGradeVal = getGrade($value1, $value2, $value3);
+
+
+$query3 = "UPDATE play_dataTB SET chapter_two = '{$getGradeVal}' where ID = '{$id}'";
+
+$result3 = $conn->query($query3) or die($this->_connect->error);
+
 
 
 ?>
