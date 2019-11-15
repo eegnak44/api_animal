@@ -45,22 +45,6 @@ function getGrade($value1, $value2, $value3){
     $val3_score = '';
     $tmpResult = '';
 
-
-//    if($value1 == 1){
-//        $val1_score = 0;
-//    } else if ($value1 == 2){
-//        $val1_score = 1;
-//    } else if ($value1 == 3){
-//        $val1_score = 4;
-//    } else if ($value1 == 4){
-//        $val1_score = 5;
-//    }
-//
-//    echo $val1_score;
-//    $result = $val1_score;
-//    $tmpResult1 = ($val1_score + $val2_score + $val3_score);
-//    echo $tmpResult1;
-
     for($i = 1; $i < 4; $i++){
         if(${'value'.$i} == '1'){
             ${'val'.$i.'_score'} = 0;
@@ -71,19 +55,9 @@ function getGrade($value1, $value2, $value3){
         } else if(${'value'.$i} == '4'){
             ${'val'.$i.'_score'} = 5;
         }
-//        echo $val1_score.'<br>';
-//        echo $val2_score.'<br>';
-//        echo $val3_score.'<br>';
     }
     $tmpResult = (($val1_score + $val2_score) + $val3_score);
-//    echo $tmpResult;
-//    echo $tmpResult1.'<br>';
-//    echo $tmpResult2.'<br>';
-//    echo $tmpResult3.'<br>';
 
-//    $tmpResult = ($val1_score + $val2_score + $val3_score);//1,2,4
-//    echo $tmpResult;
-////
     if($tmpResult <= 3){
         $result = 'A';
     } else if($tmpResult <= 11){
@@ -96,10 +70,13 @@ function getGrade($value1, $value2, $value3){
 }
 
 $getGradeVal = getGrade($value1, $value2, $value3);
-echo $getGradeVal;
 
 
-//$query3 = "UPDATE play_dataTB SET chapter_one = '{$grade}' where ID = '{$id}'";
+$query3 = "UPDATE play_dataTB SET chapter_one = '{$getGradeVal}' where ID = '{$id}'";
+
+$result3 = $conn->query($query3) or die($this->_connect->error);
+
+
 
 ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
