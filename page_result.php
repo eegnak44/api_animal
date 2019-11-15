@@ -193,9 +193,10 @@ if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
     $num = array_count_values($gradeArr);
     foreach ($num as $key => $value_){
         echo $key." = ". $value_.'<br>';
+        if($key == 'C'){
+            echo $num;
+        }
     }
-    echo $key;
-    echo $value;
 }
 
 
