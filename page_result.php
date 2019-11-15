@@ -194,6 +194,8 @@ if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
     foreach ($num as $key => $value_){
         echo $key." = ". $value_.'<br>';
     }
+    echo $key;
+    echo $value;
 }
 
 
