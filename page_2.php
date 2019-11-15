@@ -41,33 +41,47 @@ function getGrade($value1, $value2, $value3){
     $val3_score = '';
 
 //
-//    if($value1 == 1) {
-//        $val1_score = 0;
-//    } else if($value2 == 2){
-//        $val1_score = 1;
-//    } else if($value3 == 3){
-//        $val1_score = 4;
-//    } else {
-//        $val1_score = 5;
-//    }
-    for($i = 1; $i < 4; $i++){
-        if(${'value'.$i} == '1'){
-            ${'val'.$i.'_score'} = 0;
-        } else if(${'value'.$i} == '2'){
-            ${'val'.$i.'_score'} = 1;
-        } else if(${'value'.$i} == '3'){
-            ${'val'.$i.'_score'} = 4;
-        } else {
-            ${'val'.$i.'_score'} = 5;
-        }
-        echo $val1_score.'<br>';
-        echo $val2_score.'<br>';
-        echo $val3_score.'<br>';
-        ${'tmpResult'.$i} = ($val1_score + $val2_score + $val3_score);
+    if($value1 == 1 || $value2 == 1 || $value3 == 1) {
+        $val1_score = 0;
+        $val2_score = 0;
+        $val3_score = 0;
     }
-    echo $tmpResult1.'<br>';
-    echo $tmpResult2.'<br>';
-    echo $tmpResult3.'<br>';
+    if($value1 == 2 || $value2 == 2 || $value2 == 2){
+        $val1_score = 1;
+        $val2_score = 1;
+        $val3_score = 1;
+    }
+    if($value1 == 3 || $value2 == 3 || $value3 == 3){
+        $val1_score = 4;
+        $val2_score = 4;
+        $val3_score = 4;
+    }
+    if($value1 == 4 || $value2 == 4 || $value3 == 4) {
+        $val1_score = 5;
+        $val2_score = 5;
+        $val3_score = 5;
+    }
+    $tmpResult1 = ($val1_score + $val2_score + $val3_score);
+    echo $tmpResult1;
+
+//    for($i = 1; $i < 4; $i++){
+//        if(${'value'.$i} == '1'){
+//            ${'val'.$i.'_score'} = 0;
+//        } else if(${'value'.$i} == '2'){
+//            ${'val'.$i.'_score'} = 1;
+//        } else if(${'value'.$i} == '3'){
+//            ${'val'.$i.'_score'} = 4;
+//        } else {
+//            ${'val'.$i.'_score'} = 5;
+//        }
+//        echo $val1_score.'<br>';
+//        echo $val2_score.'<br>';
+//        echo $val3_score.'<br>';
+//        ${'tmpResult'.$i} = ($val1_score + $val2_score + $val3_score);
+//    }
+//    echo $tmpResult1.'<br>';
+//    echo $tmpResult2.'<br>';
+//    echo $tmpResult3.'<br>';
 
 //    $tmpResult = ($val1_score + $val2_score + $val3_score);//1,2,4
 //    echo $tmpResult;
