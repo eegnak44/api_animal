@@ -54,6 +54,7 @@ function getGrade($value1, $value2, $value3){
         $val1_score = 5;
     }
 
+    echo $val1_score;
     $result = $val1_score;
 //    $tmpResult1 = ($val1_score + $val2_score + $val3_score);
 //    echo $tmpResult1;
