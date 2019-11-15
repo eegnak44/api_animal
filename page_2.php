@@ -43,6 +43,7 @@ function getGrade($value1, $value2, $value3){
     $val1_score = '';
     $val2_score = '';
     $val3_score = '';
+    $tmpResult = '';
 
 
 //    if($value1 == 1){
@@ -70,11 +71,12 @@ function getGrade($value1, $value2, $value3){
         } else if(${'value'.$i} == '4'){
             ${'val'.$i.'_score'} = 5;
         }
-        echo $val1_score.'<br>';
-        echo $val2_score.'<br>';
-        echo $val3_score.'<br>';
-//        ${'tmpResult'.$i} = ($val1_score + $val2_score + $val3_score);
+//        echo $val1_score.'<br>';
+//        echo $val2_score.'<br>';
+//        echo $val3_score.'<br>';
     }
+    $tmpResult = (($val1_score + $val2_score) + $val3_score);
+    echo $tmpResult;
 //    echo $tmpResult1.'<br>';
 //    echo $tmpResult2.'<br>';
 //    echo $tmpResult3.'<br>';
@@ -89,7 +91,7 @@ function getGrade($value1, $value2, $value3){
 //    } else {
 //        $result = 'C';
 //    }
-//
+////
     return $result;
 }
 
