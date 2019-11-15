@@ -29,9 +29,9 @@ $result2 = $conn->query($query2) or die($this->_connect->error);
 while($row = $result2->fetch_array())
 {
     //$id = $row['ID'];
-//    echo $row['one_to_one'];
-//    echo $row['one_to_two'];
-//    echo $row['one_to_three'];
+    echo $row['one_to_one'];
+    echo $row['one_to_two'];
+    echo $row['one_to_three'];
 }
 
 function getGrade($value1, $value2, $value3){
