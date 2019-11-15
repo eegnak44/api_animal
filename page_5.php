@@ -23,6 +23,59 @@ $query = "UPDATE play_dataTB SET four_to_three = '{$value}' WHERE ID = '{$id}'";
 $result = $conn->query($query) or die($this->_connect->error);
 
 
+$value1 = '';
+$value2 = '';
+$value3 = '';
+$query2 = "SELECT four_to_one, four_to_two, four_to_three from play_dataTB where ID = '{$id}'";
+
+$result2 = $conn->query($query2) or die($this->_connect->error);
+
+while($row = $result2->fetch_array())
+{
+    //$id = $row['ID'];
+    $value1 = $row['four_to_one'];
+    $value2 = $row['four_to_two'];
+    $value3 = $row['four_to_three'];
+}
+
+function getGrade($value1, $value2, $value3){
+    $result = '';
+    $val1_score = '';
+    $val2_score = '';
+    $val3_score = '';
+    $tmpResult = '';
+
+    for($i = 1; $i < 4; $i++){
+        if(${'value'.$i} == '1'){
+            ${'val'.$i.'_score'} = 0;
+        } else if(${'value'.$i} == '2'){
+            ${'val'.$i.'_score'} = 1;
+        } else if(${'value'.$i} == '3'){
+            ${'val'.$i.'_score'} = 4;
+        } else if(${'value'.$i} == '4'){
+            ${'val'.$i.'_score'} = 5;
+        }
+    }
+    $tmpResult = (($val1_score + $val2_score) + $val3_score);
+
+    if($tmpResult <= 3){
+        $result = 'A';
+    } else if($tmpResult <= 11){
+        $result = 'B';
+    } else {
+        $result = 'C';
+    }
+
+    return $result;
+}
+
+$getGradeVal = getGrade($value1, $value2, $value3);
+
+
+$query3 = "UPDATE play_dataTB SET chapter_four = '{$getGradeVal}' where ID = '{$id}'";
+
+$result3 = $conn->query($query3) or die($this->_connect->error);
+
 ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

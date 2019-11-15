@@ -76,21 +76,73 @@ $result = $conn->query($query) or die($this->_connect->error);
 
 
 
-$query2 = "SELECT * FROM play_dataTB where ID = '{$id}'";
+//$query2 = "SELECT * FROM play_dataTB where ID = '{$id}'";
+//
+//$result2 = $conn->query($query2) or die($this->_connect->error);
+
+
+$value1 = '';
+$value2 = '';
+$value3 = '';
+$query2 = "SELECT five_to_one, five_to_two, five_to_three from play_dataTB where ID = '{$id}'";
 
 $result2 = $conn->query($query2) or die($this->_connect->error);
-
-
-
-//debug_var($row);
 
 while($row = $result2->fetch_array())
 {
     //$id = $row['ID'];
-    debug_var($row);
+    $value1 = $row['five_to_one'];
+    $value2 = $row['five_to_two'];
+    $value3 = $row['five_to_three'];
 }
 
-echo "result page";
+function getGrade($value1, $value2, $value3){
+    $result = '';
+    $val1_score = '';
+    $val2_score = '';
+    $val3_score = '';
+    $tmpResult = '';
+
+    for($i = 1; $i < 4; $i++){
+        if(${'value'.$i} == '1'){
+            ${'val'.$i.'_score'} = 0;
+        } else if(${'value'.$i} == '2'){
+            ${'val'.$i.'_score'} = 1;
+        } else if(${'value'.$i} == '3'){
+            ${'val'.$i.'_score'} = 4;
+        } else if(${'value'.$i} == '4'){
+            ${'val'.$i.'_score'} = 5;
+        }
+    }
+    $tmpResult = (($val1_score + $val2_score) + $val3_score);
+
+    if($tmpResult <= 3){
+        $result = 'A';
+    } else if($tmpResult <= 11){
+        $result = 'B';
+    } else {
+        $result = 'C';
+    }
+
+    return $result;
+}
+
+$getGradeVal = getGrade($value1, $value2, $value3);
+
+
+$query3 = "UPDATE play_dataTB SET chapter_five = '{$getGradeVal}' where ID = '{$id}'";
+
+$result3 = $conn->query($query3) or die($this->_connect->error);
+
+////debug_var($row);
+//
+//while($row = $result2->fetch_array())
+//{
+//    //$id = $row['ID'];
+//    debug_var($row);
+//}
+//
+//echo "result page";
 
 
 

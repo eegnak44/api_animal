@@ -3,9 +3,7 @@
 
 $id = $_REQUEST['id'];
 $value = $_REQUEST['value'];
-$value1 = '';
-$value2 = '';
-$value3 = '';
+
 
 $mysql_hostname = 'localhost';
 $mysql_username = 'root';
@@ -25,7 +23,9 @@ $query = "UPDATE play_dataTB SET two_to_three = '{$value}' WHERE ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
-
+$value1 = '';
+$value2 = '';
+$value3 = '';
 $query2 = "SELECT two_to_one, two_to_two, two_to_three from play_dataTB where ID = '{$id}'";
 
 $result2 = $conn->query($query2) or die($this->_connect->error);
