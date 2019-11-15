@@ -185,14 +185,20 @@ if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
         $res_style = $resultStyle[5];
     }
 
-    if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeArr[2] == 'C' && $gradeArr[3] == 'C' && $gradeArr[4] == 'C'){
-        $res_style = $resultStyle[7];
-    }
-
-
-    echo $res_style;
 
 }
+
+if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeArr[2] == 'C' && $gradeArr[3] == 'C' && $gradeArr[4] == 'C'){
+    $res_style = $resultStyle[7];
+}
+
+
+echo $res_style;
+
+
+$query3 = "UPDATE play_dataTB SET result_style = '{$res_style}' where ID = '{$id}'";
+
+$result3 = $conn->query($query3) or die($this->_connect->error);
 
 
 //for($i = 0; $i < 24; $i++){
