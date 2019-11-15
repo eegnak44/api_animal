@@ -60,9 +60,9 @@ function getGrade($value1, $value2, $value3){
         } else {
             ${'val'.$i.'_score'} = 5;
         }
-//        echo $val1_score;
-//        echo $val2_score;
-//        echo $val3_score;
+        echo $val1_score.'<br>';
+        echo $val2_score.'<br>';
+        echo $val3_score.'<br>';
         ${'tmpResult'.$i} = ($val1_score + $val2_score + $val3_score);
     }
     echo $tmpResult1.'<br>';
