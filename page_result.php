@@ -164,18 +164,13 @@ if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
     debug_var($resObj['chapter_four']);
     debug_var($resObj['chapter_five']);
 
-    for($i = 0; $i < 5; $i++){
-        if(in_array('A', $gradeArr)){
+    for($i = 0; $i < sizeof($gradeArr); $i++){
+        if($gradeArr[$i] == 'A'){
             $gradeACnt++;
-
-        }
-        if(in_array('B', $gradeArr)){
+        } else if($gradeArr[$i] == 'B'){
             $gradeBCnt++;
-
-        }
-        if(in_array('C', $gradeArr)){
+        } else if($gradeArr[$i] == 'C'){
             $gradeCCnt++;
-
         }
     }
     debug_var($gradeACnt);
