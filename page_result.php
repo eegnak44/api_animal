@@ -189,6 +189,13 @@ if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeAr
     $res_style = $resultStyle[7];
 }
 
+if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
+    $num = array_count_values($gradeArr);
+    foreach ($num as $key => $value_){
+        echo $key." = ". $value_.'<br>';
+    }
+}
+
 
 echo $res_style;
 
