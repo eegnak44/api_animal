@@ -29,9 +29,9 @@ $result2 = $conn->query($query2) or die($this->_connect->error);
 while($row = $result2->fetch_array())
 {
     //$id = $row['ID'];
-    echo $row['one_to_one'];
-    echo $row['one_to_two'];
-    echo $row['one_to_three'];
+    echo $row['one_to_one']."<br>";
+    echo $row['one_to_two']."<br>";
+    echo $row['one_to_three']."<br>";
 }
 
 function getGrade($value1, $value2, $value3){
@@ -40,29 +40,19 @@ function getGrade($value1, $value2, $value3){
     $val2_score = '';
     $val3_score = '';
 
-//
-    if($value1 == 1 || $value2 == 1 || $value3 == 1) {
+    if($value1 == 1){
         $val1_score = 0;
-        $val2_score = 0;
-        $val3_score = 0;
-    }
-    if($value1 == 2 || $value2 == 2 || $value2 == 2){
+    } else if ($value1 == 2){
         $val1_score = 1;
-        $val2_score = 1;
-        $val3_score = 1;
-    }
-    if($value1 == 3 || $value2 == 3 || $value3 == 3){
+    } else if ($value1 == 3){
         $val1_score = 4;
-        $val2_score = 4;
-        $val3_score = 4;
-    }
-    if($value1 == 4 || $value2 == 4 || $value3 == 4) {
+    } else if ($value1 == 4){
         $val1_score = 5;
-        $val2_score = 5;
-        $val3_score = 5;
     }
-    $tmpResult1 = ($val1_score + $val2_score + $val3_score);
-    echo $tmpResult1;
+
+    echo $val1_score;
+//    $tmpResult1 = ($val1_score + $val2_score + $val3_score);
+//    echo $tmpResult1;
 
 //    for($i = 1; $i < 4; $i++){
 //        if(${'value'.$i} == '1'){
