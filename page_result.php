@@ -144,9 +144,42 @@ while($row = $res->fetch_array())
 }
 //
 //echo "result page";
+debug_var($resObj['chapter_one']);
+debug_var($resObj['chapter_two']);
+debug_var($resObj['chapter_three']);
+debug_var($resObj['chapter_four']);
+debug_var($resObj['chapter_five']);
 
-for($i = 0; $i < 24; $i++){
-    debug_var($resObj[$i]);
+$gradeArr = Array(5);
+$gradeArr[0] = $resObj['chapter_one'];
+$gradeArr[1] = $resObj['chapter_two'];
+$gradeArr[2] = $resObj['chapter_three'];
+$gradeArr[3] = $resObj['chapter_four'];
+$gradeArr[4] = $resObj['chapter_five'];
+
+
+$gradeACnt = 0;
+$gradeBCnt = 0;
+$gradeCCnt = 0;
+if(in_array('A', $gradeArr)){
+    $gradeACnt++;
+    debug_var($gradeACnt);
 }
+if(in_array('B', $gradeArr)){
+    $gradeBCnt++;
+    debug_var($gradeACnt);
+}
+if(in_array('C', $gradeArr)){
+    $gradeCCnt++;
+    debug_var($gradeACnt);
+}
+
+
+
+
+//for($i = 0; $i < 24; $i++){
+//    debug_var($resObj[$i]);
+
+//}
 
 ?>
