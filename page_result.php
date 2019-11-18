@@ -394,10 +394,12 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 <div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
 
         <div id = 'resName' style="font-weight: bold; font-size: 20px;">
-            <p>결과 : <?=$resultStyle[$resGrade];?></p>
+<!--            <p>결과 : --><?//=$resultStyle[$resGrade];?><!--</p>-->
+            <p>결과 : <?=$resGrade;?></p>
         </div>
         <div id = 'resDesc'>
-            <p><?=$resultDesc[$resGrade];?></p>
+<!--            <p>--><?//=$resultDesc[$resGrade];?><!--</p>-->
+            <p><?=$resGrade;?></p>
         </div>
         <div id = 'imgDiv'>
             <img src="/img/result/ed<?=$resGrade+1;?>.jpg">
