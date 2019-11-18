@@ -263,7 +263,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //            if($key == '1')
 //            echo $key."=". $value."<br>";
 //        }
-//        debug_var($rdArr);
+        debug_var($rdArr);
     }
 
     $result = $resVal;
