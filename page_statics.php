@@ -86,14 +86,15 @@ where ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
-$i = 0;
+
 while($row1 = $result->fetch_array())
 {
-    if($i < 16){
-        ${'checkedVal'.$i} = $row1[$i];
-        debug_var(${'checkedVal'.$i});
-    }
-    $i++;
+    debug_var($row1);
+//    if($i < 16){
+//        ${'checkedVal'.$i} = $row1[$i];
+//        debug_var(${'checkedVal'.$i});
+//    }
+//    $i++;
 
 }
 
