@@ -387,7 +387,7 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
             <p><?=$resultDesc[$resGrade-1];?></p>
         </div>
         <div id = 'imgDiv'>
-            <img src="/img/result/ed<?=$resGrade;?>.jpg">
+            <img src="/img/result/ed<?=$resGrade+1;?>.jpg">
         </div>
 
     <br>
