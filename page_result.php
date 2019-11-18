@@ -156,7 +156,7 @@ $gradeArr[3] = $resObj['chapter_four'];
 $gradeArr[4] = $resObj['chapter_five'];
 
 if($gradeArr[0] == 'C'){
-    $tmpQuery1 = "select one_to_one, one_to_two, one_to_three from play_dataTB where chapter_one = resObj['chapter_one']";
+    $tmpQuery1 = "select one_to_one, one_to_two, one_to_three from play_dataTB where chapter_one = '{$resObj['chapter_one']}'";
     $res1 = $conn->query($tmpQuery1) or die($this->_connect->error);
     while($row1 = $res->fetch_array())
     {
@@ -164,7 +164,7 @@ if($gradeArr[0] == 'C'){
     }
 }
 if($gradeArr[1] == 'C'){
-    $tmpQuery2 = "select two_to_one, two_to_two, two_to_three from play_dataTB where chapter_two = resObj['chapter_two']";
+    $tmpQuery2 = "select two_to_one, two_to_two, two_to_three from play_dataTB where chapter_two = '{$resObj['chapter_two']}'";
     $res2 = $conn->query($tmpQuery2) or die($this->_connect->error);
     while($row2 = $res2->fetch_array())
     {
@@ -172,7 +172,7 @@ if($gradeArr[1] == 'C'){
     }
 }
 if($gradeArr[2] == 'C'){
-    $tmpQuery3 = "select three_to_one, three_to_two, three_to_three from play_dataTB where chapter_three = resObj['chapter_three']";
+    $tmpQuery3 = "select three_to_one, three_to_two, three_to_three from play_dataTB where chapter_three = '{$resObj['chapter_three']}'";
     $res3 = $conn->query($tmpQuery3) or die($this->_connect->error);
     while($row3 = $res->fetch_array())
     {
@@ -180,7 +180,7 @@ if($gradeArr[2] == 'C'){
     }
 }
 if($gradeArr[3] == 'C'){
-    $tmpQuery4 = "select four_to_one, four_to_two, four_to_three from play_dataTB where chapter_four = resObj['chapter_four']";
+    $tmpQuery4 = "select four_to_one, four_to_two, four_to_three from play_dataTB where chapter_four = '{$resObj['chapter_four']}'";
     $res4 = $conn->query($tmpQuery4) or die($this->_connect->error);
     while($row4 = $res4->fetch_array())
     {
@@ -188,7 +188,7 @@ if($gradeArr[3] == 'C'){
     }
 }
 if($gradeArr[4] == 'C'){
-    $tmpQuery5 = "select five_to_one, five_to_two, five_to_three from play_dataTB where chapter_five = resObj['chapter_five']";
+    $tmpQuery5 = "select five_to_one, five_to_two, five_to_three from play_dataTB where chapter_five = '{$resObj['chapter_five']}'";
     $res5 = $conn->query($tmpQuery5) or die($this->_connect->error);
     while($row5 = $res5->fetch_array())
     {
