@@ -166,6 +166,10 @@ for($i = 0;$i < sizeof($gradeArr); $i++){
     echo ($i+1)."챕터의 값 = ".$gradeArr[$i]."<br>";
 }
 
+foreach ($gradeArr as $key => $value){
+    echo $key."=".$value."<br>";
+}
+
 function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     $result = '';
     $res_style = '';
