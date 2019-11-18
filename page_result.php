@@ -163,7 +163,7 @@ $res_style = '';
 
 //debugging echo
 for($i = 0;$i < sizeof($gradeArr); $i++){
-    echo $gradeArr[$i];
+    echo ($i+1)."챕터의 값 = ".$gradeArr[$i]."<br>";
 }
 
 function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
