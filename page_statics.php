@@ -73,6 +73,27 @@ $result2 = $conn->query($query2) or die($this->_connect->error);
 while($row = $result2->fetch_array())
 {
     $value1 = $row['cnt'];
+}
+
+$query = "select one_to_one, one_to_two, one_to_three
+	  ,two_to_one, two_to_two, two_to_three
+      ,three_to_one, three_to_two, three_to_three
+      ,four_to_one, four_to_two, four_to_three
+      ,five_to_one, five_to_two, five_to_three
+      ,result_style
+from play_dataTB
+where ID = '{ID}'";
+
+$result = $conn->query($query) or die($this->_connect->error);
+
+$i = 0;
+while($row1 = $result->fetch_array())
+{
+    if($i < 16){
+        ${'value'.$i} = $row1[$i];
+        debug_var(${'value'.$i});
+    }
+    $i++;
 
 }
 
@@ -122,7 +143,7 @@ while($row = $result2->fetch_array())
 <div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
-        <p>누적 테스터 의 수 : <?=$value1;?></p>
+        <p>누적 테스터 의 수 : <?=$value1;?>명</p>
     </div>
 
     <br>
