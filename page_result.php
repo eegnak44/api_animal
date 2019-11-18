@@ -206,8 +206,8 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //                echo ($i+1)."번째 챕터에서 C";
 //            }
         }
-        debug_var($tmpResultArr);
     }
+    debug_var($tmpResultArr);
     if($gradeCCnt == 1){
 
         if($value1 == 'C'){
