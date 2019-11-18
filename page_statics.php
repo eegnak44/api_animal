@@ -106,6 +106,7 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 while($row2 = $result3->fetch_array()){
     $resultNameCheck = $row2['cnt'];
 }
+debug_var($resultNameCheck);
 
 //$num = array_count_values($gradeArr);
 //foreach ($num as $key => $value_){
