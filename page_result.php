@@ -203,7 +203,7 @@ if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
     }
 }
 
-
+echo $res_style;
 
 
 
