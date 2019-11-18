@@ -217,6 +217,18 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
         }
     }
 //    debug_var($tmpResultArr);
+    if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
+//        $resVal = 7;
+//        $num1 = $tmpResultArr;
+//        foreach ($tmpResultArr as $key => $value){
+//            if($key == '1')
+//            echo $key."=". $value."<br>";
+//        }
+//        debug_var($rdArr);
+        $outRes = array_rand($rdArr);
+        $resVal = $outRes;
+    }
+
     if($gradeCCnt == 1){
 
         if($value1 == 'C'){
@@ -258,17 +270,18 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
                 }
             }
         }
-    } else if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
-//        $resVal = 7;
-//        $num1 = $tmpResultArr;
-//        foreach ($tmpResultArr as $key => $value){
-//            if($key == '1')
-//            echo $key."=". $value."<br>";
-//        }
-//        debug_var($rdArr);
-        $outRes = array_rand($rdArr);
-        $resVal = $outRes;
     }
+//    if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
+////        $resVal = 7;
+////        $num1 = $tmpResultArr;
+////        foreach ($tmpResultArr as $key => $value){
+////            if($key == '1')
+////            echo $key."=". $value."<br>";
+////        }
+////        debug_var($rdArr);
+//        $outRes = array_rand($rdArr);
+//        $resVal = $outRes;
+//    }
 
     $result = $resVal;
 
