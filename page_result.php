@@ -171,13 +171,14 @@ foreach ($gradeArr as $key => $value){
         echo ($key+1)."챕터 is C<br>";
         ${'chapterVal'.$key} = $key;
     }
-    debug_var($chapterVal0);
-    debug_var($chapterVal1);
-    debug_var($chapterVal2);
-    debug_var($chapterVal3);
-    debug_var($chapterVal4);
+
 //    echo $key."=".$value."<br>";
 }
+debug_var($chapterVal0);
+debug_var($chapterVal1);
+debug_var($chapterVal2);
+debug_var($chapterVal3);
+debug_var($chapterVal4);
 
 function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     $result = '';
