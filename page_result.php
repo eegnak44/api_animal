@@ -208,6 +208,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $gradeCCnt++;
             $rdArr[$j] = $rdResultStyle[$i];
             debug_var($rdResultStyle[$i]);
+            debug_var($rdArr[$j]);
             $j++;
 //            if($gradeCCnt > 1){
 //                echo ($i+1)."번째 챕터에서 C";
