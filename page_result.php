@@ -170,62 +170,86 @@ $gradeCCnt = 0;
 $res_style = '';
 
 
-for($i = 0; $i < sizeof($gradeArr); $i++){
-    if($gradeArr[$i] == 'A'){
-        $gradeACnt++;
-    } else if($gradeArr[$i] == 'B'){
-        $gradeBCnt++;
-    } else if($gradeArr[$i] == 'C'){
-        $gradeCCnt++;
-        if($gradeCCnt > 1){
-            echo ($i+1)."번째 챕터에서 C";
-        }
-    }
-}
+//for($i = 0; $i < sizeof($gradeArr); $i++){
+//    if($gradeArr[$i] == 'A'){
+//        $gradeACnt++;
+//    } else if($gradeArr[$i] == 'B'){
+//        $gradeBCnt++;
+//    } else if($gradeArr[$i] == 'C'){
+//        $gradeCCnt++;
+//        if($gradeCCnt > 1){
+//            echo ($i+1)."번째 챕터에서 C";
+//        }
+//    }
+//}
 
 
 function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     $result = '';
     $resVal = 0;
+    $gradeACnt = 0;
+    $gradeBCnt = 0;
+    $gradeCCnt = 0;
     $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
+    $tmpResultArr = ['0','0','0','0','0'];
 
-    if($value1 == 'C'){
-        $res_style = $resultStyle[1];
-        $resVal = 2;
+    for($i = 0; $i < sizeof($arr); $i++){
+        if($arr[$i] == 'A'){
+            $gradeACnt++;
+        } else if($arr[$i] == 'B'){
+            $gradeBCnt++;
+        } else if($arr[$i] == 'C'){
+            $tmpResultArr[$i] = '1';
+            $gradeCCnt++;
+            debug_var($tmpResultArr);
+//            if($gradeCCnt > 1){
+//                echo ($i+1)."번째 챕터에서 C";
+//            }
+        }
     }
-    if($value2 == 'C' && $value1 !== 'C'){
-        $res_style = $resultStyle[2];
-        $resVal = 3;
-    }
-    if($value3 == 'C' && $value1 !== 'C' && $value2 !== 'C'){
-        $res_style = $resultStyle[3];
-        $resVal = 4;
-    }
-    if($value4 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C'){
-        $res_style = $resultStyle[4];
-        $resVal = 5;
-    }
-    if($value5 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C' && $value4 !== 'C'){
-        $res_style = $resultStyle[5];
-        $resVal = 6;
-    }
-    if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){
-        $res_style = $resultStyle[7];
-        $resVal = 8;
-    }
+    if($gradeCCnt == 1){
 
-    $num = array_count_values($arr);
-    foreach ($num as $key => $value_){
+        if($value1 == 'C'){
+            $res_style = $resultStyle[1];
+            $resVal = 2;
+        }
+        if($value2 == 'C' && $value1 !== 'C'){
+            $res_style = $resultStyle[2];
+            $resVal = 3;
+        }
+        if($value3 == 'C' && $value1 !== 'C' && $value2 !== 'C'){
+            $res_style = $resultStyle[3];
+            $resVal = 4;
+        }
+        if($value4 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C'){
+            $res_style = $resultStyle[4];
+            $resVal = 5;
+        }
+        if($value5 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C' && $value4 !== 'C'){
+            $res_style = $resultStyle[5];
+            $resVal = 6;
+        }
+        if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){
+            $res_style = $resultStyle[7];
+            $resVal = 8;
+        }
+
+    } else if ($gradeBCnt >= 3 || $gradeACnt >= 3){
+        $num = array_count_values($arr);
+        foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
-        if($key !== 'C'){
-            if(($key == 'A' && $value_ <= 5) || ($key == 'B' && $value_ >= 3)){
-                $res_style = $resultStyle[6];
-                $resVal = 7;
-            } else {
-                $res_style = $resultStyle[0];
-                $resVal = 1;
+            if($key !== 'C'){
+                if(($key == 'A' && $value_ <= 5) || ($key == 'B' && $value_ >= 3)){
+                    $res_style = $resultStyle[6];
+                    $resVal = 7;
+                } else {
+                    $res_style = $resultStyle[0];
+                    $resVal = 1;
+                }
             }
         }
+    } else if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
+
     }
 
     $result = $resVal;
