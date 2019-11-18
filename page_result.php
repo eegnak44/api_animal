@@ -143,18 +143,10 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 $resultQuery = "SELECT * from play_dataTB where ID = '{$id}'";
 $res = $conn->query($resultQuery) or die($this->_connect->error);
 
-
-
-////debug_var($row);
-//
 while($row = $res->fetch_array())
 {
-//    debug_var($row);
     $resObj = $row;
 }
-//
-//echo "result page";
-
 
 $gradeArr = Array(5);
 $gradeArr[0] = $resObj['chapter_one'];
@@ -168,20 +160,6 @@ $gradeACnt = 0;
 $gradeBCnt = 0;
 $gradeCCnt = 0;
 $res_style = '';
-
-
-//for($i = 0; $i < sizeof($gradeArr); $i++){
-//    if($gradeArr[$i] == 'A'){
-//        $gradeACnt++;
-//    } else if($gradeArr[$i] == 'B'){
-//        $gradeBCnt++;
-//    } else if($gradeArr[$i] == 'C'){
-//        $gradeCCnt++;
-//        if($gradeCCnt > 1){
-//            echo ($i+1)."번째 챕터에서 C";
-//        }
-//    }
-//}
 
 
 function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
@@ -210,26 +188,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $rdArr[$j] = $rdResultStyle[$i];
 
             $j++;
-//            if($gradeCCnt > 1){
-//                echo ($i+1)."번째 챕터에서 C";
-//            }
-
-//            debug_var($rdArr[$j]);
-//            debug_var($rdResultStyle[$i]);
         }
     }
-//    debug_var($tmpResultArr);
-//    debug_var($rdResultStyle);
     if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
-//        $resVal = 7;
-//        $num1 = $tmpResultArr;
-//        foreach ($tmpResultArr as $key => $value){
-//            if($key == '1')
-//            echo $key."=". $value."<br>";
-//        }
-//        debug_var($rdArr);
+
         $outRes = array_rand($rdArr);
-//        debug_var($rdArr[$outRes]);
 
         $resVal = $rdArr[$outRes];
     } else if($gradeCCnt == 1){
@@ -274,17 +237,6 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             }
         }
     }
-//    if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
-////        $resVal = 7;
-////        $num1 = $tmpResultArr;
-////        foreach ($tmpResultArr as $key => $value){
-////            if($key == '1')
-////            echo $key."=". $value."<br>";
-////        }
-////        debug_var($rdArr);
-//        $outRes = array_rand($rdArr);
-//        $resVal = $outRes;
-//    }
 
     $result = $resVal;
 
@@ -295,58 +247,14 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 $resGrade = getResultGrade($gradeArr[0],$gradeArr[1],$gradeArr[2],$gradeArr[3],$gradeArr[4],$gradeArr);
 debug_var($resGrade);
 
-//if($gradeArr[0] == 'C'){
-//    $res_style = $resultStyle[1];
-//    $resVal = 2;
-//} else if($gradeArr[1] == 'C' && $gradeArr[0] !== 'C'){
-//    $res_style = $resultStyle[2];
-//    $resVal = 3;
-//} else if($gradeArr[2] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C'){
-//    $res_style = $resultStyle[3];
-//    $resVal = 4;
-//} else if($gradeArr[3] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C' && $gradeArr[2] !== 'C'){
-//    $res_style = $resultStyle[4];
-//    $resVal = 5;
-//} else if($gradeArr[4] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C' && $gradeArr[2] !== 'C' && $gradeArr[3] !== 'C'){
-//    $res_style = $resultStyle[5];
-//    $resVal = 6;
-//}
 
 
-//if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeArr[2] == 'C' && $gradeArr[3] == 'C' && $gradeArr[4] == 'C'){
-//    $res_style = $resultStyle[7];
-//    $resVal = 8;
-//}
-
-//
-//$num = array_count_values($gradeArr);
-//foreach ($num as $key => $value_){
-////        echo $key." = ". $value_.'<br>';
-//    if($key !== 'C'){
-//        if(($key == 'A' && $value <= 5) || ($key == 'B' && $value >= 3)){
-//            $res_style = $resultStyle[6];
-//            $resVal = 7;
-//        } else {
-//            $res_style = $resultStyle[0];
-//            $resVal = 1;
-//        }
-//    }
-//}
-
-//echo $res_style;
-
-$res_style = $resultStyle[$resGrade+1];
-
+$res_style = $resultStyle[$resGrade-1];
 
 $query3 = "UPDATE play_dataTB SET result_style = '{$res_style}' where ID = '{$id}'";
 
 $result3 = $conn->query($query3) or die($this->_connect->error);
 
-
-//for($i = 0; $i < 24; $i++){
-//    debug_var($resObj[$i]);
-
-//}
 
 ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
