@@ -197,7 +197,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     $rdArr = Array(5);
     $j = 0;
 
-    for($i = 0; $i < sizeof($arr); $i++){
+    for($i = 0; $i < sizeof($arr); $i++){ // A,B,C 갯수 카운트 C 가 두개일 때는 랜덤 결과를 출력 하기 위해 rdArr 에 저장
         if($arr[$i] == 'A'){
             $gradeACnt++;
         } else if($arr[$i] == 'B'){
@@ -212,7 +212,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //                echo ($i+1)."번째 챕터에서 C";
 //            }
 
-//            debug_var($rdArr[$j]);
+            debug_var($rdArr[$j]);
 //            debug_var($rdResultStyle[$i]);
         }
     }
