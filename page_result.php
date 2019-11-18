@@ -185,7 +185,8 @@ $res_style = '';
 
 
 function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
-    $result = '';
+    $result = [];
+    $res_style = '';
     $resVal = 0;
     $gradeACnt = 0;
     $gradeBCnt = 0;
@@ -285,13 +286,17 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //        $resVal = $outRes;
 //    }
 
-    $result = $resVal;
+    $result = Array(
+                $resVal,
+                $res_style
+              );
 
     return $result;
 }
 
 
 $resGrade = getResultGrade($gradeArr[0],$gradeArr[1],$gradeArr[2],$gradeArr[3],$gradeArr[4],$gradeArr);
+debug_var($resGrade);
 
 //if($gradeArr[0] == 'C'){
 //    $res_style = $resultStyle[1];
@@ -316,20 +321,20 @@ $resGrade = getResultGrade($gradeArr[0],$gradeArr[1],$gradeArr[2],$gradeArr[3],$
 //    $resVal = 8;
 //}
 
-
-$num = array_count_values($gradeArr);
-foreach ($num as $key => $value_){
-//        echo $key." = ". $value_.'<br>';
-    if($key !== 'C'){
-        if(($key == 'A' && $value <= 5) || ($key == 'B' && $value >= 3)){
-            $res_style = $resultStyle[6];
-            $resVal = 7;
-        } else {
-            $res_style = $resultStyle[0];
-            $resVal = 1;
-        }
-    }
-}
+//
+//$num = array_count_values($gradeArr);
+//foreach ($num as $key => $value_){
+////        echo $key." = ". $value_.'<br>';
+//    if($key !== 'C'){
+//        if(($key == 'A' && $value <= 5) || ($key == 'B' && $value >= 3)){
+//            $res_style = $resultStyle[6];
+//            $resVal = 7;
+//        } else {
+//            $res_style = $resultStyle[0];
+//            $resVal = 1;
+//        }
+//    }
+//}
 
 //echo $res_style;
 
