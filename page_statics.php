@@ -88,6 +88,21 @@ $result = $conn->query($query) or die($this->_connect->error);
 
 
 while($row1 = $result->fetch_array()) {
+    $tmp1_1 = $row1[0];
+    $tmp1_2 = $row1[1];
+    $tmp1_3 = $row1[2];
+    $tmp2_1 = $row1[3];
+    $tmp2_2 = $row1[4];
+    $tmp2_3 = $row1[5];
+    $tmp3_1 = $row1[6];
+    $tmp3_2 = $row1[7];
+    $tmp3_3 = $row1[8];
+    $tmp4_1 = $row1[9];
+    $tmp4_2 = $row1[10];
+    $tmp4_3 = $row1[11];
+    $tmp5_1 = $row1[12];
+    $tmp5_2 = $row1[13];
+    $tmp5_3 = $row1[14];
     $resultName = $row1[15];
 }
 
@@ -154,7 +169,11 @@ while($row2 = $result3->fetch_array()){
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
         <p>나와 같은 선택을 한 테스터의 수 : <?=$resultNameCheck-1;?>명</p>
     </div>
-
+    <div id = 'resCheck'>
+        <div class = 'chapterRes'>
+            <img src="img/unnamed.png">
+        </div>
+    </div>
     <br>
     <form action="main.php" method="get">
         <div class = 'choice_div' style="margin: auto; width:50px;">

@@ -204,7 +204,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //            $tmpResultArr[$i] = '1';
             $gradeCCnt++;
             $rdArr[$j] = $rdResultStyle[$i];
-            debug_var($rdResultStyle[$i]);
+//            debug_var($rdResultStyle[$i]);
             $j++;
         }
     }
