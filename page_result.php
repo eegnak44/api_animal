@@ -169,7 +169,13 @@ for($i = 0;$i < sizeof($gradeArr); $i++){
 foreach ($gradeArr as $key => $value){
     if($value == 'C'){
         echo ($key+1)."챕터 is C<br>";
+        ${'chapterVal'.$key} = $key;
     }
+    debug_var($chapterVal0);
+    debug_var($chapterVal1);
+    debug_var($chapterVal2);
+    debug_var($chapterVal3);
+    debug_var($chapterVal4);
 //    echo $key."=".$value."<br>";
 }
 
