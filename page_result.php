@@ -191,7 +191,8 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     $gradeBCnt = 0;
     $gradeCCnt = 0;
     $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
-    $rdResultStyle = ['버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그'];
+//    $rdResultStyle = ['버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그'];
+    $rdResultStyle = ['2','3','4','5','6'];
     $tmpResultArr = ['0','0','0','0','0'];
     $rdArr = Array(5);
     $j = 0;
@@ -264,7 +265,9 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //            if($key == '1')
 //            echo $key."=". $value."<br>";
 //        }
-        debug_var($rdArr);
+//        debug_var($rdArr);
+        $outRes = array_rand($rdArr);
+        $resVal = $outRes;
     }
 
     $result = $resVal;
