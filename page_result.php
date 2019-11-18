@@ -273,13 +273,13 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 <body>
 
 <div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
-    <?php
-        if($res_style !== ''){?>
-            <div id = 'imgDiv'>
-                <img src="/img/result/ed<?=$resVal;?>.jpg">
-            </div>
-        <?}
-    ?>
+
+
+    <div id = 'imgDiv'>
+        <img src="/img/result/ed<?=$resVal;?>.jpg">
+    </div>
+
+
 
     <p>어느 날 큰 지진이 일어났다. 쓰나미가 일어나고 집이 무너지기 시작했다. 밖에서 큰 폭발음이 들렸다.<br>
         나는 방공호로 대피했다. <br>
