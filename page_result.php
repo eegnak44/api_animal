@@ -68,6 +68,14 @@ $mysql_charset = 'utf8';
 $conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
 //
 $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
+$resultDesc = ['나의 안전을 위해서라면 외로움 따위는 잊은지 오래입니다. 고독한 여행자에게 반려란 성가신 짐일 뿐입니다.'
+    , '당신은 버려진 외곽에서 선행을 통해 꺼져가는 생명들을 구하였습니다.당신에게 반려란 보살핌일 수 있겠습니다.'
+    , '당신에게 모든 사람들은 동등한 존재입니다. 당신은 사회에서 소외받은 이들과 함께 기꺼이 동행할 수 있는 따뜻한 마음의 반려로서의 요건을 갖추었습니다.'
+    , '당신은 다양한 이들의 삶을 존중하고 그들의 이야기를 경청합니다. 행동하는 실천가로 더 나은 세상을 만들어가고자 오늘도 움직이고 있군요.'
+    , '모든 생명에는 존재이유가 있습니다. 작은 미물의 생명조차도 소중히 여기며 종의 상호의존에 대하여 진지하게 고민하는 당신은 생태학자적 성향을 가졌습니다.'
+    , '모험심이 강하고 적응력이 뛰어난 당신. 미래사회에서 누구보다 편견없이 열린 생각으로 종의 경계를 넘어선 사랑을 꿈꿀 수도 있겠습니다.'
+    , '당신에게 선택은 너무 어려워서 평범한 길을 포기할 수 없습니다. 그러나, 이 테스트를 통해 조금이라도 반려의 의미에 대한 도전을 받으셨다면, 앞으로 당신에게 어떤 미래가 펼쳐질지 궁금합니다.'
+    , '모든 종은 당신과 반려관계를 맺을 수 있습니다. 다양함을 허용할 수 있는 당신은 어디에서든 인기있는 사람이지만, 그들의 특수성에 의한 불편함들은 감수해야 할 것입니다.'];
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -275,20 +283,17 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 <div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
 
 
-    <div id = 'imgDiv'>
-        <img src="/img/result/ed<?=$resVal;?>.jpg">
+    <div id = 'contentsDiv'>
+        <div id = 'resName' style="font-weight: bold; font-size: 20px;">
+            <p>결과 : <?=$resultStyle[$resVal-1];?></p>
+        </div>
+        <div id = 'resDesc'>
+            <p><?=$resultDesc[$resVal-1];?></p>
+        </div>
+        <div id = 'imgDiv'>
+            <img src="/img/result/ed<?=$resVal;?>.jpg">
+        </div>
     </div>
-
-
-
-    <p>어느 날 큰 지진이 일어났다. 쓰나미가 일어나고 집이 무너지기 시작했다. 밖에서 큰 폭발음이 들렸다.<br>
-        나는 방공호로 대피했다. <br>
-        시간이 흐르고 잠잠해진 후, 밖으로 나온 나는 라디오의 신호를 가까스로 잡을 수 있었다.<br>
-        <br>
-        “살아남은 자들은 광장으로 모이세요"<br>
-        <br>
-        도시 외곽에 사는 나는 갈 길이 멀다. 나는 채비하고 집 밖으로 나왔다.<br>
-    </p>
     <br>
 <!--    <form action="page_1-1.php" method="get">-->
 <!--        <div class = 'choice_div' style="margin: auto; width:50px;">-->
