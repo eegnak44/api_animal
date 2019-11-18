@@ -193,7 +193,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
     $rdResultStyle = ['버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그'];
     $tmpResultArr = ['0','0','0','0','0'];
-    $rdArr = Array();
+    $rdArr = Array(5);
 
     for($i = 0; $i < sizeof($arr); $i++){
         if($arr[$i] == 'A'){
