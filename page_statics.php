@@ -97,7 +97,7 @@ while($row1 = $result->fetch_array()) {
 //    $i++;
 }
 
-$resultName = $row1[15];
+//$resultName = $row1[15];
 $resultNameCheck = 0;
 
 $query3 = "SELECT count(result_style) as cnt from play_dataTB WHERE result_style = '{$resultName}'";
