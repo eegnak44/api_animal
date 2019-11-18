@@ -228,9 +228,9 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //        }
 //        debug_var($rdArr);
         $outRes = array_rand($rdArr);
-        debug_var($rdArr);
-        debug_var($outRes);
-        $resVal = $outRes;
+//        debug_var($rdArr[$outRes]);
+
+        $resVal = $rdArr[$outRes];
     } else if($gradeCCnt == 1){
 
         if($value1 == 'C'){
