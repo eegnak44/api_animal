@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_statics.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_statics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_result.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="152" column="1" lean-forward="true" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
+            <state relative-caret-position="555">
+              <caret line="347" column="57" lean-forward="true" selection-start-line="347" selection-start-column="57" selection-end-line="347" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -98,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_statics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="105" column="6" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+            <state relative-caret-position="657">
+              <caret line="158" column="41" lean-forward="true" selection-start-line="158" selection-start-column="41" selection-end-line="158" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -153,6 +153,8 @@
       <find>$value</find>
       <find>foreach</find>
       <find>$resultNameCheck</find>
+      <find>$gradeCCnt</find>
+      <find>$gradeArr</find>
     </findStrings>
     <replaceStrings>
       <replace>1-2</replace>
@@ -192,8 +194,8 @@
         <option value="$PROJECT_DIR$/common.php" />
         <option value="$PROJECT_DIR$/COMMON.php" />
         <option value="$PROJECT_DIR$/page_5-2.php" />
-        <option value="$PROJECT_DIR$/page_result.php" />
         <option value="$PROJECT_DIR$/page_statics.php" />
+        <option value="$PROJECT_DIR$/page_result.php" />
       </list>
     </option>
   </component>
@@ -284,35 +286,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="10145000" />
-    </task>
-    <task id="LOCAL-00098" summary="챕터 중간 정산">
-      <created>1573779458321</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1573779458321</updated>
-    </task>
-    <task id="LOCAL-00099" summary="챕터 중간 정산">
-      <created>1573779663937</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1573779663937</updated>
-    </task>
-    <task id="LOCAL-00100" summary="챕터 중간 정산">
-      <created>1573780536785</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1573780536785</updated>
-    </task>
-    <task id="LOCAL-00101" summary="챕터 중간 정산">
-      <created>1573781085845</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1573781085845</updated>
+      <workItem from="1574036239356" duration="11999000" />
     </task>
     <task id="LOCAL-00102" summary="챕터 중간 정산">
       <created>1573781266891</created>
@@ -629,11 +603,39 @@
       <option name="project" value="LOCAL" />
       <updated>1574049859723</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="결과 도출 수정">
+      <created>1574049909518</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1574049909518</updated>
+    </task>
+    <task id="LOCAL-00148" summary="결과 도출 수정">
+      <created>1574049967456</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1574049967456</updated>
+    </task>
+    <task id="LOCAL-00149" summary="결과 도출 수정">
+      <created>1574050001583</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1574050001584</updated>
+    </task>
+    <task id="LOCAL-00150" summary="결과 도출 수정">
+      <created>1574050633765</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1574050633765</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63932000" />
+    <option name="totallyTimeSpent" value="65786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -924,30 +926,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page_result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="152" column="1" lean-forward="true" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page_statics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="105" column="6" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+        <state relative-caret-position="657">
+          <caret line="158" column="41" lean-forward="true" selection-start-line="158" selection-start-column="41" selection-end-line="158" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="347" column="57" lean-forward="true" selection-start-line="347" selection-start-column="57" selection-end-line="347" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -183,41 +183,93 @@ for($i = 0; $i < sizeof($gradeArr); $i++){
     }
 }
 
-if($gradeArr[0] == 'C'){
-    $res_style = $resultStyle[1];
-    $resVal = 2;
-} else if($gradeArr[1] == 'C' && $gradeArr[0] !== 'C'){
-    $res_style = $resultStyle[2];
-    $resVal = 3;
-} else if($gradeArr[2] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C'){
-    $res_style = $resultStyle[3];
-    $resVal = 4;
-} else if($gradeArr[3] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C' && $gradeArr[2] !== 'C'){
-    $res_style = $resultStyle[4];
-    $resVal = 5;
-} else if($gradeArr[4] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C' && $gradeArr[2] !== 'C' && $gradeArr[3] !== 'C'){
-    $res_style = $resultStyle[5];
-    $resVal = 6;
-}
 
+function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
+    $result = '';
+    $resVal = 0;
+    $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
 
-if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeArr[2] == 'C' && $gradeArr[3] == 'C' && $gradeArr[4] == 'C'){
-    $res_style = $resultStyle[7];
-    $resVal = 8;
-}
+    if($value1 == 'C'){
+        $res_style = $resultStyle[1];
+        $resVal = 2;
+    }
+    if($value2 == 'C' && $value1 !== 'C'){
+        $res_style = $resultStyle[2];
+        $resVal = 3;
+    }
+    if($value3 == 'C' && $value1 !== 'C' && $value2 !== 'C'){
+        $res_style = $resultStyle[3];
+        $resVal = 4;
+    }
+    if($value4 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C'){
+        $res_style = $resultStyle[4];
+        $resVal = 5;
+    }
+    if($value5 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C' && $value4 !== 'C'){
+        $res_style = $resultStyle[5];
+        $resVal = 6;
+    }
+    if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){
+        $res_style = $resultStyle[7];
+        $resVal = 8;
+    }
 
-if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
-    $num = array_count_values($gradeArr);
+    $num = array_count_values($arr);
     foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
         if($key !== 'C'){
-            if(($key == 'A' && $value <= 5) || ($key == 'B' && $value >= 3)){
+            if(($key == 'A' && $value_ <= 5) || ($key == 'B' && $value_ >= 3)){
                 $res_style = $resultStyle[6];
                 $resVal = 7;
             } else {
                 $res_style = $resultStyle[0];
                 $resVal = 1;
             }
+        }
+    }
+
+    $result = $resVal;
+
+    return $result;
+}
+
+
+$resGrade = getResultGrade($gradeArr[0],$gradeArr[1],$gradeArr[2],$gradeArr[3],$gradeArr[4],$gradeArr);
+
+//if($gradeArr[0] == 'C'){
+//    $res_style = $resultStyle[1];
+//    $resVal = 2;
+//} else if($gradeArr[1] == 'C' && $gradeArr[0] !== 'C'){
+//    $res_style = $resultStyle[2];
+//    $resVal = 3;
+//} else if($gradeArr[2] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C'){
+//    $res_style = $resultStyle[3];
+//    $resVal = 4;
+//} else if($gradeArr[3] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C' && $gradeArr[2] !== 'C'){
+//    $res_style = $resultStyle[4];
+//    $resVal = 5;
+//} else if($gradeArr[4] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C' && $gradeArr[2] !== 'C' && $gradeArr[3] !== 'C'){
+//    $res_style = $resultStyle[5];
+//    $resVal = 6;
+//}
+
+
+//if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeArr[2] == 'C' && $gradeArr[3] == 'C' && $gradeArr[4] == 'C'){
+//    $res_style = $resultStyle[7];
+//    $resVal = 8;
+//}
+
+
+$num = array_count_values($gradeArr);
+foreach ($num as $key => $value_){
+//        echo $key." = ". $value_.'<br>';
+    if($key !== 'C'){
+        if(($key == 'A' && $value <= 5) || ($key == 'B' && $value >= 3)){
+            $res_style = $resultStyle[6];
+            $resVal = 7;
+        } else {
+            $res_style = $resultStyle[0];
+            $resVal = 1;
         }
     }
 }
@@ -287,13 +339,13 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 <div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
 
         <div id = 'resName' style="font-weight: bold; font-size: 20px;">
-            <p>결과 : <?=$resultStyle[$resVal-1];?></p>
+            <p>결과 : <?=$resultStyle[$resGrade-1];?></p>
         </div>
         <div id = 'resDesc'>
-            <p><?=$resultDesc[$resVal-1];?></p>
+            <p><?=$resultDesc[$resGrade-1];?></p>
         </div>
         <div id = 'imgDiv'>
-            <img src="/img/result/ed<?=$resVal;?>.jpg">
+            <img src="/img/result/ed<?=$resGrade;?>.jpg">
         </div>
 
     <br>
