@@ -82,19 +82,18 @@ $query = "select one_to_one, one_to_two, one_to_three
       ,five_to_one, five_to_two, five_to_three
       ,result_style
 from play_dataTB
-where ID = '{ID}'";
+where ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
-
+$i = 0;
 while($row1 = $result->fetch_array())
 {
-    debug_var($row1);
-//    if($i < 16){
-//        ${'checkedVal'.$i} = $row1[$i];
-//        debug_var(${'checkedVal'.$i});
-//    }
-//    $i++;
+    if($i < 16){
+        ${'checkedVal'.$i} = $row1[$i];
+        debug_var(${'checkedVal'.$i});
+    }
+    $i++;
 
 }
 
