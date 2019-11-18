@@ -205,10 +205,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $tmpResultArr[$i] = '1';
             $gradeCCnt++;
             $rdArr[$j] = $rdResultStyle[$i];
+            $j++;
 //            if($gradeCCnt > 1){
 //                echo ($i+1)."번째 챕터에서 C";
 //            }
-//            $j++;
+
 //            debug_var($rdArr[$j]);
 //            debug_var($rdResultStyle[$i]);
         }
@@ -262,7 +263,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //            if($key == '1')
 //            echo $key."=". $value."<br>";
 //        }
-        debug_var($rdArr);
+//        debug_var($rdArr);
     }
 
     $result = $resVal;
