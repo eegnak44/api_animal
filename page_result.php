@@ -155,6 +155,27 @@ $gradeArr[2] = $resObj['chapter_three'];
 $gradeArr[3] = $resObj['chapter_four'];
 $gradeArr[4] = $resObj['chapter_five'];
 
+$tmpQuery1 = "select one_to_one, one_to_two, one_to_three from play_dataTB where chapter_one = resObj['chapter_one']";
+$tmpQuery2 = "select two_to_one, two_to_two, two_to_three from play_dataTB where chapter_two = resObj['chapter_two']";
+$tmpQuery3 = "select three_to_one, three_to_two, three_to_three from play_dataTB where chapter_three = resObj['chapter_three']";
+$tmpQuery4 = "select four_to_one, four_to_two, four_to_three from play_dataTB where chapter_four = resObj['chapter_four']";
+$tmpQuery5 = "select five_to_one, five_to_two, five_to_three from play_dataTB where chapter_five = resObj['chapter_five']";
+
+for($i = 1; $i < 6; $i++){
+    $res = $conn->query(${'tmpQuery'.$i}) or die($this->_connect->error);
+
+    while(${'row'.$i} = $res->fetch_array())
+    {
+        ${'resObj'.$i} = ${'row'.$i};
+    }
+}
+debug_var($resObj1);
+debug_var($resObj2);
+debug_var($resObj3);
+debug_var($resObj4);
+debug_var($resObj5);
+
+
 
 $gradeACnt = 0;
 $gradeBCnt = 0;
@@ -168,17 +189,14 @@ for($i = 0;$i < sizeof($gradeArr); $i++){
 
 foreach ($gradeArr as $key => $value){
     if($value == 'C'){
-        echo ($key+1)."챕터 is C<br>";
-        ${'chapterVal'.$key} = $key;
+        $tmpVal = $gradeArr[$key];
+//        echo ($key+1)."챕터 is C<br>";
+//        ${'chapterVal'.$key} = $key+1;
     }
 
 //    echo $key."=".$value."<br>";
 }
-debug_var($chapterVal0);
-debug_var($chapterVal1);
-debug_var($chapterVal2);
-debug_var($chapterVal3);
-debug_var($chapterVal4);
+
 
 function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     $result = '';
