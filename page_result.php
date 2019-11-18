@@ -250,7 +250,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             }
         }
     } else if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
-        $resVal = 1;
+        $resVal = 7;
     }
 
     $result = $resVal;
