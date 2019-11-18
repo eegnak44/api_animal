@@ -209,8 +209,8 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //                echo ($i+1)."번째 챕터에서 C";
 //            }
 //            $j++;
-//            debug_var($rdArr[$j]);
-            debug_var($rdResultStyle[$i]);
+            debug_var($rdArr[$j]);
+//            debug_var($rdResultStyle[$i]);
         }
     }
 //    debug_var($tmpResultArr);
