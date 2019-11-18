@@ -256,7 +256,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $resVal = 8;
         }
 
-    } else if ($gradeBCnt >= 3 || $gradeACnt >= 3){
+    } else if ($gradeCCnt == 0 && $gradeBCnt >= 3 || $gradeACnt >= 3){
         $num = array_count_values($arr);
         foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
