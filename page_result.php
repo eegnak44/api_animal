@@ -404,7 +404,7 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 <!--            <p>--><?//=$resGrade;?><!--</p>-->
         </div>
         <div id = 'imgDiv'>
-            <img src="/img/result/ed<?=$resGrade+1;?>.jpg">
+            <img src="/img/result/ed<?=$resGrade;?>.jpg">
         </div>
 
     <br>
