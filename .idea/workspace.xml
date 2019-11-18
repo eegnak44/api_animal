@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/page_statics.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_statics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_statics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="581">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -150,6 +150,8 @@
       <find>accountTB</find>
       <find>testBtn2</find>
       <find>$value</find>
+      <find>foreach</find>
+      <find>$resultNameCheck</find>
     </findStrings>
     <replaceStrings>
       <replace>1-2</replace>
@@ -281,28 +283,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="7918000" />
-    </task>
-    <task id="LOCAL-00089" summary="챕터 중간 정산">
-      <created>1573778343875</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1573778343875</updated>
-    </task>
-    <task id="LOCAL-00090" summary="챕터 중간 정산">
-      <created>1573778623745</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1573778623745</updated>
-    </task>
-    <task id="LOCAL-00091" summary="챕터 중간 정산">
-      <created>1573778695842</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1573778695842</updated>
+      <workItem from="1574036239356" duration="9107000" />
     </task>
     <task id="LOCAL-00092" summary="챕터 중간 정산">
       <created>1573778858545</created>
@@ -626,11 +607,32 @@
       <option name="project" value="LOCAL" />
       <updated>1574045235550</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="결과 도출 수정">
+      <created>1574045297091</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1574045297091</updated>
+    </task>
+    <task id="LOCAL-00139" summary="결과 도출 수정">
+      <created>1574045323685</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1574045323685</updated>
+    </task>
+    <task id="LOCAL-00140" summary="결과 도출 수정">
+      <created>1574045882880</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1574045882880</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61705000" />
+    <option name="totallyTimeSpent" value="62894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -937,8 +939,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_statics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="581">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />

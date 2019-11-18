@@ -152,7 +152,7 @@ while($row2 = $result3->fetch_array()){
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
-        <p>나와 같은 선택을 한 테스터의 수 : <?=$resultNameCheck-1;?>명</p>
+<!--        <p>나와 같은 선택을 한 테스터의 수 : --><?//=$resultNameCheck-1;?><!--명</p>-->
     </div>
 
     <br>
