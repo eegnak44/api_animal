@@ -167,7 +167,10 @@ for($i = 0;$i < sizeof($gradeArr); $i++){
 }
 
 foreach ($gradeArr as $key => $value){
-    echo $key."=".$value."<br>";
+    if($value == 'C'){
+        echo ($key+1)."챕터 is C<br>";
+    }
+//    echo $key."=".$value."<br>";
 }
 
 function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
