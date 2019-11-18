@@ -382,6 +382,26 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
         //     }
         //     return result;
         // }
+
+        function noRefresh()
+        {
+            /* CTRL + N키 막음. */
+            if ((event.keyCode == 78) && (event.ctrlKey == true))
+            {
+                event.keyCode = 0;
+                return false;
+            }
+            /* F5 번키 막음. */
+            if(event.keyCode == 116)
+            {
+                event.keyCode = 0;
+                return false;
+            }
+        }
+
+        document.onkeydown = noRefresh ;
+
+        noRefresh();
     });
 
 
