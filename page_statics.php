@@ -73,7 +73,7 @@ $result2 = $conn->query($query2) or die($this->_connect->error);
 while($row = $result2->fetch_array())
 {
     $value1 = $row['cnt'];
-    debug_var($row);
+
 }
 
 
@@ -122,7 +122,7 @@ while($row = $result2->fetch_array())
 <div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
-        <p>누적 테스터 의 수 : <?=$row['cnt'];?></p>
+        <p>누적 테스터 의 수 : <?=$value1;?></p>
     </div>
 
     <br>
