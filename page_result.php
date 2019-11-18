@@ -68,6 +68,7 @@ $mysql_charset = 'utf8';
 $conn = new mysqli($mysql_hostname, $mysql_username, $mysql_password, $mysql_database, $mysql_port);
 //
 $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
+
 $resultDesc = ['나의 안전을 위해서라면 외로움 따위는 잊은지 오래입니다. 고독한 여행자에게 반려란 성가신 짐일 뿐입니다.'
     , '당신은 버려진 외곽에서 선행을 통해 꺼져가는 생명들을 구하였습니다.당신에게 반려란 보살핌일 수 있겠습니다.'
     , '당신에게 모든 사람들은 동등한 존재입니다. 당신은 사회에서 소외받은 이들과 함께 기꺼이 동행할 수 있는 따뜻한 마음의 반려로서의 요건을 갖추었습니다.'
@@ -176,22 +177,25 @@ for($i = 0; $i < sizeof($gradeArr); $i++){
         $gradeBCnt++;
     } else if($gradeArr[$i] == 'C'){
         $gradeCCnt++;
+        if($gradeCCnt > 1){
+            echo ($i+1)."번째 챕터에서 C";
+        }
     }
 }
 
 if($gradeArr[0] == 'C'){
     $res_style = $resultStyle[1];
     $resVal = 2;
-} else if($gradeArr[1] == 'C'){
+} else if($gradeArr[1] == 'C' && $gradeArr[0] !== 'C'){
     $res_style = $resultStyle[2];
     $resVal = 3;
-} else if($gradeArr[2] == 'C'){
+} else if($gradeArr[2] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C'){
     $res_style = $resultStyle[3];
     $resVal = 4;
-} else if($gradeArr[3] == 'C'){
+} else if($gradeArr[3] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C' && $gradeArr[2] !== 'C'){
     $res_style = $resultStyle[4];
     $resVal = 5;
-} else if($gradeArr[4] == 'C'){
+} else if($gradeArr[4] == 'C' && $gradeArr[0] !== 'C' && $gradeArr[1] !== 'C' && $gradeArr[2] !== 'C' && $gradeArr[3] !== 'C'){
     $res_style = $resultStyle[5];
     $resVal = 6;
 }

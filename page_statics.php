@@ -88,26 +88,19 @@ $result = $conn->query($query) or die($this->_connect->error);
 
 
 while($row1 = $result->fetch_array()) {
-//    debug_var($row1);
     $resultName = $row1[15];
-//    if($i < 16){
-//        ${'checkedVal'.$i} = $row1[$i];
-//        debug_var(${'checkedVal'.$i});
-//    }
-//    $i++;
 }
 
-//$resultName = $row1[15];
 $resultNameCheck = 0;
 
 $query3 = "SELECT count(result_style) as cnt from play_dataTB WHERE result_style = '{$resultName}'";
-echo $query3;
+//echo $query3;
 
 $result3 = $conn->query($query3) or die($this->_connect->error);
 
 while($row2 = $result3->fetch_array()){
     $resultNameCheck = $row2['cnt'];
-    debug_var($row2);
+//    debug_var($row2);
 }
 //debug_var($resultNameCheck);
 //debug_var($row2);
