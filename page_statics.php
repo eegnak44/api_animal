@@ -87,17 +87,27 @@ where ID = '{$id}'";
 $result = $conn->query($query) or die($this->_connect->error);
 
 
-while($row1 = $result->fetch_array())
-{
+while($row1 = $result->fetch_array()) {
     debug_var($row1);
 //    if($i < 16){
 //        ${'checkedVal'.$i} = $row1[$i];
 //        debug_var(${'checkedVal'.$i});
 //    }
 //    $i++;
-
 }
 
+$resultName = $row1[15];
+$resultNameCheck = 0;
+
+$query3 = "SELECT count(result_style) as cnt from play_dataTB WHERE result_style = '{$resultName}'";
+
+while($row2 = $result3->fetch_array()){
+    $resultNameCheck = $row2['cnt'];
+}
+
+//$num = array_count_values($gradeArr);
+//foreach ($num as $key => $value_){
+//        echo $key." = ". $value_.'<br>';
 
 ?>
 
@@ -142,6 +152,7 @@ while($row1 = $result->fetch_array())
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
+        <p>나와 같은 선택을 한 테스터의 수 : <?=$resultNameCheck-1;?>명</p>
     </div>
 
     <br>
