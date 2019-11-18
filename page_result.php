@@ -227,9 +227,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //        debug_var($rdArr);
         $outRes = array_rand($rdArr);
         $resVal = $outRes;
-    }
-
-    if($gradeCCnt == 1){
+    } else if($gradeCCnt == 1){
 
         if($value1 == 'C'){
             $res_style = $resultStyle[1];
@@ -256,7 +254,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $resVal = 8;
         }
 
-    } else if ($gradeCCnt == 0 && $gradeBCnt >= 3 || $gradeACnt >= 3){
+    } else if ($gradeCCnt == 0){
         $num = array_count_values($arr);
         foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
