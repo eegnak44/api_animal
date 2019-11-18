@@ -116,9 +116,6 @@ while($row1 = $result->fetch_array())
 <script>
 
     $(document).ready(function(){
-        var id = <?=$id;?>;
-        var result_style = '<?=$res_style;?>';
-        var resVal = <?=$resVal;?>;
         var value = '';
 
         $(".choice_div button").click(function () {
