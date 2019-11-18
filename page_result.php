@@ -201,11 +201,12 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
         } else if($arr[$i] == 'C'){
             $tmpResultArr[$i] = '1';
             $gradeCCnt++;
-            debug_var($tmpResultArr);
+
 //            if($gradeCCnt > 1){
 //                echo ($i+1)."번째 챕터에서 C";
 //            }
         }
+        debug_var($tmpResultArr);
     }
     if($gradeCCnt == 1){
 
@@ -249,7 +250,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             }
         }
     } else if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
-
+        $resVal = 1;
     }
 
     $result = $resVal;
