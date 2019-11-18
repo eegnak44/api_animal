@@ -212,11 +212,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //                echo ($i+1)."번째 챕터에서 C";
 //            }
 
-            debug_var($rdArr[$j]);
+//            debug_var($rdArr[$j]);
 //            debug_var($rdResultStyle[$i]);
         }
     }
-//    debug_var($tmpResultArr);
+    debug_var($tmpResultArr);
     if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
 //        $resVal = 7;
 //        $num1 = $tmpResultArr;
