@@ -258,7 +258,7 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
             value = $(this).attr('value');
 
             if(value){
-                window.location.href = 'http://34.80.159.83/page_5-3.php?id='+id+'&value='+value;
+                window.location.href = 'http://34.80.159.83/page_statics.php?id='+id;
             }
         });
         
@@ -282,8 +282,6 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 
 <div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
 
-
-    <div id = 'contentsDiv'>
         <div id = 'resName' style="font-weight: bold; font-size: 20px;">
             <p>결과 : <?=$resultStyle[$resVal-1];?></p>
         </div>
@@ -293,33 +291,16 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
         <div id = 'imgDiv'>
             <img src="/img/result/ed<?=$resVal;?>.jpg">
         </div>
-    </div>
-    <br>
-<!--    <form action="page_1-1.php" method="get">-->
-<!--        <div class = 'choice_div' style="margin: auto; width:50px;">-->
-<!--            <input type="hidden" name = 'id' value="--><?//=$id?><!--">-->
-<!--            <input type="submit" value="버려진 외곽으로 입장"><br>-->
-<!--        </div>-->
-<!--    </form>-->
-    <br>
-    <!--    <div class = 'moveBtn_div'>-->
-    <!---->
-    <!--        <input type="submit" value="뒤로" onclick="goBack()">-->
-    <!--    </div>-->
-</div>
 
-<!--<div class = "testBtn1" value = '1' style="border-left: 1px grey;">선택지1</div>-->
-<!--<div class = 'testBtn2'>-->
-<!--    <a href="/test_main_page_1.php" class="btn btn-secondary" value="1">선택지1</a>-->
-<!--</div>-->
-<!--<div>-->
-<!--    <ul>-->
-<!--        <li>1</li>-->
-<!--    </ul>-->
-<!--    <ul>-->
-<!--        <li>2</li>-->
-<!--    </ul>-->
-<!--</div>-->
+    <br>
+    <form action="page_statics.php" method="get">
+        <div class = 'choice_div' style="margin: auto; width:50px;">
+            <input type="hidden" name = 'id' value="<?=$id?>">
+            <input type="submit" value="통계"><br>
+        </div>
+    </form>
+    <br>
+</div>
 </body>
 </html>
 
