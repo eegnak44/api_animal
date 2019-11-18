@@ -64,6 +64,9 @@ $result = $conn->query($query) or die($this->_connect->error);
 <title>
     반려종 허용 테스트
 </title>
+<header style="margin: auto; width: 100px; font-size: 20px; font-weight: bold;">
+    15/15
+</header>
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">

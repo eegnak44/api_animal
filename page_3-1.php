@@ -64,6 +64,9 @@ $id = $_REQUEST['id'];
 <title>
     반려종 허용 테스트
 </title>
+<header style="margin: auto; width: 100px; font-size: 20px; font-weight: bold;">
+    7/15
+</header>
 <body>
 
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">

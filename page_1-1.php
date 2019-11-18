@@ -84,7 +84,7 @@ $id = $_REQUEST['id'];
 <title>
     반려종 허용 테스트
 </title>
-<header>
+<header style="margin: auto; width: 100px; font-size: 20px; font-weight: bold;">
     1/15
 </header>
 <body>
