@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/COMMON.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_result.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/page_1.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="732">
-              <caret line="119" column="16" lean-forward="true" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
+              <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -75,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/page_5-1.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="728">
-              <caret line="97" column="10" lean-forward="true" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
+              <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -98,17 +97,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3366">
-              <caret line="203" column="22" lean-forward="true" selection-start-line="203" selection-start-column="22" selection-end-line="203" selection-end-column="22" />
+            <state relative-caret-position="657">
+              <caret line="198" column="32" selection-start-line="198" selection-start-column="32" selection-end-line="198" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/COMMON.php">
+        <entry file="file://$PROJECT_DIR$/Common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="442">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -179,10 +184,12 @@
         <option value="$PROJECT_DIR$/page_5-3.php" />
         <option value="$PROJECT_DIR$/page_1.php" />
         <option value="$PROJECT_DIR$/common.php" />
+        <option value="$PROJECT_DIR$/COMMON.php" />
         <option value="$PROJECT_DIR$/page_result.php" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
@@ -245,6 +252,14 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" nameIsGenerated="true" document_root="$PROJECT_DIR$" host="http://34.80.159.83" port="8887">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" host="www.animal-dev.co.kr" port="8888">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -256,21 +271,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="1149000" />
-    </task>
-    <task id="LOCAL-00073" summary="챕터 5-3 까지 구성">
-      <created>1573727659467</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1573727659467</updated>
-    </task>
-    <task id="LOCAL-00074" summary="챕터 5-3 까지 구성">
-      <created>1573727994742</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1573727994743</updated>
+      <workItem from="1574036239356" duration="2756000" />
     </task>
     <task id="LOCAL-00075" summary="챕터 5-3 까지 구성">
       <created>1573729359989</created>
@@ -601,22 +602,36 @@
       <option name="project" value="LOCAL" />
       <updated>1574037128660</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="챕터 1 &#10;스트링 변경">
+      <created>1574037460580</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1574037460580</updated>
+    </task>
+    <task id="LOCAL-00123" summary="챕터 1 &#10;스트링 변경">
+      <created>1574037559370</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1574037559370</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54936000" />
+    <option name="totallyTimeSpent" value="56543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -865,7 +880,7 @@
     <entry file="file://$PROJECT_DIR$/page_5-1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
-          <caret line="97" column="10" lean-forward="true" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
+          <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#header#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -875,14 +890,14 @@
     <entry file="file://$PROJECT_DIR$/page_1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="732">
-          <caret line="119" column="16" lean-forward="true" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
+          <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/COMMON.php">
+    <entry file="file://$PROJECT_DIR$/Common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="442">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -894,8 +909,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3366">
-          <caret line="203" column="22" lean-forward="true" selection-start-line="203" selection-start-column="22" selection-end-line="203" selection-end-column="22" />
+        <state relative-caret-position="657">
+          <caret line="198" column="32" selection-start-line="198" selection-start-column="32" selection-end-line="198" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

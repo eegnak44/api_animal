@@ -192,15 +192,19 @@ if($gradeArr[0] == 'C' && $gradeArr[1] == 'C' && $gradeArr[2] == 'C' && $gradeAr
 if($_SERVER["REMOTE_ADDR"] == '211.52.72.56'){
     $num = array_count_values($gradeArr);
     foreach ($num as $key => $value_){
-        echo $key." = ". $value_.'<br>';
-//        if($key == 'C'){
-//            echo $num;
-//        }
+//        echo $key." = ". $value_.'<br>';
+        if($key !== 'C'){
+            if(($key == 'A' && $value <= 5) || ($key == 'B' && $value >= 3)){
+                $res_style = $resultStyle[6];
+            } else {
+                $res_style = $resultStyle[0];
+            }
+        }
     }
 }
 
 
-debug_var($res_style);
+
 
 
 $query3 = "UPDATE play_dataTB SET result_style = '{$res_style}' where ID = '{$id}'";
