@@ -207,7 +207,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //            }
         }
     }
-    debug_var($tmpResultArr);
+//    debug_var($tmpResultArr);
     if($gradeCCnt == 1){
 
         if($value1 == 'C'){
@@ -250,7 +250,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             }
         }
     } else if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
-        $resVal = 7;
+//        $resVal = 7;
+//        $num1 = $tmpResultArr;
+        foreach ($tmpResultArr as $key => $value){
+            echo $key."=". $value."<br>";
+        }
     }
 
     $result = $resVal;
