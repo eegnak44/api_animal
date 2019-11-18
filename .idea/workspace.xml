@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_result.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="203" column="37" selection-start-line="203" selection-start-column="37" selection-end-line="203" selection-end-column="37" />
+            <state relative-caret-position="242">
+              <caret line="192" column="14" selection-start-line="192" selection-start-column="14" selection-end-line="192" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -154,6 +155,7 @@
       <find>$resultNameCheck</find>
       <find>$gradeCCnt</find>
       <find>$gradeArr</find>
+      <find>$resGrade</find>
     </findStrings>
     <replaceStrings>
       <replace>1-2</replace>
@@ -285,42 +287,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="13329000" />
-    </task>
-    <task id="LOCAL-00103" summary="챕터 중간 정산">
-      <created>1573781703896</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1573781703896</updated>
-    </task>
-    <task id="LOCAL-00104" summary="챕터 중간 정산">
-      <created>1573781757590</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1573781757591</updated>
-    </task>
-    <task id="LOCAL-00105" summary="챕터 중간 정산">
-      <created>1573781942117</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1573781942117</updated>
-    </task>
-    <task id="LOCAL-00106" summary="챕터 중간 정산">
-      <created>1573782054115</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1573782054115</updated>
-    </task>
-    <task id="LOCAL-00107" summary="챕터 중간 정산">
-      <created>1573782275658</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1573782275659</updated>
+      <workItem from="1574036239356" duration="13935000" />
     </task>
     <task id="LOCAL-00108" summary="챕터 중간 정산">
       <created>1573783102344</created>
@@ -630,11 +597,46 @@
       <option name="project" value="LOCAL" />
       <updated>1574051756684</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="결과 도출 수정">
+      <created>1574053087089</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1574053087089</updated>
+    </task>
+    <task id="LOCAL-00153" summary="결과 도출 수정">
+      <created>1574053183020</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1574053183020</updated>
+    </task>
+    <task id="LOCAL-00154" summary="결과 도출 수정">
+      <created>1574053215099</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1574053215099</updated>
+    </task>
+    <task id="LOCAL-00155" summary="결과 도출 수정">
+      <created>1574053264625</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1574053264625</updated>
+    </task>
+    <task id="LOCAL-00156" summary="결과 도출 수정">
+      <created>1574053472677</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1574053472677</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67116000" />
+    <option name="totallyTimeSpent" value="67722000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -941,8 +943,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="203" column="37" selection-start-line="203" selection-start-column="37" selection-end-line="203" selection-end-column="37" />
+        <state relative-caret-position="242">
+          <caret line="192" column="14" selection-start-line="192" selection-start-column="14" selection-end-line="192" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />

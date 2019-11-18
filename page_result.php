@@ -191,6 +191,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     $gradeBCnt = 0;
     $gradeCCnt = 0;
     $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
+    $rdResultStyle = ['버려진 외곽의 수호자','소외받은 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그'];
     $tmpResultArr = ['0','0','0','0','0'];
 
     for($i = 0; $i < sizeof($arr); $i++){
@@ -199,12 +200,15 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
         } else if($arr[$i] == 'B'){
             $gradeBCnt++;
         } else if($arr[$i] == 'C'){
+            $j = 0;
             $tmpResultArr[$i] = '1';
             $gradeCCnt++;
-
+            $rdArr[$j] = $rdResultStyle[$i];
 //            if($gradeCCnt > 1){
 //                echo ($i+1)."번째 챕터에서 C";
 //            }
+            $j++;
+            debug_var($rdArr[$j]);
         }
     }
 //    debug_var($tmpResultArr);
@@ -252,9 +256,10 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     } else if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
 //        $resVal = 7;
 //        $num1 = $tmpResultArr;
-        foreach ($tmpResultArr as $key => $value){
-            echo $key."=". $value."<br>";
-        }
+//        foreach ($tmpResultArr as $key => $value){
+//            if($key == '1')
+//            echo $key."=". $value."<br>";
+//        }
     }
 
     $result = $resVal;
