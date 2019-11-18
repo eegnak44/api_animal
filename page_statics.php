@@ -54,7 +54,7 @@ function _after()
 }
 
 $id = $_REQUEST['id'];
-$value = $_REQUEST['value'];
+$value1 = '';
 
 $mysql_hostname = 'localhost';
 $mysql_username = 'root';
@@ -73,9 +73,10 @@ $result2 = $conn->query($query2) or die($this->_connect->error);
 while($row = $result2->fetch_array())
 {
     $value1 = $row['cnt'];
+    debug_var($row);
 }
 
-debug_var($row);
+
 ?>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
