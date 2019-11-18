@@ -245,8 +245,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 
 
 $resGrade = getResultGrade($gradeArr[0],$gradeArr[1],$gradeArr[2],$gradeArr[3],$gradeArr[4],$gradeArr);
-debug_var($resGrade);
-
+//debug_var($resGrade);
 
 
 $res_style = $resultStyle[$resGrade-1];
@@ -285,34 +284,20 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
                 window.location.href = 'http://34.80.159.83/page_statics.php?id='+id;
             }
         });
-        
-        // function getResultImg(resVal) {
-        //     var result = '';
-        //     if(resVal == '이상적 반려인'){
-        //         result = '<img src="/img/result/ed8.jpg">'
-        //     }
-        //     return result;
-        // }
 
-        function noRefresh()
-        {
-            /* CTRL + N키 막음. */
-            if ((event.keyCode == 78) && (event.ctrlKey == true))
-            {
+        function protectKey() {
+            if(event.keyCode == 116) {
                 event.keyCode = 0;
                 return false;
-            }
-            /* F5 번키 막음. */
-            if(event.keyCode == 116)
-            {
+            }else if ((event.keyCode == 78) && (event.ctrlKey == true)){
                 event.keyCode = 0;
                 return false;
             }
         }
 
-        document.onkeydown = noRefresh ;
 
-        noRefresh();
+
+        document.onkeydown= protectKey;
     });
 
 
