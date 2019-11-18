@@ -185,7 +185,7 @@ $res_style = '';
 
 
 function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
-    $result = [];
+    $result = '';
     $res_style = '';
     $resVal = 0;
     $gradeACnt = 0;
@@ -286,10 +286,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //        $resVal = $outRes;
 //    }
 
-    $result = Array(
-                $resVal,
-                $res_style
-              );
+    $result = $resVal;
 
     return $result;
 }
@@ -338,6 +335,7 @@ debug_var($resGrade);
 
 //echo $res_style;
 
+$res_style = $resultStyle[$resGrade+1];
 
 
 $query3 = "UPDATE play_dataTB SET result_style = '{$res_style}' where ID = '{$id}'";
