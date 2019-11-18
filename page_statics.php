@@ -101,7 +101,7 @@ $resultName = $row1[15];
 $resultNameCheck = 0;
 
 $query3 = "SELECT count(result_style) as cnt from play_dataTB WHERE result_style = '{$resultName}'";
-//echo $query3;
+echo $query3;
 
 $result3 = $conn->query($query3) or die($this->_connect->error);
 
