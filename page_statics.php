@@ -90,8 +90,8 @@ $i = 0;
 while($row1 = $result->fetch_array())
 {
     if($i < 16){
-        ${'value'.$i} = $row1[$i];
-        debug_var(${'value'.$i});
+        ${'checkedVal'.$i} = $row1[$i];
+        debug_var(${'checkedVal'.$i});
     }
     $i++;
 
