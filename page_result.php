@@ -413,11 +413,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $res_style = $resultStyle[3];
             $resVal = 4;
         }
-        if($value4 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C'){ // chapter 4
+        if($value4 == 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C'){ // chapter 4
             $res_style = $resultStyle[4];
             $resVal = 5;
         }
-        if($value5 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C' && $value4 !== 'C'){ //chapter 5
+        if($value5 == 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C' && $value4 !== 'C'){ //chapter 5
             $res_style = $resultStyle[5];
             $resVal = 6;
         }
