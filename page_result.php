@@ -267,7 +267,7 @@ foreach ($gradeArr as $key => $value){
 }
 
 
-function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resObj1=0, $resObj2=0, $resObj3=0, $resObj4=0, $resObj5=0){
+function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     $result = '';
     $res_style = '';
     $resVal = 0;
@@ -288,7 +288,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             $gradeBCnt++;
         } else if($arr[$i] == 'C'){
 //            ${'tmpObj'.($i+1)} = countFourFunc(${'resObj'.($i+1)});
-            $tmpObj[$i+1] = countFourFunc(${'resObj'.($i+1)});
+//            $tmpObj[$i+1] = countFourFunc(${'resObj'.($i+1)});
 //            $tmpObj_[$arr[$i]] = countFourFunc(${'resObj'.($i+1)});
 //            $tmpResultArr[$i] = '1';
             $gradeCCnt++;
@@ -443,7 +443,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 }
 
 
-$resGrade = getResultGrade($gradeArr[0],$gradeArr[1],$gradeArr[2],$gradeArr[3],$gradeArr[4],$gradeArr, $resObj1, $resObj2, $resObj3, $resObj4, $resObj5);
+$resGrade = getResultGrade($gradeArr[0],$gradeArr[1],$gradeArr[2],$gradeArr[3],$gradeArr[4],$gradeArr);
 //debug_var($resGrade);
 
 
