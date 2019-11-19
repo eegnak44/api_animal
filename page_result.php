@@ -202,11 +202,11 @@ if($gradeArr[4] == 'C'){
     }
 //    $tmpObj5 = countFourFunc($resObj5);
 }
-//debug_var($resObj1);
-//debug_var($resObj2);
-//debug_var($resObj3);
-//debug_var($resObj4);
-//debug_var($resObj5);
+debug_var($resObj1);
+debug_var($resObj2);
+debug_var($resObj3);
+debug_var($resObj4);
+debug_var($resObj5);
 //
 //
 //
@@ -321,11 +321,14 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
                 $res_style = $resultStyle[7];
                 $resVal = 8;
             }
-        } else if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 인 결과 가 5개 이하일 때 1개 이상일때
+        }
+    }
+    if($resVal == 0){
+        if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 인 결과 가 5개 이하일 때 1개 이상일때
             // 해당 C 의 이름
-                // 해당 C 의 4갯수
-                    // 4의 갯수가 3개 일 때
-                    // 4의 갯수가 2개 일 때
+            // 해당 C 의 4갯수
+            // 4의 갯수가 3개 일 때
+            // 4의 갯수가 2개 일 때
 
 //        for ($i=0; $i<5; $i++){
 //            if($tmpObj[$i+1] > 0){ // 4의 개수가 1개 이상인 tmpObj값
@@ -405,7 +408,9 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $resVal = $rdArr[$outRes];
 
         }
+
     }
+
 
     if($resVal == 0){
         if($gradeCCnt == 1){
@@ -443,9 +448,9 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     }
 
     if($resVal == 0){
-        debug_var($resVal);
+//        debug_var($resVal);
         if (($gradeCCnt == 0 && $gradeACnt >= 1) && $gradeBCnt >= 1){ // C 가 하나도 없을 때
-            debug_var($gradeCCnt);
+//            debug_var($gradeCCnt);
             $num = array_count_values($arr);
             foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
@@ -465,7 +470,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 
 
     $result = $resVal;
-//    debug_var($resVal);
+    debug_var($resVal);
     return $result;
 }
 
