@@ -309,11 +309,13 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         for($i = 0; $i < sizeof($rdArr); $i++){
 //            if($rdArr[$i-1] !== ''){
             debug_var($rdArr[$i]); // 3
-            $j = $rdArr[$i] - 1;
+            $j = $rdArr[$i] - 1; // j = chapter no
             debug_var($j); // 2
-            ${'tmpObj'.$j} = countFourFunc(${'resObj'.$j});
+//            ${'tmpObj'.$j} = countFourFunc(${'resObj'.$j});
+            $tmpObj[$j] = countFourFunc(${'resObj'.$j});
 //            }
-            debug_var(${'tmpObj'.$j});
+//            debug_var(${'tmpObj'.$j}); // j chapter 의 4의 갯수
+            debug_var($tmpObj);
         }
 
 
