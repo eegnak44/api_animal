@@ -299,6 +299,10 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $j++;
         }
     }
+    debug_var($gradeACnt);
+    debug_var($gradeBCnt);
+    debug_var($gradeCCnt);
+
 
 //    debug_var($gradeCCnt);
 //    debug_var($rdArr);
