@@ -73,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="316" column="39" selection-start-line="316" selection-start-column="39" selection-end-line="316" selection-end-column="39" />
+            <state relative-caret-position="623">
+              <caret line="327" column="37" lean-forward="true" selection-start-line="324" selection-start-column="18" selection-end-line="327" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -286,21 +286,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="42155000" />
-    </task>
-    <task id="LOCAL-00170" summary="결과 도출 수정">
-      <created>1574056010730</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1574056010730</updated>
-    </task>
-    <task id="LOCAL-00171" summary="결과 도출 수정">
-      <created>1574056170706</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1574056170706</updated>
+      <workItem from="1574036239356" duration="43136000" />
     </task>
     <task id="LOCAL-00172" summary="결과 도출 수정">
       <created>1574056323456</created>
@@ -631,11 +617,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574143182622</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="결과 도출 수정">
+      <created>1574143493954</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1574143493954</updated>
+    </task>
+    <task id="LOCAL-00220" summary="결과 도출 수정">
+      <created>1574144204713</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1574144204713</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95942000" />
+    <option name="totallyTimeSpent" value="96923000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -951,8 +951,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="316" column="39" selection-start-line="316" selection-start-column="39" selection-end-line="316" selection-end-column="39" />
+        <state relative-caret-position="623">
+          <caret line="327" column="37" lean-forward="true" selection-start-line="324" selection-start-column="18" selection-end-line="327" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
