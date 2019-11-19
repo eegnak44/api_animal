@@ -293,6 +293,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             $j++;
         }
     }
+    debug_var($gradeCCnt);
 //    debug_var($rdArr);
 //    debug_var($tmpObj1);
 //    debug_var($tmpObj2);
@@ -310,10 +311,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         for ($i=0; $i<5; $i++){
             if($tmpObj[$i+1] > 0){ // 4의 개수가 1개 이상인 tmpObj값
 
-                if($tmpObj[$i+1] > $tmpObj[$i+2]){
-                    $resVal = $i+1;
-                    debug_var($resVal);
-                }
+
+//                if($tmpObj[$i+1] > $tmpObj[$i+2]){
+//                    $resVal = $i+1;
+//                    debug_var($resVal);
+//                }
 //                debug_var($tmpObj[$i+1]);
 //                $tmpChapter = $i+1;
 //                for($j = 0; $j<5; $j++){
