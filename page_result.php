@@ -314,7 +314,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //    $tmpObj4 = countFourFunc($resObj4);
 //    $tmpObj5 = countFourFunc($resObj5);
 
-    if($resVal){
+    if($resVal == 0){
         if($gradeCCnt == 5){
 //        debug_var($gradeCCnt);
             if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){ // all C
@@ -445,6 +445,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     if($resVal == 0){
         debug_var($resVal);
         if (($gradeCCnt == 0 && $gradeACnt >= 1) || $gradeBCnt >= 1){ // C 가 하나도 없을 때
+            debug_var($gradeCCnt);
             $num = array_count_values($arr);
             foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
