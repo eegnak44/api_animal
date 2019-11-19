@@ -441,7 +441,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
         foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
 //            if($key !== 'C' && $value_ == 0){
-                if(($key == 'A' && $value_ <= 5) || ($key == 'B' && $value_ >= 3)){
+                if(($key == 'A' && $value_ >= 5) || ($key == 'B' && $value_ <= 3)){
                     $res_style = $resultStyle[6];
                     $resVal = 7;
                     debug_var($resVal);
