@@ -161,6 +161,7 @@ if($gradeArr[0] == 'C'){
     while($row1 = $res->fetch_array())
     {
         $resObj1 = $row1;
+        debug_var($resObj1);
     }
 //    $tmpObj1 = countFourFunc($resObj1);
 }
