@@ -444,7 +444,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 
     if($resVal == 0){
         debug_var($resVal);
-        if (($gradeCCnt == 0 && $gradeACnt >= 1) || $gradeBCnt >= 1){ // C 가 하나도 없을 때
+        if (($gradeCCnt == 0 && $gradeACnt >= 1) && $gradeBCnt >= 1){ // C 가 하나도 없을 때
             debug_var($gradeCCnt);
             $num = array_count_values($arr);
             foreach ($num as $key => $value_){
