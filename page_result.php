@@ -200,11 +200,11 @@ if($gradeArr[4] == 'C'){
     }
 //    $tmpObj5 = countFourFunc($resObj5);
 }
-debug_var($resObj1);
-debug_var($resObj2);
-debug_var($resObj3);
-debug_var($resObj4);
-debug_var($resObj5);
+//debug_var($resObj1);
+//debug_var($resObj2);
+//debug_var($resObj3);
+//debug_var($resObj4);
+//debug_var($resObj5);
 //
 //
 //
@@ -315,11 +315,12 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //            }
 
         }
-        debug_var($tmpObj1);
-        debug_var($tmpObj2);
-        debug_var($tmpObj3);
-        debug_var($tmpObj4);
-        debug_var($tmpObj5);
+
+//        debug_var($tmpObj1);
+//        debug_var($tmpObj2);
+//        debug_var($tmpObj3);
+//        debug_var($tmpObj4);
+//        debug_var($tmpObj5);
 //        for($j=0; $j<sizeof($rdArr); $j++){
 //            if(${'tmpObj'.$j} == 3){
 //
