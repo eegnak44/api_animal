@@ -73,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="346" column="16" lean-forward="true" selection-start-line="346" selection-start-column="16" selection-end-line="346" selection-end-column="16" />
+            <state relative-caret-position="595">
+              <caret line="361" column="13" lean-forward="true" selection-start-line="361" selection-start-column="13" selection-end-line="361" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -147,7 +147,6 @@
       <find>소외받은 이들의 동반자</find>
       <find>$tmpResultArr</find>
       <find>$resObj1</find>
-      <find>debug_var</find>
       <find>foreach</find>
       <find>$res1</find>
       <find>$res2</find>
@@ -155,6 +154,7 @@
       <find>$res4</find>
       <find>$res5</find>
       <find>$resObj3</find>
+      <find>debug_var</find>
     </findStrings>
     <replaceStrings>
       <replace>1-2</replace>
@@ -293,35 +293,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="53771000" />
-    </task>
-    <task id="LOCAL-00214" summary="결과 도출 수정">
-      <created>1574141815106</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
-      <option name="project" value="LOCAL" />
-      <updated>1574141815106</updated>
-    </task>
-    <task id="LOCAL-00215" summary="결과 도출 수정">
-      <created>1574142003784</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1574142003784</updated>
-    </task>
-    <task id="LOCAL-00216" summary="결과 도출 수정">
-      <created>1574142871415</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
-      <option name="project" value="LOCAL" />
-      <updated>1574142871415</updated>
-    </task>
-    <task id="LOCAL-00217" summary="결과 도출 수정">
-      <created>1574142967954</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1574142967954</updated>
+      <workItem from="1574036239356" duration="54971000" />
     </task>
     <task id="LOCAL-00218" summary="결과 도출 수정">
       <created>1574143182622</created>
@@ -638,11 +610,39 @@
       <option name="project" value="LOCAL" />
       <updated>1574154322405</updated>
     </task>
-    <option name="localTasksCounter" value="263" />
+    <task id="LOCAL-00263" summary="결과 도출 수정">
+      <created>1574155136830</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1574155136830</updated>
+    </task>
+    <task id="LOCAL-00264" summary="결과 도출 수정">
+      <created>1574155227625</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1574155227625</updated>
+    </task>
+    <task id="LOCAL-00265" summary="결과 도출 수정">
+      <created>1574155297549</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1574155297549</updated>
+    </task>
+    <task id="LOCAL-00266" summary="결과 도출 수정">
+      <created>1574155548974</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1574155548974</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107558000" />
+    <option name="totallyTimeSpent" value="108758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -961,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="346" column="16" lean-forward="true" selection-start-line="346" selection-start-column="16" selection-end-line="346" selection-end-column="16" />
+        <state relative-caret-position="595">
+          <caret line="361" column="13" lean-forward="true" selection-start-line="361" selection-start-column="13" selection-end-line="361" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />

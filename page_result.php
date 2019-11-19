@@ -348,101 +348,21 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //            debug_var($tmpChapterNo[4]);
 //            debug_var($tmpChapterNo[5]);
             if($tmpChapterNo[1] == 3 && (($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1 ) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
-                debug_var($tmpChapterNo[1]);
-                echo '1챕터';
+                $resVal = 2;
+            } else if ($tmpChapterNo[2] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
+                $resVal = 3;
+            } else if ($tmpChapterNo[3] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
+                $resVal = 4;
+            } else if ($tmpChapterNo[4] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
+                $resVal = 5;
+            } else if ($tmpChapterNo[5] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1))){
+                $resVal = 6;
+            } else if ($tmpChapterNo[1] == 3 && ($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])) {
+                $outRes = array_rand($rdArr);
+                $resVal = $rdArr[$outRes];
             }
-//                if($tmpChapterNo[$j] == 3 && $tmpChapterNo[$j++] == 3){
-//
-//                    $outRes = array_rand($rdArr);
-//
-//                    $resVal = $rdArr[$outRes];
-//                }
-
-
-            // 해당 C 의 이름
-            // 해당 C 의 4갯수
-            // 4의 갯수가 3개 일 때
-            // 4의 갯수가 2개 일 때
-
-//        for ($i=0; $i<5; $i++){
-//            if($tmpObj[$i+1] > 0){ // 4의 개수가 1개 이상인 tmpObj값
-
-
-//                if($tmpObj[$i+1] > $tmpObj[$i+2]){
-//                    $resVal = $i+1;
-//                    debug_var($resVal);
-//                }
-//                debug_var($tmpObj[$i+1]);
-//                $tmpChapter = $i+1;
-//                for($j = 0; $j<5; $j++){
-//                    if($tmpObj[$tmpChapter] > $tmpObj[$j]){
-////                    debug_var($i+1)
-//                      echo $tmpChapter;
-//                    }
-//               }
-//                sort($tmpObj);
-//                debug_var($tmpObj);
-//                rsort($tmpObj);
-//                debug_var($tmpObj);
-
-//            }
-//            if (${'tmpObj'.($i+1)} > 0){
-//                debug_var(${'tmpObj'.($i+1)});
-//            }
-//        }
-
-//        for($j = 0; $j < sizeof($rdArr); $j++){
-//        for($i = 0; $i < sizeof($rdArr); $i++){
-//            if($rdArr[$i-1] !== ''){
-//            debug_var($rdArr[$i]); // 3
-//            $j = $rdArr[$i] - 1; // j = chapter no
-//            debug_var($j); // 2
-//            ${'tmpObj'.$j} = countFourFunc(${'resObj'.$j});
-//            $tmpObj[$j] = countFourFunc(${'resObj'.$j});
-//            }
-//            debug_var(${'tmpObj'.$j}); // j chapter 의 4의 갯수
-
-            /*
-                Array
-                (
-                    [2] => 3
-                    [5] => 2
-                )
-             */
-//        }
-
-
-//        debug_var($tmpObj1);
-//        debug_var($tmpObj2);
-//        debug_var($tmpObj3);
-//        debug_var($tmpObj4);
-//        debug_var($tmpObj5);
-//        for($j=0; $j<sizeof($rdArr); $j++){
-//            if(${'tmpObj'.$j} == 3){
-//
-//            } else if (${'tmpObj'.$j} == 2){
-//
-//            } else {
-//
-//            }
-//
-//        }
-
-//        }
-
-//        $tmpVal$rdArr[$j]-1;
-            // C 의 4갯수가 동일 할때 랜덤
-            // C 의 4갯수가 높은것으로 resVal
-
-
-
-
-            $outRes = array_rand($rdArr);
-
-            $resVal = $rdArr[$outRes];
 
         }
-
     }
 
 
