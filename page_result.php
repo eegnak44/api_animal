@@ -342,7 +342,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                     $tmpCount++;
                 }
             }
-
+            debug_var($tmpChapterNo[1]);
+            debug_var($tmpChapterNo[2]);
+            debug_var($tmpChapterNo[3]);
+            debug_var($tmpChapterNo[4]);
+            debug_var($tmpChapterNo[5]);
             if($tmpChapterNo[1] == 3 && ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1 || $tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1 || $tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1 || $tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1)){
                 echo '1챕터';
             }
