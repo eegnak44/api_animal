@@ -300,12 +300,19 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //    $tmpObj5 = countFourFunc($resObj5);
 
     if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
-        for($j=1;$j<6;$j++){
-            if(${'tmpObj'.$j} > ${'tmpObj'.($j+1)}){
-                $resVal = $j-1;
+        for($j = 1; $j < 6; $j++){ //tmpObj.$j 의 4갯수가 3인것 찾기
+            if(${'tmpObj'.$j} == 3){
+                echo ${'tmpObj'.$j};
             }
         }
-        debug_var($resVal);
+
+//        for($j=1;$j<6;$j++){
+//            if(${'tmpObj'.$j} > ${'tmpObj'.($j+1)}){
+//                $resVal = $j-1;
+//            }
+//        }
+//        debug_var($resVal);
+
 
         $outRes = array_rand($rdArr);
 
