@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_result.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="408" column="39" lean-forward="true" selection-start-line="408" selection-start-column="39" selection-end-line="408" selection-end-column="39" />
+            <state relative-caret-position="555">
+              <caret line="459" column="13" lean-forward="true" selection-start-line="459" selection-start-column="13" selection-end-line="459" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -286,28 +287,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="48473000" />
-    </task>
-    <task id="LOCAL-00197" summary="결과 도출 수정">
-      <created>1574077929592</created>
-      <option name="number" value="00197" />
-      <option name="presentableId" value="LOCAL-00197" />
-      <option name="project" value="LOCAL" />
-      <updated>1574077929592</updated>
-    </task>
-    <task id="LOCAL-00198" summary="결과 도출 수정">
-      <created>1574123215400</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1574123215400</updated>
-    </task>
-    <task id="LOCAL-00199" summary="결과 도출 수정">
-      <created>1574123488769</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1574123488769</updated>
+      <workItem from="1574036239356" duration="49087000" />
     </task>
     <task id="LOCAL-00200" summary="결과 도출 수정">
       <created>1574129825266</created>
@@ -631,11 +611,32 @@
       <option name="project" value="LOCAL" />
       <updated>1574149652961</updated>
     </task>
-    <option name="localTasksCounter" value="246" />
+    <task id="LOCAL-00246" summary="결과 도출 수정">
+      <created>1574149816385</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1574149816385</updated>
+    </task>
+    <task id="LOCAL-00247" summary="결과 도출 수정">
+      <created>1574149906452</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1574149906452</updated>
+    </task>
+    <task id="LOCAL-00248" summary="결과 도출 수정">
+      <created>1574150211406</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1574150211406</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102260000" />
+    <option name="totallyTimeSpent" value="102874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -896,9 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/result/ed1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/result/ed4.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -949,10 +947,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/result/ed7.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/result/ed1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/page_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="408" column="39" lean-forward="true" selection-start-line="408" selection-start-column="39" selection-end-line="408" selection-end-column="39" />
+        <state relative-caret-position="555">
+          <caret line="459" column="13" lean-forward="true" selection-start-line="459" selection-start-column="13" selection-end-line="459" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />

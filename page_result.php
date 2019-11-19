@@ -318,13 +318,14 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //    $tmpObj4 = countFourFunc($resObj4);
 //    $tmpObj5 = countFourFunc($resObj5);
 
-    if($gradeCCnt == 5){
+    if($resVal){
+        if($gradeCCnt == 5){
 //        debug_var($gradeCCnt);
-        if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){ // all C
-            $res_style = $resultStyle[7];
-            $resVal = 8;
-        }
-    } else if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 결과 가 5개 이하일 때
+            if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){ // all C
+                $res_style = $resultStyle[7];
+                $resVal = 8;
+            }
+        } else if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 결과 가 5개 이하일 때
 
 //        for ($i=0; $i<5; $i++){
 //            if($tmpObj[$i+1] > 0){ // 4의 개수가 1개 이상인 tmpObj값
@@ -393,52 +394,58 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 //        }
 
 //        $tmpVal$rdArr[$j]-1;
-        // C 의 4갯수가 동일 할때 랜덤
-        // C 의 4갯수가 높은것으로 resVal
+            // C 의 4갯수가 동일 할때 랜덤
+            // C 의 4갯수가 높은것으로 resVal
 
 
 
 
-        $outRes = array_rand($rdArr);
+            $outRes = array_rand($rdArr);
 
-        $resVal = $rdArr[$outRes];
+            $resVal = $rdArr[$outRes];
 
+        }
     }
-    if($gradeCCnt == 1){
 
-        if($value1 == 'C'){ //chapter 1
-            $res_style = $resultStyle[1];
-            $resVal = 2;
-        }
-        if($value2 == 'C'){//chapter 2
-            if($value1 !== 'C'){
-                $res_style = $resultStyle[2];
-                $resVal = 3;
-            }
-        }
-        if($value3 == 'C'){ // chapter 3
-            if($value1 !== 'C' && $value2 !== 'C'){
-                $res_style = $resultStyle[3];
-                $resVal = 4;
-            }
-        }
-        if($value4 == 'C' ){ // chapter 4
-            if(($value1 !== 'C' && $value2 !== 'C') && $value3 !== 'C'){
-                $res_style = $resultStyle[4];
-                $resVal = 5;
-            }
-        }
-        if($value5 == 'C' ){ //chapter 5
-            if(($value1 !== 'C' && $value2 !== 'C') && ($value3 !== 'C' && $value4 !== 'C')){
-                $res_style = $resultStyle[5];
-                $resVal = 6;
-            }
-        }
+    if($resVal == 0){
+        if($gradeCCnt == 1){
 
+            if($value1 == 'C'){ //chapter 1
+                $res_style = $resultStyle[1];
+                $resVal = 2;
+            }
+            if($value2 == 'C'){//chapter 2
+                if($value1 !== 'C'){
+                    $res_style = $resultStyle[2];
+                    $resVal = 3;
+                }
+            }
+            if($value3 == 'C'){ // chapter 3
+                if($value1 !== 'C' && $value2 !== 'C'){
+                    $res_style = $resultStyle[3];
+                    $resVal = 4;
+                }
+            }
+            if($value4 == 'C' ){ // chapter 4
+                if(($value1 !== 'C' && $value2 !== 'C') && $value3 !== 'C'){
+                    $res_style = $resultStyle[4];
+                    $resVal = 5;
+                }
+            }
+            if($value5 == 'C' ){ //chapter 5
+                if(($value1 !== 'C' && $value2 !== 'C') && ($value3 !== 'C' && $value4 !== 'C')){
+                    $res_style = $resultStyle[5];
+                    $resVal = 6;
+                }
+            }
+
+        }
     }
-    if (($gradeCCnt == 0 && $gradeACnt >= 1) || $gradeBCnt >= 1){ // C 가 하나도 없을 때
-        $num = array_count_values($arr);
-        foreach ($num as $key => $value_){
+
+    if($resVal == 0){
+        if (($gradeCCnt == 0 && $gradeACnt >= 1) || $gradeBCnt >= 1){ // C 가 하나도 없을 때
+            $num = array_count_values($arr);
+            foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
 //            if($key !== 'C' && $value_ == 0){
                 if(($key == 'A' && $value_ >= 5) || ($key == 'B' && $value_ <= 3)){
@@ -450,8 +457,10 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
                     $resVal = 1;
                 }
 //            }
+            }
         }
     }
+
 
     $result = $resVal;
 //    debug_var($resVal);
