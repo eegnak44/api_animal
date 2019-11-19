@@ -452,7 +452,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     }
 
     $result = $resVal;
-    debug_var($resVal);
+//    debug_var($resVal);
     return $result;
 }
 
