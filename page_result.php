@@ -162,7 +162,7 @@ if($gradeArr[0] == 'C'){
     $res1 = $conn->query($tmpQuery1) or die($this->_connect->error);
     while($row1 = $res->fetch_array())
     {
-        $resObj1 = $row1;
+        $resObj_1 = $row1;
     }
 //    $tmpObj1 = countFourFunc($resObj1);
 }
@@ -171,7 +171,7 @@ if($gradeArr[1] == 'C'){
     $res2 = $conn->query($tmpQuery2) or die($this->_connect->error);
     while($row2 = $res2->fetch_array())
     {
-        $resObj2 = $row2;
+        $resObj_2 = $row2;
     }
 //    $tmpObj2 = countFourFunc($resObj2);
 }
@@ -180,7 +180,7 @@ if($gradeArr[2] == 'C'){
     $res3 = $conn->query($tmpQuery3) or die($this->_connect->error);
     while($row3 = $res->fetch_array())
     {
-        $resObj3 = $row3;
+        $resObj_3 = $row3;
     }
 //    $tmpObj3 = countFourFunc($resObj3);
 }
@@ -189,7 +189,7 @@ if($gradeArr[3] == 'C'){
     $res4 = $conn->query($tmpQuery4) or die($this->_connect->error);
     while($row4 = $res4->fetch_array())
     {
-        $resObj4 = $row4;
+        $resObj_4 = $row4;
     }
 //    $tmpObj4 = countFourFunc($resObj4);
 }
@@ -198,15 +198,15 @@ if($gradeArr[4] == 'C'){
     $res5 = $conn->query($tmpQuery5) or die($this->_connect->error);
     while($row5 = $res5->fetch_array())
     {
-        $resObj5 = $row5;
+        $resObj_5 = $row5;
     }
 //    $tmpObj5 = countFourFunc($resObj5);
 }
-debug_var($resObj1);
-debug_var($resObj2);
-debug_var($resObj3);
-debug_var($resObj4);
-debug_var($resObj5);
+debug_var($resObj_1);
+debug_var($resObj_2);
+debug_var($resObj_3);
+debug_var($resObj_4);
+debug_var($resObj_5);
 //
 //
 //
