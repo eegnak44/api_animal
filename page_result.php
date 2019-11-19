@@ -227,7 +227,7 @@ if($gradeArr[4] == 'C'){
 function countFourFunc($arr){
     $tmpFourCountVal = 0;
     $result = '';
-    for($i = 0; $i < 3; $i++){ // A,B,C 갯수 카운트 C 가 두개일 때는 랜덤 결과를 출력 하기 위해 rdArr 에 저장
+    for($i = 0; $i < 3; $i++){
         if($arr[$i] == '4'){
             $tmpFourCountVal++;
         }
@@ -235,6 +235,9 @@ function countFourFunc($arr){
     $result = $tmpFourCountVal;
     return $result;
 }
+
+$varTmpTmp = countFourFunc($resObj1);
+debug_var($varTmpTmp);
 
 //debug_var($tmpObj1);
 //debug_var($tmpObj2);
@@ -285,7 +288,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         } else if($arr[$i] == 'C'){
 //            ${'tmpObj'.($i+1)} = countFourFunc(${'resObj'.($i+1)});
             $tmpObj[$i+1] = countFourFunc(${'resObj'.($i+1)});
-            $tmpObj_[$arr[$i]] = countFourFunc(${'resObj'.($i+1)});
+//            $tmpObj_[$arr[$i]] = countFourFunc(${'resObj'.($i+1)});
 //            $tmpResultArr[$i] = '1';
             $gradeCCnt++;
             $rdArr[$j] = $rdResultStyle[$i];
@@ -293,7 +296,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             $j++;
         }
     }
-    debug_var($tmpObj_);
+
 //    debug_var($gradeCCnt);
 //    debug_var($rdArr);
 //    debug_var($tmpObj1);
@@ -309,14 +312,15 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //    $tmpObj5 = countFourFunc($resObj5);
 
     if($gradeCCnt == 5){
-        debug_var($gradeCCnt);
+//        debug_var($gradeCCnt);
         if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){ // all C
             $res_style = $resultStyle[7];
             $resVal = 8;
         }
-    } else if ($gradeCCnt < 5) { //C 결과 가 2개 이상일 때
-        for ($i=0; $i<5; $i++){
-            if($tmpObj[$i+1] > 0){ // 4의 개수가 1개 이상인 tmpObj값
+    } else if ($gradeCCnt < 5) { //C 결과 가 5개 이하일 때
+
+//        for ($i=0; $i<5; $i++){
+//            if($tmpObj[$i+1] > 0){ // 4의 개수가 1개 이상인 tmpObj값
 
 
 //                if($tmpObj[$i+1] > $tmpObj[$i+2]){
@@ -336,11 +340,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //                rsort($tmpObj);
 //                debug_var($tmpObj);
 
-            }
+//            }
 //            if (${'tmpObj'.($i+1)} > 0){
 //                debug_var(${'tmpObj'.($i+1)});
 //            }
-        }
+//        }
 
 //        for($j = 0; $j < sizeof($rdArr); $j++){
 //        for($i = 0; $i < sizeof($rdArr); $i++){
