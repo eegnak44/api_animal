@@ -347,21 +347,28 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //            debug_var($tmpChapterNo[3]);
 //            debug_var($tmpChapterNo[4]);
 //            debug_var($tmpChapterNo[5]);
-            if($tmpChapterNo[1] == 3 && (($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1 ) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
-                $resVal = 2;
-            } else if ($tmpChapterNo[2] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
-                $resVal = 3;
-            } else if ($tmpChapterNo[3] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
-                $resVal = 4;
-            } else if ($tmpChapterNo[4] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
-                $resVal = 5;
-            } else if ($tmpChapterNo[5] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1))){
-                $resVal = 6;
-            } else if ($tmpChapterNo[1] == 3 && ($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])) {
-                $outRes = array_rand($rdArr);
-                $resVal = $rdArr[$outRes];
-            }
+            if($tmpChapterNo[1] == 3) {
+//                if (($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])){
+                if ($tmpChapterNo[1] == $tmpChapterNo[2] && $tmpChapterNo[1] !== $tmpChapterNo[3] && $tmpChapterNo[1] !== $tmpChapterNo[4] && $tmpChapterNo[1] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['2','3'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
 
+            }
+//            else if ($tmpChapterNo[2] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
+//                $resVal = 3;
+//            } else if ($tmpChapterNo[3] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
+//                $resVal = 4;
+//            } else if ($tmpChapterNo[4] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
+//                $resVal = 5;
+//            } else if ($tmpChapterNo[5] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1))){
+//                $resVal = 6;
+//            } else if ($tmpChapterNo[1] == 3 && ($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])) {
+//
+//            }
+//            $outRes = array_rand($rdArr);
+//            $resVal = $rdArr[$outRes];
         }
     }
 
