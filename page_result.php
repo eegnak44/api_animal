@@ -324,14 +324,10 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                 )
              */
         }
-        $num = array_count_values($tmpObj);
-        foreach ($num as $key => $value_) {
-            echo $key . " = " . $value_ . '<br>';
+        foreach($tmpObj as $key => $value){
+            echo $key."=".$value."<br>";
         }
 
-//        for($i = 0; $i < sizeof($tmpObj); $i++){
-//
-//        }
 
 
 //        debug_var($tmpObj1);
