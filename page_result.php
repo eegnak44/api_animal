@@ -330,14 +330,29 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
     }
     if($resVal == 0){
         if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 인 결과 가 5개 이하일 때 1개 이상일때
+            $tmpCount = 0;
             for($i = 1; $i<6;$i++){
                 if($tmpObj[$i] > 0){
+
                     ${'tmpChapterNo'.$i} = $tmpObj[$i];
+                    $tmpChapterNo[$i] = $tmpObj[$i];
+
 //                    debug_var($i);
 //                    debug_var($tmpObj[$i]);
-                    debug_var(${'tmpChapterNo'.$i});
+                    $tmpCount++;
                 }
             }
+
+            if($tmpChapterNo[1] == 3 && ($tmpChapterNo[2] == 2 || $tmpChapterNo[2] == 1 || $tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1 || $tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1 || $tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1)){
+                echo '1챕터';
+            }
+//                if($tmpChapterNo[$j] == 3 && $tmpChapterNo[$j++] == 3){
+//
+//                    $outRes = array_rand($rdArr);
+//
+//                    $resVal = $rdArr[$outRes];
+//                }
+
 
             // 해당 C 의 이름
             // 해당 C 의 4갯수
