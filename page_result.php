@@ -200,7 +200,7 @@ if($gradeArr[4] == 'C'){
     }
 //    $tmpObj5 = countFourFunc($resObj5);
 }
-
+debug_var($resObj1);
 //
 //
 //
@@ -299,12 +299,14 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //    $tmpObj4 = countFourFunc($resObj4);
 //    $tmpObj5 = countFourFunc($resObj5);
 
-    if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
-        for($j = 1; $j < 6; $j++){ //tmpObj.$j 의 4갯수가 3인것 찾기
-            if(${'tmpObj'.$j} == 3){
-                echo ${'tmpObj'.$j};
-            }
-        }
+    if ($gradeCCnt > 1) { //C 결과 가 2개 이상일 때
+
+//        for($j = 1; $j < 6; $j++){ //tmpObj.$j 의 4갯수가 3인것 찾기
+//            if(${'tmpObj'.$j} == 3){
+//                echo $j;
+//                ${'tmpVal'.$j} = $j;
+//            }
+//        }
 
 //        for($j=1;$j<6;$j++){
 //            if(${'tmpObj'.$j} > ${'tmpObj'.($j+1)}){
@@ -320,32 +322,32 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 
     } else if($gradeCCnt == 1){
 
-        if($value1 == 'C'){
+        if($value1 == 'C'){ //chapter 1
             $res_style = $resultStyle[1];
             $resVal = 2;
         }
-        if($value2 == 'C' && $value1 !== 'C'){
+        if($value2 == 'C' && $value1 !== 'C'){ //chapter 2
             $res_style = $resultStyle[2];
             $resVal = 3;
         }
-        if($value3 == 'C' && $value1 !== 'C' && $value2 !== 'C'){
+        if($value3 == 'C' && $value1 !== 'C' && $value2 !== 'C'){ // chapter 3
             $res_style = $resultStyle[3];
             $resVal = 4;
         }
-        if($value4 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C'){
+        if($value4 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C'){ // chapter 4
             $res_style = $resultStyle[4];
             $resVal = 5;
         }
-        if($value5 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C' && $value4 !== 'C'){
+        if($value5 = 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C' && $value4 !== 'C'){ //chapter 5
             $res_style = $resultStyle[5];
             $resVal = 6;
         }
-        if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){
+        if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){ // all C
             $res_style = $resultStyle[7];
             $resVal = 8;
         }
 
-    } else if ($gradeCCnt == 0){
+    } else if ($gradeCCnt == 0){ // C 가 하나도 없을 때
         $num = array_count_values($arr);
         foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
