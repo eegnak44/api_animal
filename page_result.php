@@ -313,8 +313,9 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             debug_var($j); // 2
             ${'tmpObj'.$j} = countFourFunc(${'resObj'.$j});
 //            }
-
+            debug_var(${'tmpObj'.$j});
         }
+
 
 //        debug_var($tmpObj1);
 //        debug_var($tmpObj2);
