@@ -316,7 +316,22 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //            }
 //            debug_var(${'tmpObj'.$j}); // j chapter 의 4의 갯수
             debug_var($tmpObj);
+            /*
+                Array
+                (
+                    [2] => 3
+                    [5] => 2
+                )
+             */
         }
+        $num = array_count_values($tmpObj);
+        foreach ($num as $key => $value_) {
+            echo $key . " = " . $value_ . '<br>';
+        }
+
+//        for($i = 0; $i < sizeof($tmpObj); $i++){
+//
+//        }
 
 
 //        debug_var($tmpObj1);
