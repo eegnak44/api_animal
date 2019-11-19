@@ -204,14 +204,36 @@ if($gradeArr[4] == 'C'){
 //    $resObj1 = $row1;
 //}
 //
-debug_var($resObj1);
-debug_var($resObj2);
-debug_var($resObj3);
-debug_var($resObj4);
-debug_var($resObj5);
+//debug_var($resObj1);
+//debug_var($resObj2);
+//debug_var($resObj3);
+//debug_var($resObj4);
+//debug_var($resObj5);
+//
+//for($i = 0; $i < 3; $i++){
+//    $tmpObj1[$i] = $resObj1[$i]
+//}
 
 
+function countFourFunc($arr){
+    $tmpFourCountVal = 0;
+    $result = '';
+    for($i = 0; $i < 3; $i++){ // A,B,C 갯수 카운트 C 가 두개일 때는 랜덤 결과를 출력 하기 위해 rdArr 에 저장
+        if($arr[$i] == '4'){
+            $tmpFourCountVal++;
+        }
+    }
+    $result = $tmpFourCountVal;
+    return $result;
+}
 
+$tmpObj1 = countFourFunc($resObj2);
+$tmpObj2 = countFourFunc($resObj1);
+$tmpObj3 = countFourFunc($resObj5);
+
+debug_var($tmpObj1);
+debug_var($tmpObj2);
+debug_var($tmpObj3);
 
 $gradeACnt = 0;
 $gradeBCnt = 0;
