@@ -332,6 +332,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 인 결과 가 5개 이하일 때 1개 이상일때
             for($i = 1; $i<6;$i++){
                 if($tmpObj[$i] > 0){
+                    debug_var($i);
                     debug_var($tmpObj[$i]);
                 }
             }
