@@ -308,8 +308,8 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 
     if ($gradeCCnt > 1) { //C 결과 가 2개 이상일 때
         for ($i=0; $i<5; $i++){
-            if($tmpObj[$i] > 0){
-                debug_var($tmpObj[$i]);
+            if($tmpObj[$i+1] > 0){
+                debug_var($tmpObj[$i+1]);
             }
 //            if (${'tmpObj'.($i+1)} > 0){
 //                debug_var(${'tmpObj'.($i+1)});
