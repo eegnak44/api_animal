@@ -307,7 +307,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //    $tmpObj4 = countFourFunc($resObj4);
 //    $tmpObj5 = countFourFunc($resObj5);
 
-    if ($gradeCCnt > 1) { //C 결과 가 2개 이상일 때
+    if ($gradeCCnt > 6) { //C 결과 가 2개 이상일 때
         for ($i=0; $i<5; $i++){
             if($tmpObj[$i+1] > 0){ // 4의 개수가 1개 이상인 tmpObj값
 
