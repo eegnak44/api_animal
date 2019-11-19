@@ -287,11 +287,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             $j++;
         }
     }
-    debug_var($tmpObj1);
-    debug_var($tmpObj2);
-    debug_var($tmpObj3);
-    debug_var($tmpObj4);
-    debug_var($tmpObj5);
+//    debug_var($tmpObj1);
+//    debug_var($tmpObj2);
+//    debug_var($tmpObj3);
+//    debug_var($tmpObj4);
+//    debug_var($tmpObj5);
 
 //    $tmpObj1 = countFourFunc($resObj1);
 //    $tmpObj2 = countFourFunc($resObj2);
@@ -300,10 +300,17 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //    $tmpObj5 = countFourFunc($resObj5);
 
     if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
+        for($j=1;$j<6;$j++){
+            if(${'tmpObj'.$j} > ${'tmpObj'.($j+1)}){
+                $resVal = $j-1;
+            }
+        }
+        debug_var($resVal);
 
         $outRes = array_rand($rdArr);
 
         $resVal = $rdArr[$outRes];
+
     } else if($gradeCCnt == 1){
 
         if($value1 == 'C'){
