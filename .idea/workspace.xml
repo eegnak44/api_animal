@@ -73,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
+            <state relative-caret-position="598">
+              <caret line="239" lean-forward="true" selection-start-line="239" selection-end-line="239" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -146,8 +146,8 @@
       <find>update</find>
       <find>소외받은 이들의 동반자</find>
       <find>$tmpResultArr</find>
-      <find>debug_var</find>
       <find>foreach</find>
+      <find>debug_var</find>
     </findStrings>
     <replaceStrings>
       <replace>1-2</replace>
@@ -286,28 +286,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="27110000" />
-    </task>
-    <task id="LOCAL-00147" summary="결과 도출 수정">
-      <created>1574049909518</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1574049909518</updated>
-    </task>
-    <task id="LOCAL-00148" summary="결과 도출 수정">
-      <created>1574049967456</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1574049967456</updated>
-    </task>
-    <task id="LOCAL-00149" summary="결과 도출 수정">
-      <created>1574050001583</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1574050001584</updated>
+      <workItem from="1574036239356" duration="29127000" />
     </task>
     <task id="LOCAL-00150" summary="결과 도출 수정">
       <created>1574050633765</created>
@@ -631,11 +610,32 @@
       <option name="project" value="LOCAL" />
       <updated>1574077306040</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="결과 도출 수정">
+      <created>1574077781459</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1574077781459</updated>
+    </task>
+    <task id="LOCAL-00197" summary="결과 도출 수정">
+      <created>1574077929592</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1574077929592</updated>
+    </task>
+    <task id="LOCAL-00198" summary="결과 도출 수정">
+      <created>1574123215400</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1574123215400</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80897000" />
+    <option name="totallyTimeSpent" value="82914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -951,8 +951,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
+        <state relative-caret-position="598">
+          <caret line="239" lean-forward="true" selection-start-line="239" selection-end-line="239" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
