@@ -315,7 +315,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             $tmpObj[$j] = countFourFunc(${'resObj'.$j});
 //            }
 //            debug_var(${'tmpObj'.$j}); // j chapter 의 4의 갯수
-            debug_var($tmpObj);
+
             /*
                 Array
                 (
@@ -324,11 +324,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                 )
              */
         }
-        foreach($tmpObj as $key => $value){
-            echo $key."=".$value."<br>";
-        }
-
-
+        var_dump($tmpObj);
 
 //        debug_var($tmpObj1);
 //        debug_var($tmpObj2);
