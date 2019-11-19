@@ -162,7 +162,7 @@ if($gradeArr[0] == 'C'){
     {
         $resObj1 = $row1;
     }
-    $tmpObj1 = countFourFunc($resObj1);
+//    $tmpObj1 = countFourFunc($resObj1);
 }
 if($gradeArr[1] == 'C'){
     $tmpQuery2 = "select two_to_one, two_to_two, two_to_three from play_dataTB where chapter_two = '{$resObj['chapter_two']}'";
@@ -171,7 +171,7 @@ if($gradeArr[1] == 'C'){
     {
         $resObj2 = $row2;
     }
-    $tmpObj2 = countFourFunc($resObj2);
+//    $tmpObj2 = countFourFunc($resObj2);
 }
 if($gradeArr[2] == 'C'){
     $tmpQuery3 = "select three_to_one, three_to_two, three_to_three from play_dataTB where chapter_three = '{$resObj['chapter_three']}'";
@@ -180,7 +180,7 @@ if($gradeArr[2] == 'C'){
     {
         $resObj3 = $row3;
     }
-    $tmpObj3 = countFourFunc($resObj3);
+//    $tmpObj3 = countFourFunc($resObj3);
 }
 if($gradeArr[3] == 'C'){
     $tmpQuery4 = "select four_to_one, four_to_two, four_to_three from play_dataTB where chapter_four = '{$resObj['chapter_four']}'";
@@ -189,7 +189,7 @@ if($gradeArr[3] == 'C'){
     {
         $resObj4 = $row4;
     }
-    $tmpObj4 = countFourFunc($resObj4);
+//    $tmpObj4 = countFourFunc($resObj4);
 }
 if($gradeArr[4] == 'C'){
     $tmpQuery5 = "select five_to_one, five_to_two, five_to_three from play_dataTB where chapter_five = '{$resObj['chapter_five']}'";
@@ -198,7 +198,7 @@ if($gradeArr[4] == 'C'){
     {
         $resObj5 = $row5;
     }
-    $tmpObj5 = countFourFunc($resObj5);
+//    $tmpObj5 = countFourFunc($resObj5);
 }
 
 //
@@ -232,11 +232,11 @@ function countFourFunc($arr){
     return $result;
 }
 
-debug_var($tmpObj1);
-debug_var($tmpObj2);
-debug_var($tmpObj3);
-debug_var($tmpObj4);
-debug_var($tmpObj5);
+//debug_var($tmpObj1);
+//debug_var($tmpObj2);
+//debug_var($tmpObj3);
+//debug_var($tmpObj4);
+//debug_var($tmpObj5);
 
 $gradeACnt = 0;
 $gradeBCnt = 0;
@@ -259,7 +259,7 @@ foreach ($gradeArr as $key => $value){
 }
 
 
-function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
+function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resObj1, $resObj2, $resObj3, $resObj4, $resObj5){
     $result = '';
     $res_style = '';
     $resVal = 0;
@@ -279,7 +279,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
         } else if($arr[$i] == 'B'){
             $gradeBCnt++;
         } else if($arr[$i] == 'C'){
-
+            ${'tmpObj'.($i+1)} = countFourFunc(${'resObj'.($i+1)});
 //            $tmpResultArr[$i] = '1';
             $gradeCCnt++;
             $rdArr[$j] = $rdResultStyle[$i];
@@ -287,6 +287,18 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $j++;
         }
     }
+    debug_var($tmpObj1);
+    debug_var($tmpObj2);
+    debug_var($tmpObj3);
+    debug_var($tmpObj4);
+    debug_var($tmpObj5);
+
+//    $tmpObj1 = countFourFunc($resObj1);
+//    $tmpObj2 = countFourFunc($resObj2);
+//    $tmpObj3 = countFourFunc($resObj3);
+//    $tmpObj4 = countFourFunc($resObj4);
+//    $tmpObj5 = countFourFunc($resObj5);
+
     if ($gradeCCnt > 1) { //$gradeCCnt 가 2개 이상일 때 처리
 
         $outRes = array_rand($rdArr);
@@ -341,7 +353,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 }
 
 
-$resGrade = getResultGrade($gradeArr[0],$gradeArr[1],$gradeArr[2],$gradeArr[3],$gradeArr[4],$gradeArr);
+$resGrade = getResultGrade($gradeArr[0],$gradeArr[1],$gradeArr[2],$gradeArr[3],$gradeArr[4],$gradeArr, $resObj1, $resObj2, $resObj3, $resObj4, $resObj5);
 //debug_var($resGrade);
 
 
