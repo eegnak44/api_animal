@@ -319,7 +319,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             $res_style = $resultStyle[7];
             $resVal = 8;
         }
-    } else if ($gradeCCnt < 5) { //C 결과 가 5개 이하일 때
+    } else if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 결과 가 5개 이하일 때
 
 //        for ($i=0; $i<5; $i++){
 //            if($tmpObj[$i+1] > 0){ // 4의 개수가 1개 이상인 tmpObj값
