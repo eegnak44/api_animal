@@ -173,6 +173,16 @@ while($row2 = $result3->fetch_array()){
         <div class = 'chapterRes'>
             <img src="img/unnamed.png">
         </div>
+        <div class = 'chapterRes'>
+            <img src="img/unnamed.png">
+        </div>
+        <div class = 'chapterRes'>
+            <img src="img/unnamed.png">
+        </div>
+        <div class = 'chapterRes'>
+            <img src="img/unnamed.png">
+        </div>
+
     </div>
     <br>
     <form action="main.php" method="get">

@@ -70,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="361" column="13" lean-forward="true" selection-start-line="361" selection-start-column="13" selection-end-line="361" selection-end-column="13" />
+            <state relative-caret-position="793">
+              <caret line="376" column="13" lean-forward="true" selection-start-line="376" selection-start-column="13" selection-end-line="376" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_statics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="173" column="39" lean-forward="true" selection-start-line="173" selection-start-column="39" selection-end-line="173" selection-end-column="39" />
+            <state relative-caret-position="606">
+              <caret line="174" column="14" lean-forward="true" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -139,7 +139,6 @@
       <find>accountTB</find>
       <find>testBtn2</find>
       <find>$value</find>
-      <find>$resultNameCheck</find>
       <find>$gradeCCnt</find>
       <find>$gradeArr</find>
       <find>$resGrade</find>
@@ -155,6 +154,8 @@
       <find>$res5</find>
       <find>$resObj3</find>
       <find>debug_var</find>
+      <find>tmpChapterNo2</find>
+      <find>$resultNameCheck</find>
     </findStrings>
     <replaceStrings>
       <replace>1-2</replace>
@@ -195,8 +196,8 @@
         <option value="$PROJECT_DIR$/common.php" />
         <option value="$PROJECT_DIR$/COMMON.php" />
         <option value="$PROJECT_DIR$/page_5-2.php" />
-        <option value="$PROJECT_DIR$/page_statics.php" />
         <option value="$PROJECT_DIR$/page_result.php" />
+        <option value="$PROJECT_DIR$/page_statics.php" />
       </list>
     </option>
   </component>
@@ -293,21 +294,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="54971000" />
-    </task>
-    <task id="LOCAL-00218" summary="결과 도출 수정">
-      <created>1574143182622</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1574143182622</updated>
-    </task>
-    <task id="LOCAL-00219" summary="결과 도출 수정">
-      <created>1574143493954</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1574143493954</updated>
+      <workItem from="1574036239356" duration="58260000" />
     </task>
     <task id="LOCAL-00220" summary="결과 도출 수정">
       <created>1574144204713</created>
@@ -638,11 +625,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574155548974</updated>
     </task>
-    <option name="localTasksCounter" value="267" />
+    <task id="LOCAL-00267" summary="결과 도출 수정">
+      <created>1574156319251</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1574156319251</updated>
+    </task>
+    <task id="LOCAL-00268" summary="결과 도출 수정">
+      <created>1574156922132</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1574156922132</updated>
+    </task>
+    <option name="localTasksCounter" value="269" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108758000" />
+    <option name="totallyTimeSpent" value="112047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -939,10 +940,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page_statics.php">
+    <entry file="file://$PROJECT_DIR$/img/result/ed7.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/result/ed1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="173" column="39" lean-forward="true" selection-start-line="173" selection-start-column="39" selection-end-line="173" selection-end-column="39" />
+        <state relative-caret-position="793">
+          <caret line="376" column="13" lean-forward="true" selection-start-line="376" selection-start-column="13" selection-end-line="376" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -953,16 +960,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/result/ed7.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/result/ed1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page_result.php">
+    <entry file="file://$PROJECT_DIR$/page_statics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="361" column="13" lean-forward="true" selection-start-line="361" selection-start-column="13" selection-end-line="361" selection-end-column="13" />
+        <state relative-caret-position="606">
+          <caret line="174" column="14" lean-forward="true" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
