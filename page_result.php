@@ -286,7 +286,6 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     for($i = 0; $i < sizeof($arr); $i++){ // A,B,C 갯수 카운트 C 가 두개일 때는 랜덤 결과를 출력 하기 위해 rdArr 에 저장
         if($arr[$i] == 'A'){
             $gradeACnt++;
-            debug_var($gradeACnt);
         } else if($arr[$i] == 'B'){
             $gradeBCnt++;
         } else if($arr[$i] == 'C'){
@@ -423,7 +422,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $resVal = 6;
         }
 
-    } else if ($gradeCCnt == 0 && ($gradeACnt > 1 || $gradeBCnt > 1)){ // C 가 하나도 없을 때
+    } else if ($gradeACnt >= 1 || $gradeBCnt >= 1){ // C 가 하나도 없을 때
         $num = array_count_values($arr);
         foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
