@@ -238,6 +238,7 @@ function countFourFunc($arr){
 
 $varTmpTmp = countFourFunc($resObj1);
 debug_var($varTmpTmp);
+debug_var($resObj1);
 
 //debug_var($tmpObj1);
 //debug_var($tmpObj2);
