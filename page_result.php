@@ -293,7 +293,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             $j++;
         }
     }
-    debug_var($gradeCCnt);
+//    debug_var($gradeCCnt);
 //    debug_var($rdArr);
 //    debug_var($tmpObj1);
 //    debug_var($tmpObj2);
@@ -423,7 +423,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             }
         }
     } else if($gradeCCnt == 5){
-
+        debug_var($gradeCCnt);
         if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){ // all C
             $res_style = $resultStyle[7];
             $resVal = 8;
