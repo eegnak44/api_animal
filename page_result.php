@@ -162,7 +162,6 @@ if($gradeArr[0] == 'C'){
     {
         $resObj1 = $row1;
     }
-    debug_var($resObj1);
 //    $tmpObj1 = countFourFunc($resObj1);
 }
 if($gradeArr[1] == 'C'){
@@ -268,7 +267,7 @@ foreach ($gradeArr as $key => $value){
 }
 
 
-function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resObj1, $resObj2, $resObj3, $resObj4, $resObj5){
+function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resObj1=0, $resObj2=0, $resObj3=0, $resObj4=0, $resObj5=0){
     $result = '';
     $res_style = '';
     $resVal = 0;
