@@ -405,21 +405,29 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
             $res_style = $resultStyle[1];
             $resVal = 2;
         }
-        if($value2 == 'C' && $value1 !== 'C'){ //chapter 2
-            $res_style = $resultStyle[2];
-            $resVal = 3;
+        if($value2 == 'C'){//chapter 2
+            if($value1 !== 'C'){
+                $res_style = $resultStyle[2];
+                $resVal = 3;
+            }
         }
-        if($value3 == 'C' && $value1 !== 'C' && $value2 !== 'C'){ // chapter 3
-            $res_style = $resultStyle[3];
-            $resVal = 4;
+        if($value3 == 'C'){ // chapter 3
+            if($value1 !== 'C' && $value2 !== 'C'){
+                $res_style = $resultStyle[3];
+                $resVal = 4;
+            }
         }
-        if($value4 == 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C'){ // chapter 4
-            $res_style = $resultStyle[4];
-            $resVal = 5;
+        if($value4 == 'C' ){ // chapter 4
+            if(($value1 !== 'C' && $value2 !== 'C') && $value3 !== 'C'){
+                $res_style = $resultStyle[4];
+                $resVal = 5;
+            }
         }
-        if($value5 == 'C' && $value1 !== 'C' && $value2 !== 'C' && $value3 !== 'C' && $value4 !== 'C'){ //chapter 5
-            $res_style = $resultStyle[5];
-            $resVal = 6;
+        if($value5 == 'C' ){ //chapter 5
+            if(($value1 !== 'C' && $value2 !== 'C') && ($value3 !== 'C' && $value4 !== 'C')){
+                $res_style = $resultStyle[5];
+                $resVal = 6;
+            }
         }
 
     } else if ($gradeACnt >= 1 || $gradeBCnt >= 1){ // C 가 하나도 없을 때
