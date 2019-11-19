@@ -272,7 +272,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
     $gradeCCnt = 0;
     $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외당한 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
 //    $rdResultStyle = ['버려진 외곽의 수호자','소외당한 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그'];
-    $rdResultStyle = ['2','3','4','5','6'];
+    $rdResultStyle = ['2','3','4','5','6']; //[1,2,3,4,5]
 //    $tmpResultArr = ['0','0','0','0','0'];
     $rdArr = Array(5);
     $j = 0;
@@ -305,9 +305,17 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //    $tmpObj5 = countFourFunc($resObj5);
 
     if ($gradeCCnt > 1) { //C 결과 가 2개 이상일 때
+//        for($j = 0; $j < sizeof($rdArr); $j++){
         for($i = 1; $i < 6; $i++){
-            ${'tmpObj'.$i} = countFourFunc(${'resObj'.$i});
+            if($rdArr[$i-1] !== ''){
+                ${'tmpObj'.$i} = countFourFunc(${'resObj'.$i});
+            }
+            debug_var(${'tmpObj'.$i});
         }
+
+//        }
+
+//        $tmpVal$rdArr[$j]-1;
         // C 의 4갯수가 동일 할때 랜덤
         // C 의 4갯수가 높은것으로 resVal
 
@@ -352,10 +360,6 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             $res_style = $resultStyle[5];
             $resVal = 6;
         }
-        if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){ // all C
-            $res_style = $resultStyle[7];
-            $resVal = 8;
-        }
 
     } else if ($gradeCCnt == 0){ // C 가 하나도 없을 때
         $num = array_count_values($arr);
@@ -370,6 +374,12 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                     $resVal = 1;
                 }
             }
+        }
+    } else if($gradeCCnt == 5){
+
+        if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){ // all C
+            $res_style = $resultStyle[7];
+            $resVal = 8;
         }
     }
 
