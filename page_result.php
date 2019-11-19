@@ -237,9 +237,9 @@ function countFourFunc($arr){
     return $result;
 }
 
-$varTmpTmp = countFourFunc($resObj1);
-debug_var($varTmpTmp);
-debug_var($resObj1);
+//$varTmpTmp = countFourFunc($resObj1);
+//debug_var($varTmpTmp);
+//debug_var($resObj1);
 
 //debug_var($tmpObj1);
 //debug_var($tmpObj2);
@@ -421,7 +421,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             $resVal = 6;
         }
 
-    } else if ($gradeCCnt == 0){ // C 가 하나도 없을 때
+    } else if ($gradeCCnt == 0 && ($gradeACnt > 1 || $gradeBCnt > 1)){ // C 가 하나도 없을 때
         $num = array_count_values($arr);
         foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
