@@ -155,6 +155,8 @@ $gradeArr[2] = $resObj['chapter_three'];
 $gradeArr[3] = $resObj['chapter_four'];
 $gradeArr[4] = $resObj['chapter_five'];
 
+debug_var($gradeArr);
+
 if($gradeArr[0] == 'C'){
     $tmpQuery1 = "select one_to_one, one_to_two, one_to_three from play_dataTB where chapter_one = '{$resObj['chapter_one']}' and ID = '{$id}'";
     $res1 = $conn->query($tmpQuery1) or die($this->_connect->error);
@@ -284,6 +286,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
     for($i = 0; $i < sizeof($arr); $i++){ // A,B,C 갯수 카운트 C 가 두개일 때는 랜덤 결과를 출력 하기 위해 rdArr 에 저장
         if($arr[$i] == 'A'){
             $gradeACnt++;
+            debug_var($gradeACnt);
         } else if($arr[$i] == 'B'){
             $gradeBCnt++;
         } else if($arr[$i] == 'C'){
