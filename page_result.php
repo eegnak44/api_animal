@@ -291,7 +291,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             $j++;
         }
     }
-    debug_var($rdArr);
+//    debug_var($rdArr);
 //    debug_var($tmpObj1);
 //    debug_var($tmpObj2);
 //    debug_var($tmpObj3);
@@ -306,11 +306,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 
     if ($gradeCCnt > 1) { //C 결과 가 2개 이상일 때
 //        for($j = 0; $j < sizeof($rdArr); $j++){
-        for($i = 1; $i < 6; $i++){
+        for($i = 0; $i < sizeof($rdArr); $i++){
 //            if($rdArr[$i-1] !== ''){
-            debug_var($rdArr[$i-1]);
-            $j = $rdArr[$i-1] - 1;
-            debug_var($j);
+            debug_var($rdArr[$i]); // 3
+            $j = $rdArr[$i] - 1;
+            debug_var($j); // 2
 //            ${'tmpObj'.$i} = countFourFunc(${'resObj'.$i});
 //            }
         }
