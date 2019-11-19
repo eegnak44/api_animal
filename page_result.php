@@ -403,7 +403,8 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr){
 
         $resVal = $rdArr[$outRes];
 
-    } else if($gradeCCnt == 1){
+    }
+    if($gradeCCnt == 1){
 
         if($value1 == 'C'){ //chapter 1
             $res_style = $resultStyle[1];
