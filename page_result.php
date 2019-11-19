@@ -201,6 +201,10 @@ if($gradeArr[4] == 'C'){
 //    $tmpObj5 = countFourFunc($resObj5);
 }
 debug_var($resObj1);
+debug_var($resObj2);
+debug_var($resObj3);
+debug_var($resObj4);
+debug_var($resObj5);
 //
 //
 //
