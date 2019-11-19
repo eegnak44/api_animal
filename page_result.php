@@ -283,7 +283,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         } else if($arr[$i] == 'B'){
             $gradeBCnt++;
         } else if($arr[$i] == 'C'){
-//            ${'tmpObj'.($i+1)} = countFourFunc(${'resObj'.($i+1)});
+            ${'tmpObj'.($i+1)} = countFourFunc(${'resObj'.($i+1)});
 //            $tmpResultArr[$i] = '1';
             $gradeCCnt++;
             $rdArr[$j] = $rdResultStyle[$i];
@@ -305,14 +305,20 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //    $tmpObj5 = countFourFunc($resObj5);
 
     if ($gradeCCnt > 1) { //C 결과 가 2개 이상일 때
+        for ($i=0; $i<5; $i++){
+            if (${'tmpObj'.($i+1)} > 0){
+                debug_var(${'tmpObj'.($i+1)});
+            }
+        }
+
 //        for($j = 0; $j < sizeof($rdArr); $j++){
-        for($i = 0; $i < sizeof($rdArr); $i++){
+//        for($i = 0; $i < sizeof($rdArr); $i++){
 //            if($rdArr[$i-1] !== ''){
-            debug_var($rdArr[$i]); // 3
-            $j = $rdArr[$i] - 1; // j = chapter no
-            debug_var($j); // 2
+//            debug_var($rdArr[$i]); // 3
+//            $j = $rdArr[$i] - 1; // j = chapter no
+//            debug_var($j); // 2
 //            ${'tmpObj'.$j} = countFourFunc(${'resObj'.$j});
-            $tmpObj[$j] = countFourFunc(${'resObj'.$j});
+//            $tmpObj[$j] = countFourFunc(${'resObj'.$j});
 //            }
 //            debug_var(${'tmpObj'.$j}); // j chapter 의 4의 갯수
 
@@ -323,8 +329,8 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                     [5] => 2
                 )
              */
-        }
-        var_dump($tmpObj);
+//        }
+
 
 //        debug_var($tmpObj1);
 //        debug_var($tmpObj2);
@@ -348,19 +354,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         // C 의 4갯수가 동일 할때 랜덤
         // C 의 4갯수가 높은것으로 resVal
 
-//        for($j = 1; $j < 6; $j++){ //tmpObj.$j 의 4갯수가 3인것 찾기
-//            if(${'tmpObj'.$j} == 3){
-//                echo $j;
-//                ${'tmpVal'.$j} = $j;
-//            }
-//        }
 
-//        for($j=1;$j<6;$j++){
-//            if(${'tmpObj'.$j} > ${'tmpObj'.($j+1)}){
-//                $resVal = $j-1;
-//            }
-//        }
-//        debug_var($resVal);
 
 
         $outRes = array_rand($rdArr);
