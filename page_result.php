@@ -161,7 +161,7 @@ if($gradeArr[0] == 'C'){
     $tmpQuery1 = "select one_to_one, one_to_two, one_to_three from play_dataTB where chapter_one = '{$resObj['chapter_one']}' and ID = '{$id}'";
     echo $tmpQuery1;
     $res1 = $conn->query($tmpQuery1) or die($this->_connect->error);
-    while($row1 = $res->fetch_array())
+    while($row1 = $res1->fetch_array())
     {
         $resObj_1 = $row1;
     }
@@ -181,7 +181,7 @@ if($gradeArr[2] == 'C'){
     $tmpQuery3 = "select three_to_one, three_to_two, three_to_three from play_dataTB where chapter_three = '{$resObj['chapter_three']}' and ID = '{$id}'";
     echo $tmpQuery3;
     $res3 = $conn->query($tmpQuery3) or die($this->_connect->error);
-    while($row3 = $res->fetch_array())
+    while($row3 = $res3->fetch_array())
     {
         $resObj_3 = $row3;
     }
