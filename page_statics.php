@@ -172,9 +172,10 @@ while($row2 = $result3->fetch_array()){
     <div id = 'resCheck'>
         <?php
             for($i=0;$i<15;$i++){?>
-                <div class = 'chapterRes'>
-                    <div><img src="img/unnamed.png" style="width: 80px;"></div> <div>test</div>
-                </div>
+
+                <div><img src="img/unnamed.png" style="width: 80px;"></div>
+                <div>test</div>
+
             <?}?>
     </div>
     <br>
