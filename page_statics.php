@@ -173,15 +173,15 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
         <p>나와 같은 선택을 한 테스터의 수 : <?=$resultNameCheck-1;?>명</p>
     </div>
 
-    <?for($j=1;$j<4;$j++){?>
+
         <div id = 'resCheck'>
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
-                <div style="float: left; width: 91px;"><?=${'stageResNameKr'.$j}[$i]?></div>
+                <div style="float: left; width: 91px;"><?=$stageResNameKr1[$i]?></div>
             <?}?>
         </div>
-    <?}?>
+
     <br>
     <form action="main.php" method="get">
         <div class = 'choice_div' style="margin: auto; width:50px;">
