@@ -176,8 +176,7 @@ while($row2 = $result3->fetch_array()){
           <br>
             <?for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 80px; margin: 0px;"></div>
-                <div style="float: left;">test</div>
-                <br>
+                <div style="float: left;">test</div
             <?}
         }?>
 
