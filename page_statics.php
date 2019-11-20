@@ -89,7 +89,7 @@ $result = $conn->query($query) or die($this->_connect->error);
 $list1 = Array();
 $list2 = Array();
 $list3 = Array();
-
+$resultName = '';
 
 while($row1 = $result->fetch_array()) {
     $list1[0] = $row1[0];
@@ -295,10 +295,11 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
 <div id = 'StaticsContentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;">
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
+        <p style="font-size: 20px; font-weight: bold;"><?=$resultName;?></p>
+        <br>
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
         <p>나와 같은 선택을 한 테스터의 수 : <?=$resultNameCheck-1;?>명</p>
     </div>
-
 
         <div id = 'resCheck' style="width: 1000px">
             <?
