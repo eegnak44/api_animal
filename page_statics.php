@@ -130,6 +130,21 @@ while($row2 = $result3->fetch_array()){
 //foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
 
+$tmpQueryCol1 = ['one_to_one', 'one_to_two', 'one_to_three','two_to_one', 'two_to_two'];
+$tmpQueryCol2 = ['two_to_three','three_to_one', 'three_to_two', 'three_to_three','four_to_one'];
+$tmpQueryCol3 = ['four_to_two', 'four_to_three','five_to_one', 'five_to_two', 'five_to_three'];
+
+for($i = 0; $i<5; $i++){
+    ${'query_'.$i} = "select count({$tmpQueryCol1[$i]}) as cnt from play_dataTB where one_to_one = '{$list1[$i]}'";
+    ${'result_'.$i} = $conn->query(${'query_'.$i}) or die($this->_connect->error);
+    while(${'row_'.$i} = ${'result'.$i}->fetch_array()){
+        ${'res_'.$i} = ${'row_'.$i}['cnt'];
+        debug_var(${'row_'.$i}['cnt']);
+    }
+}
+
+
+
 $stageResNameKr1 = ["병든<br>떠돌이개","새끼를<br>밴<br>길고양이","방사능<br>피폭자","통일<br>한국의<br>북한 인민","불법체류<br>외국노동자"];
 $stageResNameKr2 = ["이슬람<br>난민", "정치<br>견해가<br>다른 사람","안티<br>페미니스트",'페미니스트','초파리'];
 $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을<br>지닌 로봇','유전자<br>변형<br>괴생명체','과학기술과<br> 특이<br>바이러스를<br>가진 외계인'];
