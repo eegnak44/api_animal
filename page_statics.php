@@ -108,7 +108,7 @@ while($row1 = $result->fetch_array()) {
     $list3[3] = $row1[13];
     $list3[4] = $row1[14];
     $resultName = $row1[15];
-    debug_var($row1);
+//    debug_var($row1);
 }
 
 
