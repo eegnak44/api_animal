@@ -124,6 +124,9 @@ while($row2 = $result3->fetch_array()){
 //foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
 
+$stageResNameKr1 = ['병든 떠돌이개','새끼를 밴 길고양이','방사능피폭자','통일 한국의 북한 인민','불법체류 외국노동자'];
+$stageResNameKr2 = ['이슬람 난민', '정치 견해가 다른 사람','안티페미니스트','페미니스트','초파리'];
+$stageResNameKr3 = ['거미','바퀴벌레','고도의 지능과 감정을 지닌 로봇','유전자 변형 괴생명체','과학기술과 특이 바이러스를 가진 외계인'];
 ?>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -163,18 +166,18 @@ while($row2 = $result3->fetch_array()){
 </title>
 <body>
 
-<div id = 'StaticsContentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
+<div id = 'StaticsContentsDiv' style = "margin: auto; padding-top: 70px;width:40%;padding-right: 100px;padding-left: 100px;">
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
         <p>나와 같은 선택을 한 테스터의 수 : <?=$resultNameCheck-1;?>명</p>
     </div>
-    <?for($j=0;$j<3;$j++){?>
+    <?for($j=1;$j<4;$j++){?>
         <div id = 'resCheck'>
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 80px; margin: 0px;"></div>
-                <div style="float: left;">test</div>
+                <div style="float: left;"><?=$stageResNameKr.$j[$i]?></div>
             <?}?>
         </div>
     <?}?>
