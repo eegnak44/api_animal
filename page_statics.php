@@ -177,8 +177,8 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
         <div id = 'resCheck'>
             <?
             for($i=0;$i<5;$i++){?>
-                <div style="float: left;"><img src="img/unnamed.png" style="width: 80px; margin: 0px;"></div>
-                <div style="float: left;"><?=${'stageResNameKr'.$j}[$i]?></div>
+                <div style="float: left;"><img src="img/unnamed.png" style="width: 90px; margin: 0px;"></div>
+                <div style="float: left; width: 90px;"><?=${'stageResNameKr'.$j}[$i]?></div>
             <?}?>
         </div>
     <?}?>
