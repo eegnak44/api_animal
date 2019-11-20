@@ -86,23 +86,27 @@ where ID = '{$id}'";
 
 $result = $conn->query($query) or die($this->_connect->error);
 
+$list1 = Array();
+$list2 = Array();
+$list3 = Array();
+
 
 while($row1 = $result->fetch_array()) {
-    $tmp1_1 = $row1[0];
-    $tmp1_2 = $row1[1];
-    $tmp1_3 = $row1[2];
-    $tmp2_1 = $row1[3];
-    $tmp2_2 = $row1[4];
-    $tmp2_3 = $row1[5];
-    $tmp3_1 = $row1[6];
-    $tmp3_2 = $row1[7];
-    $tmp3_3 = $row1[8];
-    $tmp4_1 = $row1[9];
-    $tmp4_2 = $row1[10];
-    $tmp4_3 = $row1[11];
-    $tmp5_1 = $row1[12];
-    $tmp5_2 = $row1[13];
-    $tmp5_3 = $row1[14];
+    $list1[0] = $row1[0];
+    $list1[1] = $row1[1];
+    $list1[2] = $row1[2];
+    $list1[3] = $row1[3];
+    $list1[4] = $row1[4];
+    $list2[0] = $row1[5];
+    $list2[1] = $row1[6];
+    $list2[2] = $row1[7];
+    $list2[3] = $row1[8];
+    $list2[4] = $row1[9];
+    $list3[0] = $row1[10];
+    $list3[1] = $row1[11];
+    $list3[2] = $row1[12];
+    $list3[3] = $row1[13];
+    $list3[4] = $row1[14];
     $resultName = $row1[15];
     debug_var($row1);
 }
@@ -181,6 +185,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
                 <div style="float: left; width: 91px;"><?=$stageResNameKr1[$i]?></div>
+                <div style="float: left; width: 91px;"><?=$list1[$i];?></div>
             <?}?>
         </div>
         <br>
@@ -189,6 +194,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
                 <div style="float: left; width: 91px;"><?=$stageResNameKr2[$i]?></div>
+                <div style="float: left; width: 91px;"><?=$list2[$i];?></div>
             <?}?>
         </div>
         <br>
@@ -197,6 +203,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
                 <div style="float: left; width: 91px;"><?=$stageResNameKr3[$i]?></div>
+                <div style="float: left; width: 91px;"><?=$list3[$i];?></div>
             <?}?>
         </div>
 
