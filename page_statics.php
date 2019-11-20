@@ -181,6 +181,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
                 <div style="float: left; width: 91px;"><?=$stageResNameKr1[$i]?></div>
             <?}?>
         </div>
+        <br>
         <div id = 'resCheck' style="width: 1000px">
             <?
             for($i=0;$i<5;$i++){?>
@@ -188,6 +189,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
                 <div style="float: left; width: 91px;"><?=$stageResNameKr2[$i]?></div>
             <?}?>
         </div>
+        <br>
         <div id = 'resCheck' style="width: 1000px">
             <?
             for($i=0;$i<5;$i++){?>
