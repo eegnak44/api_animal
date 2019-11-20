@@ -134,14 +134,21 @@ $tmpQueryCol1 = ['one_to_one', 'one_to_two', 'one_to_three','two_to_one', 'two_t
 $tmpQueryCol2 = ['two_to_three','three_to_one', 'three_to_two', 'three_to_three','four_to_one'];
 $tmpQueryCol3 = ['four_to_two', 'four_to_three','five_to_one', 'five_to_two', 'five_to_three'];
 
-for($i = 0; $i<5; $i++){
-    ${'query_'.$i} = "select count({$tmpQueryCol1[$i]}) as cnt from play_dataTB where one_to_one = '{$list1[$i]}'";
-    ${'result_'.$i} = $conn->query(${'query_'.$i}) or die($this->_connect->error);
-    while(${'row_'.$i} = ${'result'.$i}->fetch_array()){
-        ${'res_'.$i} = ${'row_'.$i}['cnt'];
-        debug_var(${'row_'.$i}['cnt']);
-    }
+//for($i = 0; $i<5; $i++){
+//    ${'query_'.$i} = "select count({$tmpQueryCol1[$i]}) as cnt from play_dataTB where one_to_one = '{$list1[$i]}'";
+//    ${'result_'.$i} = $conn->query(${'query_'.$i}) or die($this->_connect->error);
+//    while(${'row_'.$i} = ${'result'.$i}->fetch_array()){
+//        ${'res_'.$i} = ${'row_'.$i}['cnt'];
+//        debug_var(${'row_'.$i}['cnt']);
+//    }
+//}
+$query_1 = "select count({$tmpQueryCol1[0]}) as cnt from play_dataTB where one_to_one = '{$list1[0]}'";
+$result_1 = $conn->query($query_1) or die($this->_connect->error);
+while($row_1 = $result_1->fetch_array()){
+    $res_1 = $row_1['cnt'];
+    debug_var($res_1);
 }
+
 
 
 
