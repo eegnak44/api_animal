@@ -373,6 +373,9 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                     $resVal = $TmpRdResultStyle[$outRes];
                 }
             }
+            debug_var($tmpChapterNo[1]);
+            debug_var($tmpChapterNo[5]);
+
             if($tmpChapterNo[2] == 3) {
 //                if (($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])){
                 if ($tmpChapterNo[2] == $tmpChapterNo[1] && $tmpChapterNo[2] !== $tmpChapterNo[3] && $tmpChapterNo[2] !== $tmpChapterNo[4] && $tmpChapterNo[2] !== $tmpChapterNo[5]){
