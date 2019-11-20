@@ -334,7 +334,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             for($i = 1; $i<6;$i++){
                 if($tmpObj[$i] > 0){
 
-                    ${'tmpChapterNo'.$i} = $tmpObj[$i];
+//                    ${'tmpChapterNo'.$i} = $tmpObj[$i];
                     $tmpChapterNo[$i] = $tmpObj[$i];
 
 //                    debug_var($i);
@@ -347,6 +347,8 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //            debug_var($tmpChapterNo[3]);
 //            debug_var($tmpChapterNo[4]);
 //            debug_var($tmpChapterNo[5]);
+
+
             if($tmpChapterNo[1] == 3) {
 //                if (($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])){
                 if ($tmpChapterNo[1] == $tmpChapterNo[2] && $tmpChapterNo[1] !== $tmpChapterNo[3] && $tmpChapterNo[1] !== $tmpChapterNo[4] && $tmpChapterNo[1] !== $tmpChapterNo[5]){
@@ -354,7 +356,114 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                     $outRes = array_rand($TmpRdResultStyle);
                     $resVal = $TmpRdResultStyle[$outRes];
                 }
+                else if ($tmpChapterNo[1] == $tmpChapterNo[3] && $tmpChapterNo[1] !== $tmpChapterNo[2] && $tmpChapterNo[1] !== $tmpChapterNo[4] && $tmpChapterNo[1] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['2','4'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[1] == $tmpChapterNo[4] && $tmpChapterNo[1] !== $tmpChapterNo[2] && $tmpChapterNo[1] !== $tmpChapterNo[3] && $tmpChapterNo[1] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['2','5'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[1] == $tmpChapterNo[5] && $tmpChapterNo[1] !== $tmpChapterNo[2] && $tmpChapterNo[1] !== $tmpChapterNo[3] && $tmpChapterNo[1] !== $tmpChapterNo[4]){
+                    $TmpRdResultStyle = ['2','6'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+            }
+            if($tmpChapterNo[2] == 3) {
+//                if (($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])){
+                if ($tmpChapterNo[2] == $tmpChapterNo[1] && $tmpChapterNo[2] !== $tmpChapterNo[3] && $tmpChapterNo[2] !== $tmpChapterNo[4] && $tmpChapterNo[2] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['3','2'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[2] == $tmpChapterNo[3] && $tmpChapterNo[2] !== $tmpChapterNo[1] && $tmpChapterNo[2] !== $tmpChapterNo[4] && $tmpChapterNo[2] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['3','4'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[2] == $tmpChapterNo[4] && $tmpChapterNo[2] !== $tmpChapterNo[1] && $tmpChapterNo[2] !== $tmpChapterNo[3] && $tmpChapterNo[2] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['3','5'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[2] == $tmpChapterNo[5] && $tmpChapterNo[2] !== $tmpChapterNo[1] && $tmpChapterNo[2] !== $tmpChapterNo[3] && $tmpChapterNo[2] !== $tmpChapterNo[4]){
+                    $TmpRdResultStyle = ['3','6'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+            }
+            if($tmpChapterNo[3] == 3) {
+//                if (($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])){
+                if ($tmpChapterNo[3] == $tmpChapterNo[1] && $tmpChapterNo[3] !== $tmpChapterNo[2] && $tmpChapterNo[3] !== $tmpChapterNo[4] && $tmpChapterNo[3] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['4','2'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[3] == $tmpChapterNo[2] && $tmpChapterNo[3] !== $tmpChapterNo[1] && $tmpChapterNo[3] !== $tmpChapterNo[4] && $tmpChapterNo[3] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['4','3'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[3] == $tmpChapterNo[4] && $tmpChapterNo[3] !== $tmpChapterNo[1] && $tmpChapterNo[3] !== $tmpChapterNo[2] && $tmpChapterNo[3] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['4','5'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[3] == $tmpChapterNo[5] && $tmpChapterNo[3] !== $tmpChapterNo[1] && $tmpChapterNo[3] !== $tmpChapterNo[2] && $tmpChapterNo[3] !== $tmpChapterNo[4]){
+                    $TmpRdResultStyle = ['4','6'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+            }
+            if($tmpChapterNo[4] == 3) {
+//                if (($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])){
+                if ($tmpChapterNo[4] == $tmpChapterNo[1] && $tmpChapterNo[4] !== $tmpChapterNo[2] && $tmpChapterNo[4] !== $tmpChapterNo[3] && $tmpChapterNo[4] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['5','2'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[4] == $tmpChapterNo[2] && $tmpChapterNo[4] !== $tmpChapterNo[1] && $tmpChapterNo[4] !== $tmpChapterNo[3] && $tmpChapterNo[4] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['5','3'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[4] == $tmpChapterNo[3] && $tmpChapterNo[4] !== $tmpChapterNo[1] && $tmpChapterNo[4] !== $tmpChapterNo[2] && $tmpChapterNo[4] !== $tmpChapterNo[5]){
+                    $TmpRdResultStyle = ['5','5'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[4] == $tmpChapterNo[5] && $tmpChapterNo[4] !== $tmpChapterNo[1] && $tmpChapterNo[4] !== $tmpChapterNo[2] && $tmpChapterNo[4] !== $tmpChapterNo[3]){
+                    $TmpRdResultStyle = ['5','6'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+            }
 
+            if($tmpChapterNo[5] == 3) {
+//                if (($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])){
+                if ($tmpChapterNo[5] == $tmpChapterNo[1] && $tmpChapterNo[5] !== $tmpChapterNo[2] && $tmpChapterNo[5] !== $tmpChapterNo[3] && $tmpChapterNo[5] !== $tmpChapterNo[4]){
+                    $TmpRdResultStyle = ['6','2'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[5] == $tmpChapterNo[2] && $tmpChapterNo[5] !== $tmpChapterNo[1] && $tmpChapterNo[5] !== $tmpChapterNo[3] && $tmpChapterNo[5] !== $tmpChapterNo[4]){
+                    $TmpRdResultStyle = ['6','3'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[5] == $tmpChapterNo[3] && $tmpChapterNo[5] !== $tmpChapterNo[1] && $tmpChapterNo[5] !== $tmpChapterNo[2] && $tmpChapterNo[5] !== $tmpChapterNo[4]){
+                    $TmpRdResultStyle = ['6','4'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
+                else if ($tmpChapterNo[5] == $tmpChapterNo[4] && $tmpChapterNo[5] !== $tmpChapterNo[1] && $tmpChapterNo[5] !== $tmpChapterNo[2] && $tmpChapterNo[5] !== $tmpChapterNo[3]){
+                    $TmpRdResultStyle = ['6','5'];
+                    $outRes = array_rand($TmpRdResultStyle);
+                    $resVal = $TmpRdResultStyle[$outRes];
+                }
             }
 //            else if ($tmpChapterNo[2] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
 //                $resVal = 3;

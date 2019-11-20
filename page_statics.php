@@ -163,7 +163,7 @@ while($row2 = $result3->fetch_array()){
 </title>
 <body>
 
-<div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
+<div id = 'StaticsContentsDiv'>
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
@@ -171,16 +171,16 @@ while($row2 = $result3->fetch_array()){
     </div>
     <div id = 'resCheck'>
         <div class = 'chapterRes'>
-            <img src="img/unnamed.png">
+            <img src="img/unnamed.png" style="width: 80px;">
         </div>
         <div class = 'chapterRes'>
-            <img src="img/unnamed.png">
+            <img src="img/unnamed.png" style="width: 80px;">
         </div>
         <div class = 'chapterRes'>
-            <img src="img/unnamed.png">
+            <img src="img/unnamed.png" style="width: 80px;">
         </div>
         <div class = 'chapterRes'>
-            <img src="img/unnamed.png">
+            <img src="img/unnamed.png" style="width: 80px;">
         </div>
 
     </div>
