@@ -166,7 +166,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
 </title>
 <body>
 
-<div id = 'StaticsContentsDiv' style = "margin-left: 100px; padding-top: 70px;width:40%;">
+<div id = 'StaticsContentsDiv' style = "margin-left: 100px; padding-top: 70px;width:1000px;">
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
@@ -174,11 +174,25 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
     </div>
 
 
-        <div id = 'resCheck'>
+        <div id = 'resCheck' style="width: 1000px">
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
                 <div style="float: left; width: 91px;"><?=$stageResNameKr1[$i]?></div>
+            <?}?>
+        </div>
+        <div id = 'resCheck' style="width: 1000px">
+            <?
+            for($i=0;$i<5;$i++){?>
+                <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
+                <div style="float: left; width: 91px;"><?=$stageResNameKr2[$i]?></div>
+            <?}?>
+        </div>
+        <div id = 'resCheck' style="width: 1000px">
+            <?
+            for($i=0;$i<5;$i++){?>
+                <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
+                <div style="float: left; width: 91px;"><?=$stageResNameKr3[$i]?></div>
             <?}?>
         </div>
 
