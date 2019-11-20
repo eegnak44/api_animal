@@ -173,8 +173,8 @@ while($row2 = $result3->fetch_array()){
         <?php
             for($i=0;$i<15;$i++){?>
 
-                <div><img src="img/unnamed.png" style="width: 80px;"></div>
-                <div>test</div>
+                <div style="float: left;"><img src="img/unnamed.png" style="width: 80px; margin: 0px;"></div>
+                <div style="float: left;">test</div>
 
             <?}?>
     </div>
