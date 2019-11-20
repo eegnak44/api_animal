@@ -124,9 +124,9 @@ while($row2 = $result3->fetch_array()){
 //foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
 
-$stageResNameKr1 = ["병든'<br>'떠돌이개","새끼를'<br>'밴'<br>'길고양이","방사능피폭자","통일'<br>'한국의'<br>'북한 인민","불법체류'<br>'외국노동자"];
-$stageResNameKr2 = ['이슬람 난민', '정치 견해가 다른 사람','안티페미니스트','페미니스트','초파리'];
-$stageResNameKr3 = ['거미','바퀴벌레','고도의 지능과 감정을 지닌 로봇','유전자 변형 괴생명체','과학기술과 특이 바이러스를 가진 외계인'];
+$stageResNameKr1 = ["병든<br>떠돌이개","새끼를<br>밴<br>길고양이","방사능피폭자","통일<br>한국의<br>북한 인민","불법체류<br>외국노동자"];
+$stageResNameKr2 = ["이슬람 난민", "정치<br>견해가<br>다른 사람","안티페미니스트",'페미니스트','초파리'];
+$stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을<br>지닌 로봇','유전자<br>변형<br>괴생명체','과학기술과<br> 특이<br>바이러스를<br>가진 외계인'];
 ?>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
