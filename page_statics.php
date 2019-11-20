@@ -172,12 +172,13 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의 지능과 감정을 지�
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
         <p>나와 같은 선택을 한 테스터의 수 : <?=$resultNameCheck-1;?>명</p>
     </div>
+
     <?for($j=1;$j<4;$j++){?>
         <div id = 'resCheck'>
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 80px; margin: 0px;"></div>
-                <div style="float: left;"><?=$stageResNameKr.$j[$i]?></div>
+                <div style="float: left;"><?=${'stageResNameKr'.$j}[$i]?></div>
             <?}?>
         </div>
     <?}?>
