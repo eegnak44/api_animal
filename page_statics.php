@@ -124,9 +124,9 @@ $replaceArrayList1 = str_replace($targetArray, $replaceArr,$list1);
 $replaceArrayList2 = str_replace($targetArray, $replaceArr,$list2);
 $replaceArrayList3 = str_replace($targetArray, $replaceArr,$list3);
 
-debug_var($replaceArrayList1);
-debug_var($replaceArrayList2);
-debug_var($replaceArrayList3);
+//debug_var($replaceArrayList1);
+//debug_var($replaceArrayList2);
+//debug_var($replaceArrayList3);
 
 
 $resultNameCheck = 0;
@@ -295,7 +295,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
 <div id = 'StaticsContentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;">
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
-        <p style="font-size: 20px; font-weight: bold;"><?=$resultName;?></p>
+        <p style="font-size: 30px; font-weight: bold;"><?=$resultName;?></p>
         <br>
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
         <p>나와 같은 선택을 한 테스터의 수 : <?=$resultNameCheck-1;?>명</p>
