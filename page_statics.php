@@ -106,6 +106,7 @@ while($row1 = $result->fetch_array()) {
     $resultName = $row1[15];
 }
 
+debug_var($row1);
 $resultNameCheck = 0;
 
 $query3 = "SELECT count(result_style) as cnt from play_dataTB WHERE result_style = '{$resultName}'";
@@ -182,7 +183,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             <?}?>
         </div>
         <br>
-        <div id = 'resCheck' style="width: 1000px">
+        <div id = 'resCheck' style="width: 1000px; float: left;">
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
