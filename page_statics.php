@@ -170,19 +170,12 @@ while($row2 = $result3->fetch_array()){
         <p>나와 같은 선택을 한 테스터의 수 : <?=$resultNameCheck-1;?>명</p>
     </div>
     <div id = 'resCheck'>
-        <div class = 'chapterRes'>
-            <img src="img/unnamed.png" style="width: 80px;">
-        </div>
-        <div class = 'chapterRes'>
-            <img src="img/unnamed.png" style="width: 80px;">
-        </div>
-        <div class = 'chapterRes'>
-            <img src="img/unnamed.png" style="width: 80px;">
-        </div>
-        <div class = 'chapterRes'>
-            <img src="img/unnamed.png" style="width: 80px;">
-        </div>
-
+        <?php
+            for($i=0;$i<15;$i++){?>
+                <div class = 'chapterRes'>
+                    <img src="img/unnamed.png" style="width: 80px;">
+                </div>
+            <?}?>
     </div>
     <br>
     <form action="main.php" method="get">
