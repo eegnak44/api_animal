@@ -112,14 +112,22 @@ while($row1 = $result->fetch_array()) {
 }
 
 
-$replaceArr = ["격리제거", "혐오공존", "긍정공존","반려"];
+
 //$replaceArrayList1 = array_replace($list1,$replaceArr);
 //debug_var($replaceArrayList1);
 
+
+$replaceArr = ["격리제거", "혐오공존", "긍정공존","반려"];
 $targetArray = ['1','2','3','4'];
 
-$tmpReplace = str_replace($targetArray, $replaceArr,$list1);
-debug_var($tmpReplace);
+$replaceArrayList1 = str_replace($targetArray, $replaceArr,$list1);
+$replaceArrayList2 = str_replace($targetArray, $replaceArr,$list2);
+$replaceArrayList3 = str_replace($targetArray, $replaceArr,$list3);
+
+debug_var($replaceArrayList1);
+debug_var($replaceArrayList2);
+debug_var($replaceArrayList3);
+
 
 $resultNameCheck = 0;
 
