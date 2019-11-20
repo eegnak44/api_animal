@@ -172,8 +172,8 @@ while($row2 = $result3->fetch_array()){
     <div id = 'resCheck'>
         <?php
             for($i=0;$i<15;$i++){?>
-                <div class = 'chapterRes'>test
-                    <img src="img/unnamed.png" style="width: 80px;"> test1
+                <div class = 'chapterRes'>
+                    <img src="img/unnamed.png" style="width: 80px;"> <div>test</div>
                 </div>
             <?}?>
     </div>
