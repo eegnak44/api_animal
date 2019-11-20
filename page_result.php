@@ -329,7 +329,8 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         }
     }
     if($resVal == 0){
-        if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 인 결과 가 5개 이하일 때 1개 이상일때
+//        if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 인 결과 가 5개 이하일 때 1개 이상일때
+        if ($gradeCCnt >= 2) { //C 인 결과 가 5개 이하일 때 1개 이상일때
             $tmpCount = 0;
             for($i = 1; $i<6;$i++){
                 if($tmpObj[$i] > 0){
@@ -479,8 +480,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //            $outRes = array_rand($rdArr);
 //            $resVal = $rdArr[$outRes];
         }
+        if($gradeCCnt == 3 || $gradeCCnt == 4){
+            $outRes = array_rand($rdArr);
+            $resVal = $rdArr[$outRes];
+        }
     }
-
 
     if($resVal == 0){
         if($gradeCCnt == 1){
@@ -540,7 +544,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 
 
     $result = $resVal;
-    debug_var($resVal);
+//    debug_var($resVal);
     return $result;
 }
 
