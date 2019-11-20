@@ -124,8 +124,8 @@ while($row2 = $result3->fetch_array()){
 //foreach ($num as $key => $value_){
 //        echo $key." = ". $value_.'<br>';
 
-$stageResNameKr1 = ["병든<br>떠돌이개","새끼를<br>밴<br>길고양이","방사능피폭자","통일<br>한국의<br>북한 인민","불법체류<br>외국노동자"];
-$stageResNameKr2 = ["이슬람 난민", "정치<br>견해가<br>다른 사람","안티페미니스트",'페미니스트','초파리'];
+$stageResNameKr1 = ["병든<br>떠돌이개","새끼를<br>밴<br>길고양이","방사능<br>피폭자","통일<br>한국의<br>북한 인민","불법체류<br>외국노동자"];
+$stageResNameKr2 = ["이슬람<br>난민", "정치<br>견해가<br>다른 사람","안티<br>페미니스트",'페미니스트','초파리'];
 $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을<br>지닌 로봇','유전자<br>변형<br>괴생명체','과학기술과<br> 특이<br>바이러스를<br>가진 외계인'];
 ?>
 
@@ -166,7 +166,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
 </title>
 <body>
 
-<div id = 'StaticsContentsDiv' style = "margin: auto; padding-top: 70px;width:40%;padding-right: 100px;padding-left: 100px;">
+<div id = 'StaticsContentsDiv' style = "margin-left: 100px; padding-top: 70px;width:40%;">
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
