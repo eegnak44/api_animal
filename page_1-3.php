@@ -72,11 +72,11 @@ $result = $conn->query($query) or die($this->_connect->error);
 <div id = 'contentsDiv' style="margin: auto; padding: 100px; width:1000px;">
     <p style="font-size: 30px;">chapter1. 버려진 외곽</p>
     <br>
-    <p>외곽 지역을 벗어나기 전, 나는 잠시 쉬고 싶었다. <br>
-        마침, 외곽의 경계에 멀끔한 집 한채를 발견했다. <br>
-        라디오의 소리를 듣지 못한 도망치지 못했다. <br>
-        그는 나에게 흔쾌히 방 한켠을 내주었는데, 자세히 보니 그의 피부에는 붉은 반점들이 나 있었다. <br>
-        그는 얼마전 무너진 원자력 발전소에서 일하던 노동자였다. <br>
+    <p>외곽 지역을 벗어나기 전, 나는 잠시 쉬고 싶었다.<br.0>
+        마침, 외곽의 경계에 멀끔한 집 한 채를 발견했다. 라디오의 소리를 듣지 못한 도망치지 못했다.<br>
+            그는 나에게 흔쾌히 방 한쪽을 내주었는데,<br>
+            자세히 보니 그의 피부에는 붉은 반점들이 나 있었다.<br>
+            그는 얼마 전 무너진 원자력 발전소에서 일하던 노동자였다.<br>
     </p>
     <br>
 <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
@@ -88,10 +88,10 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <form action="page_2.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">그가 방사능에 피폭되었음을 확신하였다. <br>나는 2차 피해를 우려해 그를 그의 방에 가두고 도망쳤다. </button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">그가 치료를 받아 고통에서 조금이라도 벗어날 수 있도록 의료 시설에 신고하였으나, <br>나는 더이상 머물고 싶지 않아 급히 그 집을 떠났다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">그는 힘든 나에게 기꺼이 방을 내준 자였다. 그에게 가까이 가지 않았지만, <br>그의 호의를 고마워 하며 나는 나의 식량을 조금 나누어 주었다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">나는 그 집에 머물러 선량한 그에게 온갖 의료지식을 동원하여 몇일간 간호해주었고 <br>그는 고통스러웠지만 나와 함께한 몇일간 행복했다고 말한 후 눈을 감았다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">그가 방사선에 피폭되었음을 확신하였다. <br>나는 2차 피해를 우려해 그를 그의 방에 가두고 도망쳤다 </button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">그가 치료를 받아 고통에서 조금이라도 벗어날 수 있도록 의료 시설에 신고하였으나, <br>나는 더는 머물고 싶지 않아 급히 그 집을 떠났다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">그는 힘든 나에게 기꺼이 방을 내준 자였다. 그에게 가까이 가지 않았지만, <br>그의 호의를 고마워하며 나는 나의 식량을 조금 나누어 주었다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">나는 그 집에 머물러 선량한 그에게 온갖 의료지식을 동원하여 며칠간 간호해주었고 <br>그는 고통스러웠지만 나와 함께한 며칠 동안 행복했다고 말한 후 눈을 감았다. </button><br>
         </div>
     </form>
     <br>

@@ -73,8 +73,9 @@ $result = $conn->query($query) or die($this->_connect->error);
     <p style="font-size: 30px;">chapter2. 무너진 경계</p>
     <br>
     <p>
-        두번째 움막에는 김치 공장에서 근무하는 외국인 노동자들이 살고 있었다. <br>
-        고된 노동에 지친 이들은 이 지역에서 불법체류 중인 것으로 보인다.<br>
+        두 번째로 마주친 무리는 통조림 공장에서 근무했던 외국인 노동자들이었다. <br>
+        자국의 경제 사정에 의해 불법 체류 중인 이들은 오랫동안 가난했고 차별받으며 살아왔으나,<br>
+        지진이 일어날 때 챙겨온 통조림과 함께 강인한 생명력으로 지금껏 버텨왔다.<br>
     </p>
     <br>
 
@@ -87,10 +88,10 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <form action="page_2-3.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">소식을 전해주지 않는다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">간단한 소식만 전해준다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">친구가 되어 동행한다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">반려관계를 맺고 동행한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">이들에게 소식을 전해주지 않고 빠른 걸음으로 이 구역을 지나친다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">이들에게 간단한 정보를 넘겨주는 조건으로 통조림을 요구한 후, <br>교환이 끝나면 혼자 길을 떠난다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">이들에게 광장의 소식을 전달하고, <br>적당한 관계를 유지하면서 길을 안내한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">이들과 동행을 하면서 이들에게 생존에 대한 지식을 배우고 <br>서로 의지하는 사이로 발전시킬 수 있을 것이다.</button><br>
         </div>
     </form>
     <br>

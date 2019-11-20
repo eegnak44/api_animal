@@ -74,8 +74,8 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <p>
         바퀴벌레는 왕성한 번식력으로 우주선 지하세계를 장악했다. <br>
-        지구를 떠난지 오래된 인류에게 식량이 다 떨어졌다. <br>
-        이 단백질 덩어리 곤충을 식량으로 채택하여야만 살 수 있다. <br>
+        지구를 떠난 지 오래된 인류에게 식량이 다 떨어졌다. <br>
+        이 단백질 덩어리 곤충을 식량으로 채택하여야만 살 수 있다.<br>
     </p>
     <br>
     <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
@@ -87,10 +87,10 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <form action="page_5.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">바퀴벌레는 더럽기 때문에 먹을 수 없다. <br> 바퀴벌레를 격리시키고 살충제를 뿌린다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">징그럽긴 하지만 음식으로 만들어 <br>간헐적으로 먹을 수 있다고 생각한다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">바퀴벌레도 생명이다. <br> 그들을 먹을 수는 없지만 자유롭게 번식하고 살 수 있게 그냥 둔다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">그들이 살기 좋은 환경을 만들어 놓고 <br>본격적으로 바퀴벌레를 사육하며 미래 식량을 위한 레시피들을 개발한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">바퀴벌레는 더러우므로 먹을 수 없다. <br>바퀴벌레를 격리하고 살충제를 뿌린다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">징그럽긴 하지만 음식으로 만들어 간헐적으로 먹을 수 있다고 생각한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">바퀴벌레도 생명이다. <br>그들을 먹을 수는 없지만 자유롭게 번식하고 살 수 있게 그냥 둔다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">그들이 살기 좋은 환경을 만든 후, <br>본격적으로 바퀴벌레를 사육하며 미래 식량을 위한 요리법들을 개발한다.</button><br>
         </div>
     </form>
     <br>

@@ -74,8 +74,8 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <p>
         거미들은 온갖 해로운 벌레를 잡는 역할을 한다. <br>
-        그러나 기계 사이에 복잡하게 쳐진 거미줄은 가끔 기계의 오류를 일으키고 공간을 지저분하게 만들었다.<br>
-        거미를 어떻게 해야 할까? <br>
+        그러나 기계 사이에 복잡하게 처진 거미줄은 가끔 기계의 오류를 일으키고 공간을 지저분하게 만들었다.<br>
+        거미를 어떻게 해야 할까?<br>
     </p>
     <br>
     <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
@@ -88,9 +88,9 @@ $result = $conn->query($query) or die($this->_connect->error);
     <form action="page_4-3.php" method="get">
         <div class = 'choice_div'>
             <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">거미가 보일 때마다 모든 거미와 거미줄을 제거한다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">가끔 거미줄을 제거하고, 나의 삶에 불편함이 없을 정도로 개체수를 유지시켜 준다. </button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">거미는 이로운 곤충이다. 제거하는 것보다 그냥 두는 것이 더 좋을 것이다. </button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">거미를 계속 보다보니 귀엽고 영리해보인다. <br>가끔 먹이도 잡아주면서 서로 도움이 되는 관계를 형성한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">가끔 거미줄을 제거하고, 나의 삶에 불편함이 없을 정도로 개체 수를 유지해 준다</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">거미는 이로운 곤충이다. 제거하는 것보다 그냥 두는 것이 더 좋을 것이다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">거미를 계속 보다 보니 귀엽고 영리해 보인다. <br> 가끔 먹이도 잡아주면서 서로 도움이 되는 관계를 형성한다.</button><br>
         </div>
     </form>
     <br>

@@ -73,8 +73,9 @@ $result = $conn->query($query) or die($this->_connect->error);
     <p style="font-size: 30px;">chapter5. 행성 7H</p>
     <br>
     <p>
-        행성7H에 도착하자 지구에서는 본 적 없는 괴상한 생명체가 이곳 저곳에 분포되어 있었다. <br>
-        이들이 인류에게 해를 끼치진 않지만, 보기 싫은 외형과 끈적거리는 점액질에서 악취가 났다.
+        행성7H에 도착하자 지구에서는 본 적 없는 괴상한 생명체가 이곳저곳에 분포되어 있었다. <br>
+        이들이 인류에게 해를 끼치진 않지만, <br>
+        보기 싫은 외형과 끈적거리는 점액질에서 악취가 났다. <br>
     </p>
     <br>
     <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
@@ -86,7 +87,7 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <form action="page_5-3.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">나의 주거지 눈 앞에 있는 괴생명체를 모두 제거한다. </button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">나의 주거지 눈앞에 있는 괴생명체를 모두 제거한다. </button><br>
             <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">그들은 이 행성의 원주민들이므로, 혐오스럽다고 하더라도 그대로 둔다. </button><br>
             <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">괴생명체의 서식지에 주거 공간을 지은 후, <br>괴생명체를 탐구하여 나에게 실용적인 도움이 될 수 있을지 연구한다.</button><br>
             <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">괴생명체의 영역을 존중하며 함께 살아갈 종으로서 소통하고자 노력한다. </button><br>

@@ -85,10 +85,10 @@ $id = $_REQUEST['id'];
     <br>
     <form action="page_2-2.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">소식을 전해주지 않는다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">간단한 소식만 전해준다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">친구가 되어 동행한다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">반려관계를 맺고 동행한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">과거의 적은 지금도 적. <br>이들에게 소식을 전해주지 않을 것이다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">이들에 대해 적대적인 감정이 남아있긴 하지만, <br>간단한 정보는 전달할 수 있다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">과거는 과거일 뿐. <br>과거사에 대해 반성을 했음을 확인한 후 동행하길 제안한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">인류 생존을 위해 동행하는데, 국가 간의 역사적 이해관계는 상관없다. <br>이들의 내면과 태도가 더 중요하다.</button><br>
         </div>
     </form>
     <br>

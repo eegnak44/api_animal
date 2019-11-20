@@ -122,8 +122,10 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
     <div id = 'imgDiv'>
         <img src="/img/chapter/firework-chapter4.jpg">
     </div>
-        <p>행성7H로 향하는 우주선 안,<br>
-        사람들 뿐만 아니라 수 많은 벌레들이 우주선 안으로 따라 들어왔다.</p>
+        <p>행성7H로 향하는 우주선 안, <br>
+            사람들 뿐만 아니라 수 많은 벌레들이 우주선 안으로 따라 들어왔다. <br>
+            <br>
+            나는 벌레들과 긴 비행을 함께 할 수 있을까? </p>
     <br>
 
     <form action="page_4-1.php" method="get">

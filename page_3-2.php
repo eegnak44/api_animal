@@ -87,7 +87,7 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <form action="page_3-3.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">나는 또 다시 그런 세상에서 살고 싶지 않다.  </button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">나는 또다시 그런 세상에서 살고 싶지 않다.  </button><br>
             <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">나는 이들이 정해놓은 규칙이 마음에 들지 않지만, <br>다른 우주선보다는 합리적인 것 같아 머물기로 했다.</button><br>
             <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">나는 이들이 정해놓은 질서에 따라 사는 것이 편하고 익숙하다.</button><br>
             <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">나도 가족을 만들어 이들과 동화되어 살아가고 싶다. </button><br>
