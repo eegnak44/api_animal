@@ -116,6 +116,8 @@ $replaceArr = array(1=>"격리제거", 2=>"혐오공존", 3=>"긍정공존",4=>"
 $replaceArrayList1 = array_replace($list1,$replaceArr);
 debug_var($replaceArrayList1);
 
+$tmpReplace = str_replace('1', '격리제거',$list1);
+debug_var($tmpReplace);
 
 $resultNameCheck = 0;
 
