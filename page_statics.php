@@ -112,6 +112,11 @@ while($row1 = $result->fetch_array()) {
 }
 
 
+$replaceArr = array(1=>"격리제거", 2=>"혐오공존", 3=>"긍정공존",4=>"반려");
+$replaceArrayList1 = array_replace($list1,$replaceArr);
+debug_var($replaceArrayList1);
+
+
 $resultNameCheck = 0;
 
 $query3 = "SELECT count(result_style) as cnt from play_dataTB WHERE result_style = '{$resultName}'";
@@ -275,7 +280,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
 </title>
 <body>
 
-<div id = 'StaticsContentsDiv' style = "margin-left: 100px; padding-top: 70px;width:1000px;">
+<div id = 'StaticsContentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;">
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
         <p>누적 테스터 의 수 : <?=$value1;?>명</p>
@@ -287,7 +292,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
-                <div style="float: left; width: 91px;"><?=$stageResNameKr1[$i]?><p style="font-weight: bold;"><?=$res1[$i];?>명</p></div>
+                <div style="float: left; width: 91px;"><?=$stageResNameKr1[$i]?><p style="font-weight: bold;"><?=$list1[$i]?><?=$res1[$i];?>명</p></div>
             <?}?>
         </div>
         <br>
