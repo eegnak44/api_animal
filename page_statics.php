@@ -304,7 +304,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
-                <div style="float: left; width: 91px;"><?=$stageResNameKr1[$i]?><p style="font-weight: bold;"><?=$list1[$i]?><?=$res1[$i];?>명</p></div>
+                <div style="float: left; width: 91px;"><?=$stageResNameKr1[$i]?><p style="font-weight: bold;"><?=$replaceArrayList1[$i]?><br><?=$res1[$i];?>명</p></div>
             <?}?>
         </div>
         <br>
@@ -312,7 +312,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
-                <div style="float: left; width: 91px;"><?=$stageResNameKr2[$i]?><p style="font-weight: bold"><?=$res2[$i];?>명</p></div>
+                <div style="float: left; width: 91px;"><?=$stageResNameKr2[$i]?><p style="font-weight: bold"><?=$replaceArrayList2[$i]?><br><?=$res2[$i];?>명</p></div>
 
             <?}?>
         </div>
@@ -321,7 +321,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
-                <div style="float: left; width: 91px;"><?=$stageResNameKr3[$i]?><p style="font-weight: bold"><?=$res3[$i];?>명</p></div>
+                <div style="float: left; width: 91px;"><?=$stageResNameKr3[$i]?><p style="font-weight: bold"><?=$replaceArrayList3[$i]?><br><?=$res3[$i];?>명</p></div>
             <?}?>
         </div>
 
