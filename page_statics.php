@@ -104,9 +104,10 @@ while($row1 = $result->fetch_array()) {
     $tmp5_2 = $row1[13];
     $tmp5_3 = $row1[14];
     $resultName = $row1[15];
+    debug_var($row1);
 }
 
-debug_var($row1);
+
 $resultNameCheck = 0;
 
 $query3 = "SELECT count(result_style) as cnt from play_dataTB WHERE result_style = '{$resultName}'";
