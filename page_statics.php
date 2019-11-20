@@ -144,6 +144,9 @@ $tmpQueryCol3 = ['four_to_two', 'four_to_three','five_to_one', 'five_to_two', 'f
 //}
 
 $res1 = Array();
+$res2 = Array();
+$res3 = Array();
+
 
 // 결과 시작
 $query_1 = "select count({$tmpQueryCol1[0]}) as cnt from play_dataTB where one_to_one = '{$list1[0]}'";
@@ -171,6 +174,61 @@ $result_5 = $conn->query($query_5) or die($this->_connect->error);
 while($row_5 = $result_5->fetch_array()){
     $res1[4] = $row_5['cnt'];
 }
+
+
+$query_6 = "select count({$tmpQueryCol2[0]}) as cnt from play_dataTB where two_to_three = '{$list2[0]}'";
+$result_6 = $conn->query($query_6) or die($this->_connect->error);
+while($row_6 = $result_6->fetch_array()){
+    $res2[0] = $row_6['cnt'];
+}
+$query_7 = "select count({$tmpQueryCol2[1]}) as cnt from play_dataTB where three_to_one = '{$list2[1]}'";
+$result_7 = $conn->query($query_7) or die($this->_connect->error);
+while($row_7 = $result_7->fetch_array()){
+    $res2[1] = $row_7['cnt'];
+}
+$query_8 = "select count({$tmpQueryCol2[2]}) as cnt from play_dataTB where three_to_two = '{$list2[2]}'";
+$result_8 = $conn->query($query_8) or die($this->_connect->error);
+while($row_8 = $result_8->fetch_array()){
+    $res2[2] = $row_8['cnt'];
+}
+$query_9 = "select count({$tmpQueryCol2[3]}) as cnt from play_dataTB where three_to_three = '{$list2[3]}'";
+$result_9 = $conn->query($query_9) or die($this->_connect->error);
+while($row_9 = $result_9->fetch_array()){
+    $res2[3] = $row_9['cnt'];
+}
+$query_10 = "select count({$tmpQueryCol2[4]}) as cnt from play_dataTB where four_to_one = '{$list2[4]}'";
+$result_10 = $conn->query($query_10) or die($this->_connect->error);
+while($row_10 = $result_10->fetch_array()){
+    $res2[4] = $row_10['cnt'];
+}
+
+
+$query_11 = "select count({$tmpQueryCol3[0]}) as cnt from play_dataTB where four_to_two = '{$list3[0]}'";
+$result_11 = $conn->query($query_11) or die($this->_connect->error);
+while($row_11 = $result_11->fetch_array()){
+    $res3[0] = $row_11['cnt'];
+}
+$query_12 = "select count({$tmpQueryCol3[1]}) as cnt from play_dataTB where four_to_three = '{$list3[1]}'";
+$result_12 = $conn->query($query_12) or die($this->_connect->error);
+while($row_12 = $result_12->fetch_array()){
+    $res3[1] = $row_12['cnt'];
+}
+$query_13 = "select count({$tmpQueryCol3[2]}) as cnt from play_dataTB where five_to_one = '{$list3[2]}'";
+$result_13 = $conn->query($query_13) or die($this->_connect->error);
+while($row_13 = $result_13->fetch_array()){
+    $res3[2] = $row_13['cnt'];
+}
+$query_14 = "select count({$tmpQueryCol3[3]}) as cnt from play_dataTB where five_to_two = '{$list3[3]}'";
+$result_14 = $conn->query($query_14) or die($this->_connect->error);
+while($row_14 = $result_14->fetch_array()){
+    $res3[3] = $row_14['cnt'];
+}
+$query_15 = "select count({$tmpQueryCol3[4]}) as cnt from play_dataTB where five_to_three = '{$list3[4]}'";
+$result_15 = $conn->query($query_15) or die($this->_connect->error);
+while($row_15 = $result_15->fetch_array()){
+    $res3[4] = $row_15['cnt'];
+}
+
 
 
 
@@ -237,7 +295,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
-                <div style="float: left; width: 91px;"><?=$stageResNameKr2[$i]?><p style="font-weight: bold"><?=$list2[$i];?>명</p></div>
+                <div style="float: left; width: 91px;"><?=$stageResNameKr2[$i]?><p style="font-weight: bold"><?=$res2[$i];?>명</p></div>
 
             <?}?>
         </div>
@@ -246,7 +304,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
-                <div style="float: left; width: 91px;"><?=$stageResNameKr3[$i]?><p style="font-weight: bold"><?=$list3[$i];?>명</p></div>
+                <div style="float: left; width: 91px;"><?=$stageResNameKr3[$i]?><p style="font-weight: bold"><?=$res3[$i];?>명</p></div>
             <?}?>
         </div>
 
