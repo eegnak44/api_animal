@@ -173,7 +173,7 @@ while($row2 = $result3->fetch_array()){
         <?php
             for($i=0;$i<15;$i++){?>
                 <div class = 'chapterRes'>
-                    <img src="img/unnamed.png" style="width: 80px;"> <div>test</div>
+                    <div><img src="img/unnamed.png" style="width: 80px;"></div> <div>test</div>
                 </div>
             <?}?>
     </div>
