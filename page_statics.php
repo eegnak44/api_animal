@@ -142,11 +142,34 @@ $tmpQueryCol3 = ['four_to_two', 'four_to_three','five_to_one', 'five_to_two', 'f
 //        debug_var(${'row_'.$i}['cnt']);
 //    }
 //}
+
+$res1 = Array();
+
+// 결과 시작
 $query_1 = "select count({$tmpQueryCol1[0]}) as cnt from play_dataTB where one_to_one = '{$list1[0]}'";
 $result_1 = $conn->query($query_1) or die($this->_connect->error);
 while($row_1 = $result_1->fetch_array()){
-    $res_1 = $row_1['cnt'];
-    debug_var($res_1);
+    $res1[0] = $row_1['cnt'];
+}
+$query_2 = "select count({$tmpQueryCol1[1]}) as cnt from play_dataTB where one_to_one = '{$list1[1]}'";
+$result_2 = $conn->query($query_2) or die($this->_connect->error);
+while($row_2 = $result_2->fetch_array()){
+    $res1[1] = $row_2['cnt'];
+}
+$query_3 = "select count({$tmpQueryCol1[2]}) as cnt from play_dataTB where one_to_one = '{$list1[2]}'";
+$result_3 = $conn->query($query_1) or die($this->_connect->error);
+while($row_3 = $result_3->fetch_array()){
+    $res1[2] = $row_3['cnt'];
+}
+$query_4 = "select count({$tmpQueryCol1[3]}) as cnt from play_dataTB where one_to_one = '{$list1[3]}'";
+$result_4 = $conn->query($query_4) or die($this->_connect->error);
+while($row_4 = $result_4->fetch_array()){
+    $res1[3] = $row_4['cnt'];
+}
+$query_5 = "select count({$tmpQueryCol1[4]}) as cnt from play_dataTB where one_to_one = '{$list1[4]}'";
+$result_5 = $conn->query($query_5) or die($this->_connect->error);
+while($row_5 = $result_5->fetch_array()){
+    $res1[4] = $row_5['cnt'];
 }
 
 
@@ -206,7 +229,7 @@ $stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left;"><img src="img/unnamed.png" style="width: 91px; margin: 0px;"></div>
-                <div style="float: left; width: 91px;"><?=$stageResNameKr1[$i]?><p style="font-weight: bold;"><?=$list1[$i];?>명</p></div>
+                <div style="float: left; width: 91px;"><?=$stageResNameKr1[$i]?><p style="font-weight: bold;"><?=$res1[$i];?>명</p></div>
             <?}?>
         </div>
         <br>
