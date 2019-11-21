@@ -470,56 +470,6 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             }
 
 
-            if($value1 == $value2){
-                $TmpRdResultStyle = ['2','3'];
-                $outRes = array_rand($TmpRdResultStyle);
-                $resVal = $TmpRdResultStyle[$outRes];
-            }
-            if($value1 == $value3){
-                $TmpRdResultStyle = ['2','4'];
-                $outRes = array_rand($TmpRdResultStyle);
-                $resVal = $TmpRdResultStyle[$outRes];
-            }
-            if($value1 == $value4){
-                $TmpRdResultStyle = ['2','5'];
-                $outRes = array_rand($TmpRdResultStyle);
-                $resVal = $TmpRdResultStyle[$outRes];
-            }
-            if($value1 == $value5){
-                $TmpRdResultStyle = ['2','6'];
-                $outRes = array_rand($TmpRdResultStyle);
-                $resVal = $TmpRdResultStyle[$outRes];
-            }
-            if($value2 == $value3){
-                $TmpRdResultStyle = ['3','4'];
-                $outRes = array_rand($TmpRdResultStyle);
-                $resVal = $TmpRdResultStyle[$outRes];
-            }
-            if($value2 == $value4){
-                $TmpRdResultStyle = ['3','5'];
-                $outRes = array_rand($TmpRdResultStyle);
-                $resVal = $TmpRdResultStyle[$outRes];
-            }
-            if($value2 == $value5){
-                $TmpRdResultStyle = ['3','6'];
-                $outRes = array_rand($TmpRdResultStyle);
-                $resVal = $TmpRdResultStyle[$outRes];
-            }
-            if($value3 == $value4){
-                $TmpRdResultStyle = ['4','5'];
-                $outRes = array_rand($TmpRdResultStyle);
-                $resVal = $TmpRdResultStyle[$outRes];
-            }
-            if($value3 == $value5){
-                $TmpRdResultStyle = ['4','6'];
-                $outRes = array_rand($TmpRdResultStyle);
-                $resVal = $TmpRdResultStyle[$outRes];
-            }
-            if($value4 == $value5){
-                $TmpRdResultStyle = ['5','6'];
-                $outRes = array_rand($TmpRdResultStyle);
-                $resVal = $TmpRdResultStyle[$outRes];
-            }
 
 //            else if ($tmpChapterNo[2] == 3 && (($tmpChapterNo[1] == 2 || $tmpChapterNo[1] == 1 ) || ($tmpChapterNo[3] == 2 || $tmpChapterNo[3] == 1) || ($tmpChapterNo[4] == 2 || $tmpChapterNo[4] == 1) || ($tmpChapterNo[5] == 2 || $tmpChapterNo[5] == 1))){
 //                $resVal = 3;
@@ -538,6 +488,60 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         if($gradeCCnt == 3 || $gradeCCnt == 4){
             $outRes = array_rand($rdArr);
             $resVal = $rdArr[$outRes];
+        }
+    }
+
+    if($resVal == 0){
+
+        if($value1 == $value2){
+            $TmpRdResultStyle = ['2','3'];
+            $outRes = array_rand($TmpRdResultStyle);
+            $resVal = $TmpRdResultStyle[$outRes];
+        }
+        if($value1 == $value3){
+            $TmpRdResultStyle = ['2','4'];
+            $outRes = array_rand($TmpRdResultStyle);
+            $resVal = $TmpRdResultStyle[$outRes];
+        }
+        if($value1 == $value4){
+            $TmpRdResultStyle = ['2','5'];
+            $outRes = array_rand($TmpRdResultStyle);
+            $resVal = $TmpRdResultStyle[$outRes];
+        }
+        if($value1 == $value5){
+            $TmpRdResultStyle = ['2','6'];
+            $outRes = array_rand($TmpRdResultStyle);
+            $resVal = $TmpRdResultStyle[$outRes];
+        }
+        if($value2 == $value3){
+            $TmpRdResultStyle = ['3','4'];
+            $outRes = array_rand($TmpRdResultStyle);
+            $resVal = $TmpRdResultStyle[$outRes];
+        }
+        if($value2 == $value4){
+            $TmpRdResultStyle = ['3','5'];
+            $outRes = array_rand($TmpRdResultStyle);
+            $resVal = $TmpRdResultStyle[$outRes];
+        }
+        if($value2 == $value5){
+            $TmpRdResultStyle = ['3','6'];
+            $outRes = array_rand($TmpRdResultStyle);
+            $resVal = $TmpRdResultStyle[$outRes];
+        }
+        if($value3 == $value4){
+            $TmpRdResultStyle = ['4','5'];
+            $outRes = array_rand($TmpRdResultStyle);
+            $resVal = $TmpRdResultStyle[$outRes];
+        }
+        if($value3 == $value5){
+            $TmpRdResultStyle = ['4','6'];
+            $outRes = array_rand($TmpRdResultStyle);
+            $resVal = $TmpRdResultStyle[$outRes];
+        }
+        if($value4 == $value5){
+            $TmpRdResultStyle = ['5','6'];
+            $outRes = array_rand($TmpRdResultStyle);
+            $resVal = $TmpRdResultStyle[$outRes];
         }
     }
 
@@ -599,7 +603,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 
 
     $result = $resVal;
-//    debug_var($resVal);
+    debug_var($resVal);
     return $result;
 }
 
