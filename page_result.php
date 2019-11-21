@@ -521,6 +521,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                 $TmpRdResultStyle = ['3','4'];
                 $outRes = array_rand($TmpRdResultStyle);
                 $resVal = $TmpRdResultStyle[$outRes];
+                debug_var($resVal);
             }
             if($value2 == $value4){
                 $TmpRdResultStyle = ['3','5'];
@@ -615,7 +616,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 
 
     $result = $resVal;
-    debug_var($resVal);
+//    debug_var($resVal);
     return $result;
 }
 
