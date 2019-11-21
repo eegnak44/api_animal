@@ -515,7 +515,8 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                 $resVal = $TmpRdResultStyle[$outRes];
             }
         }
-
+    }
+    if($resVal == 0){
         if($tmpChapterNo[2] == 3){
             if($value2 == $value3){
                 $TmpRdResultStyle = ['3','4'];
@@ -534,7 +535,9 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                 $resVal = $TmpRdResultStyle[$outRes];
             }
         }
+    }
 
+    if($resVal == 0){
         if($tmpChapterNo[3] == 3){
             if($value3 == $value4){
                 $TmpRdResultStyle = ['4','5'];
@@ -547,7 +550,9 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                 $resVal = $TmpRdResultStyle[$outRes];
             }
         }
+    }
 
+    if($resVal == 0){
         if($tmpChapterNo[4] == 3){
             if($value4 == $value5){
                 $TmpRdResultStyle = ['5','6'];
