@@ -609,11 +609,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //            if($key !== 'C' && $value_ == 0){
                 if(($key == 'A' && $value_ >= 5) || ($key == 'B' && $value_ <= 3)){
                     $res_style = $resultStyle[6];
-                    $resVal = 7;
+                    $resVal = 1;
 //                    debug_var($resVal);
                 } else {
                     $res_style = $resultStyle[0];
-                    $resVal = 1;
+                    $resVal = 7;
                 }
 //            }
             }
