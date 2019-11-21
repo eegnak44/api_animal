@@ -311,21 +311,21 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
         <p>나와 같은 선택을 한 테스터의 수 : <?=$resultNameCheck-1;?>명</p>
     </div>
 
-        <div id = 'resCheck' style="width: 1000px">
+        <div id = 'resCheck' style="width: 1000px;margin-top:10px;">
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left; width: 150px;"><?=$stageResNameKr1[$i]?><p style="font-weight: bold;"><?=$replaceArrayList1[$i]?><br><?=$res1[$i];?>명</p></div>
             <?}?>
         </div>
         <br>
-        <div id = 'resCheck' style="width: 1000px; float: left;">
+        <div id = 'resCheck' style="width: 1000px; float: left; margin-top:10px;">
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left; width: 150px;"><?=$stageResNameKr2[$i]?><p style="font-weight: bold"><?=$replaceArrayList2[$i]?><br><?=$res2[$i];?>명</p></div>
             <?}?>
         </div>
         <br>
-        <div id = 'resCheck' style="width: 1000px">
+        <div id = 'resCheck' style="width: 1000px;margin-top:10px;">
             <?
             for($i=0;$i<5;$i++){?>
                 <div style="float: left; width: 150px;"><?=$stageResNameKr3[$i]?><p style="font-weight: bold"><?=$replaceArrayList3[$i]?><br><?=$res3[$i];?>명</p></div>
@@ -334,7 +334,7 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
 
     <br>
     <form action="main.php" method="get">
-        <div class = 'choice_div' style="margin: auto; width:50px;">
+        <div class = 'choice_div' style="margin: auto; width:250px;">
             <input type="submit" value="다시하기"><br>
         </div>
     </form>
