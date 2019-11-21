@@ -482,9 +482,10 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //            } else if ($tmpChapterNo[1] == 3 && ($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])) {
 //
 //            }
-//            $outRes = array_rand($rdArr);
-//            $resVal = $rdArr[$outRes];
+            $outRes = array_rand($rdArr);
+            $resVal = $rdArr[$outRes];
         }
+
         if($gradeCCnt == 3 || $gradeCCnt == 4){
             $outRes = array_rand($rdArr);
             $resVal = $rdArr[$outRes];
