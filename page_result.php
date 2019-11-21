@@ -676,7 +676,7 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 </title>
 <body>
 
-<div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
+<div id = 'contentsDiv' style = "margin-left: 500px; padding-top: 10px;width:1000px;padding-right: 100px;padding-left: 100px;">
 
         <div id = 'resName' style="font-weight: bold; font-size: 20px;">
             <p>결과 : <?=$resultStyle[$resGrade-1];?></p>
@@ -687,7 +687,7 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 <!--            <p>--><?//=$resGrade;?><!--</p>-->
         </div>
         <div id = 'imgDiv'>
-            <img src="/img/result/ed<?=$resGrade;?>.jpg">
+            <img src="/img/result/ed<?=$resGrade;?>.jpg" style="width: 700px;">
         </div>
 
     <br>
