@@ -82,7 +82,7 @@ $id = $_REQUEST['id'];
 </title>
 <body>
 
-<div id = 'contentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;padding-right: 100px;padding-left: 100px;">
+<div id = 'contentsDiv' style = "margin: auto; padding-top: 50px;width:1000px;padding-right: 100px;padding-left: 100px;">
 
     <div id = 'imgDiv'>
         <img src="/img/chapter/firework-chapter1.jpg">
