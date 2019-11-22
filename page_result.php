@@ -296,6 +296,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         } else if($arr[$i] == 'C'){
 //            ${'tmpObj'.($i+1)} = countFourFunc(${'resObj'.($i+1)});
             $tmpObj[$i+1] = countFourFunc(${'resObj'.($i+1)});
+            debug_var($tmpObj[$i+1]);
 //            $tmpObj_[$arr[$i]] = countFourFunc(${'resObj'.($i+1)});
 //            $tmpResultArr[$i] = '1';
             $gradeCCnt++;
