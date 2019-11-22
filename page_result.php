@@ -296,7 +296,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         } else if($arr[$i] == 'C'){
 //            ${'tmpObj'.($i+1)} = countFourFunc(${'resObj'.($i+1)});
             $tmpObj[$i+1] = countFourFunc(${'resObj'.($i+1)});
-            debug_var($tmpObj);
+            if($tmpObj[$i+1] == 3){
+                $tmpChapterNo[$i] = $i+1;    //4의 갯수가 3일 때 챕터 번호
+            }
+
+
 //            $tmpObj_[$arr[$i]] = countFourFunc(${'resObj'.($i+1)});
 //            $tmpResultArr[$i] = '1';
             $gradeCCnt++;
@@ -332,9 +336,15 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
     if($resVal == 0){
 //        if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 인 결과 가 5개 이하일 때 1개 이상일때
         if ($gradeCCnt >= 2) { //C 인 결과 가 5개 이하일 때 1개 이상일때
-            for($i = 0; $i<sizeof($arr); $i++){
-                debug_var($tmpObj[$i+1]);
+//            for($i = 0; $i<sizeof($tmpObj); $i++){
+//                if($tmpObj[$i+1] == 3){
+//                    $tmpObj[]
+//                }
+//            }
+            for($i = 0; $i < 5; $i++){
+                debug_var($tmpObj[$tmpChapterNo[$i]]);
             }
+
 
 //            $tmpCount = 0;
 //            for($i = 1; $i<6;$i++){
