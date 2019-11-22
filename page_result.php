@@ -389,9 +389,11 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                 $resVal = 6;
             }
             if($tmpObj[$tmpChapterNo[0]] == $tmpObj[$tmpChapterNo[4]]){
+
                 $TmpRdResultStyle = ['2','6'];
                 $outRes = array_rand($TmpRdResultStyle);
                 $resVal = $TmpRdResultStyle[$outRes];
+                debug_var($resVal);
             }
 
 
