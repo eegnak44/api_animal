@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_result.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,13 +98,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="678" column="51" selection-start-line="678" selection-start-column="51" selection-end-line="678" selection-end-column="51" />
+            <state relative-caret-position="309">
+              <caret line="286" column="44" lean-forward="true" selection-start-line="286" selection-start-column="44" selection-end-line="286" selection-end-column="44" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_statics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="329" column="34" lean-forward="true" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
+            <state relative-caret-position="1643">
+              <caret line="327" column="52" lean-forward="true" selection-start-line="327" selection-start-column="52" selection-end-line="327" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -165,6 +166,7 @@
       <find>debug_var</find>
       <find>$replaceArrayList1</find>
       <find>$stageResNameKr1</find>
+      <find>debugging</find>
     </findStrings>
     <replaceStrings>
       <replace>1-2</replace>
@@ -200,7 +202,6 @@
         <option value="$PROJECT_DIR$/page_4-3.php" />
         <option value="$PROJECT_DIR$/page_5-2.php" />
         <option value="$PROJECT_DIR$/page_5-3.php" />
-        <option value="$PROJECT_DIR$/page_statics.php" />
         <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/page_2.php" />
         <option value="$PROJECT_DIR$/page_3.php" />
@@ -208,6 +209,7 @@
         <option value="$PROJECT_DIR$/page_5.php" />
         <option value="$PROJECT_DIR$/page_1.php" />
         <option value="$PROJECT_DIR$/page_result.php" />
+        <option value="$PROJECT_DIR$/page_statics.php" />
       </list>
     </option>
   </component>
@@ -298,28 +300,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="83942000" />
-    </task>
-    <task id="LOCAL-00281" summary="결과 도출 수정">
-      <created>1574214492077</created>
-      <option name="number" value="00281" />
-      <option name="presentableId" value="LOCAL-00281" />
-      <option name="project" value="LOCAL" />
-      <updated>1574214492077</updated>
-    </task>
-    <task id="LOCAL-00282" summary="결과 도출 수정">
-      <created>1574214678633</created>
-      <option name="number" value="00282" />
-      <option name="presentableId" value="LOCAL-00282" />
-      <option name="project" value="LOCAL" />
-      <updated>1574214678634</updated>
-    </task>
-    <task id="LOCAL-00283" summary="결과 도출 수정">
-      <created>1574215564705</created>
-      <option name="number" value="00283" />
-      <option name="presentableId" value="LOCAL-00283" />
-      <option name="project" value="LOCAL" />
-      <updated>1574215564705</updated>
+      <workItem from="1574036239356" duration="85273000" />
     </task>
     <task id="LOCAL-00284" summary="결과 도출 수정">
       <created>1574215796681</created>
@@ -643,11 +624,32 @@
       <option name="project" value="LOCAL" />
       <updated>1574309534773</updated>
     </task>
-    <option name="localTasksCounter" value="330" />
+    <task id="LOCAL-00330" summary="각 스테이지 스트링 수정">
+      <created>1574310601280</created>
+      <option name="number" value="00330" />
+      <option name="presentableId" value="LOCAL-00330" />
+      <option name="project" value="LOCAL" />
+      <updated>1574310601280</updated>
+    </task>
+    <task id="LOCAL-00331" summary="각 스테이지 스트링 수정">
+      <created>1574310638615</created>
+      <option name="number" value="00331" />
+      <option name="presentableId" value="LOCAL-00331" />
+      <option name="project" value="LOCAL" />
+      <updated>1574310638615</updated>
+    </task>
+    <task id="LOCAL-00332" summary="각 스테이지 스트링 수정">
+      <created>1574382477766</created>
+      <option name="number" value="00332" />
+      <option name="presentableId" value="LOCAL-00332" />
+      <option name="project" value="LOCAL" />
+      <updated>1574382477766</updated>
+    </task>
+    <option name="localTasksCounter" value="333" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137729000" />
+    <option name="totallyTimeSpent" value="139060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -929,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_statics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="329" column="34" lean-forward="true" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
+        <state relative-caret-position="1643">
+          <caret line="327" column="52" lean-forward="true" selection-start-line="327" selection-start-column="52" selection-end-line="327" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -950,13 +952,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="678" column="51" selection-start-line="678" selection-start-column="51" selection-end-line="678" selection-end-column="51" />
+        <state relative-caret-position="309">
+          <caret line="286" column="44" lean-forward="true" selection-start-line="286" selection-start-column="44" selection-end-line="286" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

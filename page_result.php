@@ -259,9 +259,9 @@ $gradeCCnt = 0;
 $res_style = '';
 
 //debugging echo
-//for($i = 0;$i < sizeof($gradeArr); $i++){
-//    echo ($i+1)."챕터의 값 = ".$gradeArr[$i]."<br>";
-//}
+for($i = 0;$i < sizeof($gradeArr); $i++){
+    echo ($i+1)."챕터의 값 = ".$gradeArr[$i]."<br>";
+}
 
 foreach ($gradeArr as $key => $value){
     if($value == 'C'){
