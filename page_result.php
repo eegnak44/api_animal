@@ -341,9 +341,64 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //                    $tmpObj[]
 //                }
 //            }
-            for($i = 0; $i < 5; $i++){
-                debug_var($tmpObj[$tmpChapterNo[$i]]);
+//            for($i = 0; $i < 5; $i++){
+//                debug_var($tmpObj[$tmpChapterNo[$i]]);
+//
+//            }
+
+            if($tmpObj[$tmpChapterNo[0]] > $tmpObj[$tmpChapterNo[1]]){
+                $resVal = 2;
             }
+            if($tmpObj[$tmpChapterNo[0]] < $tmpObj[$tmpChapterNo[1]]){
+                $resVal = 3;
+            }
+            if($tmpObj[$tmpChapterNo[0]] == $tmpObj[$tmpChapterNo[1]]){
+                $TmpRdResultStyle = ['2','3'];
+                $outRes = array_rand($TmpRdResultStyle);
+                $resVal = $TmpRdResultStyle[$outRes];
+            }
+
+            if($tmpObj[$tmpChapterNo[0]] > $tmpObj[$tmpChapterNo[2]]){
+                $resVal = 2;
+            }
+            if($tmpObj[$tmpChapterNo[0]] < $tmpObj[$tmpChapterNo[2]]){
+                $resVal = 4;
+            }
+            if($tmpObj[$tmpChapterNo[0]] == $tmpObj[$tmpChapterNo[2]]){
+                $TmpRdResultStyle = ['2','4'];
+                $outRes = array_rand($TmpRdResultStyle);
+                $resVal = $TmpRdResultStyle[$outRes];
+            }
+
+            if($tmpObj[$tmpChapterNo[0]] > $tmpObj[$tmpChapterNo[3]]){
+                $resVal = 2;
+            }
+            if($tmpObj[$tmpChapterNo[0]] < $tmpObj[$tmpChapterNo[3]]){
+                $resVal = 5;
+            }
+            if($tmpObj[$tmpChapterNo[0]] == $tmpObj[$tmpChapterNo[3]]){
+                $TmpRdResultStyle = ['2','5'];
+                $outRes = array_rand($TmpRdResultStyle);
+                $resVal = $TmpRdResultStyle[$outRes];
+            }
+
+            if($tmpObj[$tmpChapterNo[0]] > $tmpObj[$tmpChapterNo[4]]){
+                $resVal = 2;
+            }
+            if($tmpObj[$tmpChapterNo[0]] < $tmpObj[$tmpChapterNo[4]]){
+                $resVal = 6;
+            }
+            if($tmpObj[$tmpChapterNo[0]] == $tmpObj[$tmpChapterNo[4]]){
+                $TmpRdResultStyle = ['2','6'];
+                $outRes = array_rand($TmpRdResultStyle);
+                $resVal = $TmpRdResultStyle[$outRes];
+            }
+
+
+            //$tmpObj[$tmpChapterNo[2]];
+            //$tmpObj[$tmpChapterNo[3]];
+            //$tmpObj[$tmpChapterNo[4]];
+
 
 
 //            $tmpCount = 0;
@@ -497,8 +552,8 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 //            } else if ($tmpChapterNo[1] == 3 && ($tmpChapterNo[1] == $tmpChapterNo[2]) || ($tmpChapterNo[1] == $tmpChapterNo[3]) || ($tmpChapterNo[1] == $tmpChapterNo[4]) || ($tmpChapterNo[1] == $tmpChapterNo[5])) {
 //
 //            }
-            $outRes = array_rand($rdArr);
-            $resVal = $rdArr[$outRes];
+//            $outRes = array_rand($rdArr);
+//            $resVal = $rdArr[$outRes];
         }
 
         if($gradeCCnt == 3 || $gradeCCnt == 4){
