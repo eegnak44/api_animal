@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="554" column="15" selection-start-line="554" selection-start-column="15" selection-end-line="555" selection-end-column="40" />
+            <state relative-caret-position="-47">
+              <caret line="311" lean-forward="true" selection-start-line="311" selection-end-line="311" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -163,11 +163,11 @@
       <find>$resultNameCheck</find>
       <find>$tmp1_1</find>
       <find>debug</find>
-      <find>debug_var</find>
       <find>$replaceArrayList1</find>
       <find>$stageResNameKr1</find>
       <find>debugging</find>
       <find>$resObj1</find>
+      <find>debug_var</find>
     </findStrings>
     <replaceStrings>
       <replace>1-2</replace>
@@ -215,11 +215,9 @@
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1726" />
-    <option name="y" value="81" />
+  <component name="ProjectFrameBounds">
     <option name="width" value="1936" />
-    <option name="height" value="1055" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -301,28 +299,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572915937385</updated>
       <workItem from="1572915938734" duration="2878000" />
-      <workItem from="1574036239356" duration="89047000" />
-    </task>
-    <task id="LOCAL-00289" summary="결과 도출 수정">
-      <created>1574216752156</created>
-      <option name="number" value="00289" />
-      <option name="presentableId" value="LOCAL-00289" />
-      <option name="project" value="LOCAL" />
-      <updated>1574216752156</updated>
-    </task>
-    <task id="LOCAL-00290" summary="결과 도출 수정">
-      <created>1574217000219</created>
-      <option name="number" value="00290" />
-      <option name="presentableId" value="LOCAL-00290" />
-      <option name="project" value="LOCAL" />
-      <updated>1574217000219</updated>
-    </task>
-    <task id="LOCAL-00291" summary="결과 도출 수정">
-      <created>1574217179046</created>
-      <option name="number" value="00291" />
-      <option name="presentableId" value="LOCAL-00291" />
-      <option name="project" value="LOCAL" />
-      <updated>1574217179046</updated>
+      <workItem from="1574036239356" duration="91849000" />
     </task>
     <task id="LOCAL-00292" summary="결과 도출 수정">
       <created>1574217204009</created>
@@ -646,14 +623,35 @@
       <option name="project" value="LOCAL" />
       <updated>1574384860773</updated>
     </task>
-    <option name="localTasksCounter" value="338" />
+    <task id="LOCAL-00338" summary="각 스테이지 스트링 수정">
+      <created>1574387371167</created>
+      <option name="number" value="00338" />
+      <option name="presentableId" value="LOCAL-00338" />
+      <option name="project" value="LOCAL" />
+      <updated>1574387371167</updated>
+    </task>
+    <task id="LOCAL-00339" summary="각 스테이지 스트링 수정">
+      <created>1574387424056</created>
+      <option name="number" value="00339" />
+      <option name="presentableId" value="LOCAL-00339" />
+      <option name="project" value="LOCAL" />
+      <updated>1574387424056</updated>
+    </task>
+    <task id="LOCAL-00340" summary="각 스테이지 스트링 수정">
+      <created>1574389016669</created>
+      <option name="number" value="00340" />
+      <option name="presentableId" value="LOCAL-00340" />
+      <option name="project" value="LOCAL" />
+      <updated>1574389016669</updated>
+    </task>
+    <option name="localTasksCounter" value="341" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142834000" />
+    <option name="totallyTimeSpent" value="145636000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="0" y="0" width="1936" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
@@ -953,8 +951,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="554" column="15" selection-start-line="554" selection-start-column="15" selection-end-line="555" selection-end-column="40" />
+        <state relative-caret-position="-47">
+          <caret line="311" lean-forward="true" selection-start-line="311" selection-end-line="311" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
