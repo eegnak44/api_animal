@@ -1,58 +1,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
-/**
- * Created by PhpStorm.
- * User: chris
- * Date: 2019-11-14
- * Time: 오후 2:24
- */
-function isDevDebug()
-{
-
-    $dev_ip = array("211.52.72.51",
-        "211.52.72.56",
-        "211.52.72.59" );
-
-    return true;//in_array( $_SERVER["REMOTE_ADDR"], $dev_ip);
-}
-function debug_var($var = '')
-{
-
-    if(isDevDebug())
-    {
-        echo _before();
-        if (is_array($var))
-        {
-            print_r($var);
-        }
-        elseif (is_object($var))
-        {
-            print_r($var);
-        }
-        else
-        {
-            echo $var;
-        }
-        echo _after();
-    }
-}
-
-function _before()
-{
-    $before = '<div style="position:relative; z-index:999999; padding:10px 20px 10px 20px; background-color:#fbe6f2; border:1px solid #d893a1; color: #000; font-size: 12px;" class="Debug">'."\n";
-    $before .= '<h5 style="font-family:verdana,sans-serif; font-weight:bold; font-size:18px; margin:0px 0px 10px 0px;">Debug Helper Output</h5>'."\n";
-    $before .= '<xmp style="font-weight: bold;">'."\n";
-    return $before;
-}
-
-function _after()
-{
-    $after = '</xmp>'."\n";
-    $after .= '<h5 style="font-family:verdana,sans-serif; font-weight:bold; font-size:18px; margin:0px 0px 10px 0px;">END</h5>'."\n";
-    $after .= '</div>'."\n";
-    return $after;
-}
-
 $id = $_REQUEST['id'];
 $value1 = '';
 
@@ -111,25 +58,12 @@ while($row1 = $result->fetch_array()) {
 //    debug_var($row1);
 }
 
-
-
-//$replaceArrayList1 = array_replace($list1,$replaceArr);
-//debug_var($replaceArrayList1);
-
-
 $replaceArr = ["격리제거", "혐오공존", "긍정공존","반려"];
 $targetArray = ['1','2','3','4'];
 
 $replaceArrayList1 = str_replace($targetArray, $replaceArr,$list1);
 $replaceArrayList2 = str_replace($targetArray, $replaceArr,$list2);
 $replaceArrayList3 = str_replace($targetArray, $replaceArr,$list3);
-//$replaceArrayList4 = str_replace($targetArray, $replaceArr,$list4);
-//$replaceArrayList5 = str_replace($targetArray, $replaceArr,$list5);
-
-//debug_var($replaceArrayList1);
-//debug_var($replaceArrayList2);
-//debug_var($replaceArrayList3);
-
 
 $resultNameCheck = 0;
 
@@ -140,27 +74,10 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 
 while($row2 = $result3->fetch_array()){
     $resultNameCheck = $row2['cnt'];
-//    debug_var($row2);
 }
-//debug_var($resultNameCheck);
-//debug_var($row2);
-
-//$num = array_count_values($gradeArr);
-//foreach ($num as $key => $value_){
-//        echo $key." = ". $value_.'<br>';
-
 $tmpQueryCol1 = ['one_to_one', 'one_to_two', 'one_to_three','two_to_one', 'two_to_two'];
 $tmpQueryCol2 = ['two_to_three','three_to_one', 'three_to_two', 'three_to_three','four_to_one'];
 $tmpQueryCol3 = ['four_to_two', 'four_to_three','five_to_one', 'five_to_two', 'five_to_three'];
-
-//for($i = 0; $i<5; $i++){
-//    ${'query_'.$i} = "select count({$tmpQueryCol1[$i]}) as cnt from play_dataTB where one_to_one = '{$list1[$i]}'";
-//    ${'result_'.$i} = $conn->query(${'query_'.$i}) or die($this->_connect->error);
-//    while(${'row_'.$i} = ${'result'.$i}->fetch_array()){
-//        ${'res_'.$i} = ${'row_'.$i}['cnt'];
-//        debug_var(${'row_'.$i}['cnt']);
-//    }
-//}
 
 $res1 = Array();
 $res2 = Array();
@@ -255,14 +172,6 @@ $stageResNameKr1 = ["병든<br>떠돌이개", "다른 역사", "다른 정치관
 $stageResNameKr2 = ["새끼를 밴<br>길고양이", "다른 민족","전통주의","거미","유전자<br>변형<br>괴생명체"];
 $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바퀴벌레","과학기술과<br>특이바이러스를<br>가진 외계인"];
 
-//$stageResNameKr1 = ["병든<br>떠돌이개","새끼를<br>밴<br>길고양이","방사능<br>피폭자"];
-//$stageResNameKr2 = ["다른 역사","다른 민족","다른 종교"];
-//$stageResNameKr3 = ["다른 정치관","전통주의","진보주의"];
-//$stageResNameKr4 = ["초파리","거미","바퀴벌레"];
-//$stageResNameKr5 = ["고도의<br>지능과<br>감정을<br>지닌 로봇","유전자<br>변형<br>괴생명체","과학기술과<br> 특이<br>바이러스를<br>가진 외계인"];
-
-//$stageResNameKr2 = ["이슬람<br>난민", "정치<br>견해가<br>다른 사람","안티<br>페미니스트",'페미니스트','초파리'];
-//$stageResNameKr3 = ['거미','바퀴벌레','고도의<br>지능과<br>감정을<br>지닌 로봇','유전자<br>변형<br>괴생명체','과학기술과<br> 특이<br>바이러스를<br>가진 외계인'];
 ?>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -349,7 +258,7 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
         <?for($i=0;$i<4;$i++){?>
             <font style="font-weight: bold;"><?=$creditArr[$i];?></font>&nbsp; : &nbsp;<font><?=$creditArr1[$i];?>&nbsp; &nbsp;</font>
         <?}?></div>
-    <div style="float: left;"><img src="img/logo/gaenyeom_logo.png" style="width:90px;"></div>
+    <div style="float: left;width:200px;"><img src="img/logo/gaenyeom_logo.png" style="width:90px;"></div>
     <div style="margin: auto; width: 500px;">
     <?
     for($i=1;$i<5;$i++){?>

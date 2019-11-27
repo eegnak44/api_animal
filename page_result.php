@@ -102,7 +102,6 @@ $gradeArr[2] = $resObj['chapter_three'];
 $gradeArr[3] = $resObj['chapter_four'];
 $gradeArr[4] = $resObj['chapter_five'];
 
-//debug_var($gradeArr);
 
 if($gradeArr[0] == 'C'){
     $tmpQuery1 = "select one_to_one, one_to_two, one_to_three from play_dataTB where chapter_one = '{$resObj['chapter_one']}' and ID = '{$id}'";
@@ -376,7 +375,6 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
                 $TmpRdResultStyle = ['3','4'];
                 $outRes = array_rand($TmpRdResultStyle);
                 $resVal = $TmpRdResultStyle[$outRes];
-//                debug_var($resVal);
             }
             if($value2 == $value4){
                 $TmpRdResultStyle = ['3','5'];
@@ -470,7 +468,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 
 
     $result = $resVal;
-//    debug_var($resVal);
+
     return $result;
 }
 
