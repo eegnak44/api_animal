@@ -127,11 +127,6 @@ $conn->close();
     <br>
 
 </div>
-<!--<div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
-<!--    이미지영역-->
-<!--    <img src="/img/dog021.gif">-->
-<!---->
-<!--</div>-->
 <br>
 
 <form action="page_1.php" method="get">

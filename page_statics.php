@@ -297,6 +297,7 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
 </script>
 
 <html>
+<link rel="shortcut icon" href="/common/templates/alamo/images/icon/favicon.ico">
 <title>
     반려종 허용 테스트
 </title>
@@ -331,13 +332,19 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
                 <div style="float: left; width: 200px;"><?=$stageResNameKr3[$i]?><p style="font-weight: bold"><?=$replaceArrayList3[$i]?><br><?=$res3[$i];?>명</p></div>
             <?}?>
         </div>
-
     <br>
     <form action="main.php" method="get">
         <div class = 'choice_div' style="margin: auto; width:250px;">
             <input type="submit" value="다시하기"><br>
         </div>
     </form>
+    <div id = 'creditDiv' style="width: 1000px;">
+        <?
+            for($i=1;$i<5;$i++){?>
+                <div style="float: left;"><img src="img/logo/logo_'<?=$i;?>'.png" style="width: 91px; margin: 0px;"></div>
+            <?}
+        ?>
+    </div>
     <br>
 </div>
 </body>

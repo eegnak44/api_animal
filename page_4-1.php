@@ -86,9 +86,9 @@ $id = $_REQUEST['id'];
     <br>
     <form action="page_4-2.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">귀찮은 초파리. 모든 초파리를 제거할 수 있도록 벌레 약을 개발하여 잡는다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">굳이 모두 잡으려고 하지 않고, 초파리가 내 앞에서 귀찮게 할 때만 잡는다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">초파리들도 살고자 이 우주선까지 살아 돌아왔는데, 죽일 필요까진 없는 것 같다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">귀찮은 초파리. 모든 초파리를 제거할 수 있도록 벌레 약을 개발하여 잡는다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">굳이 모두 잡으려고 하지 않고, 초파리가 내 앞에서 귀찮게 할 때만 잡는다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">초파리들도 살고자 이 우주선까지 살아 돌아왔는데, 죽일 필요까진 없는 것 같다.</button><br><br>
             <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">빠른 시간 진화하는 이들의 유전적 특성들을 분석하여 우주선이 이동하는 동안 진화에 대한 연구를 진행한다.</button><br>
         </div>
     </form>

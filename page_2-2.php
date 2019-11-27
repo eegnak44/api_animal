@@ -88,9 +88,9 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <form action="page_2-3.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">이들에게 소식을 전해주지 않고 빠른 걸음으로 이 구역을 지나친다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">이들에게 간단한 정보를 넘겨주는 조건으로 통조림을 요구한 후, <br>교환이 끝나면 혼자 길을 떠난다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">이들에게 광장의 소식을 전달하고, <br>적당한 관계를 유지하면서 길을 안내한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">이들에게 소식을 전해주지 않고 빠른 걸음으로 이 구역을 지나친다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">이들에게 간단한 정보를 넘겨주는 조건으로 통조림을 요구한 후, <br>교환이 끝나면 혼자 길을 떠난다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">이들에게 광장의 소식을 전달하고, <br>적당한 관계를 유지하면서 길을 안내한다.</button><br><br>
             <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">이들과 동행을 하면서 이들에게 생존에 대한 지식을 배우고 <br>서로 의지하는 사이로 발전시킬 수 있을 것이다.</button><br>
         </div>
     </form>

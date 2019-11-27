@@ -86,9 +86,9 @@ $id = $_REQUEST['id'];
     <br>
     <form action="page_5-2.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">로봇을 부숴버린다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">로봇이 혐오스럽지만, 인류의 역사를 담은 로봇의 데이터는 소중하기 때문에 <br>적당한 거리를 유지하며 지낸다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">로봇의 지성에 감탄하며, 그에게 더욱 더 의지한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">로봇을 부숴버린다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">로봇이 혐오스럽지만, 인류의 역사를 담은 로봇의 데이터는 소중하기 때문에 <br>적당한 거리를 유지하며 지낸다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">로봇의 지성에 감탄하며, 그에게 더욱 더 의지한다.</button><br><br>
             <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">로봇을 나와 동등한 인격체로서 대하며, <br>로봇과 대화를 나누어 친구로 지내고자 노력한다.</button><br>
         </div>
     </form>

@@ -63,7 +63,6 @@ $id = $_REQUEST['id'];
 
             if(value){
                 window.location.href = 'http://34.80.159.83/page_1-1.php?id='+id;
-                // window.location.href = 'http://34.80.159.83/page_1-2.php;
             }
         });
 
@@ -104,23 +103,6 @@ $id = $_REQUEST['id'];
         </div>
     </form>
     <br>
-<!--    <div class = 'moveBtn_div'>-->
-<!---->
-<!--        <input type="submit" value="뒤로" onclick="goBack()">-->
-<!--    </div>-->
 </div>
-
-<!--<div class = "testBtn1" value = '1' style="border-left: 1px grey;">선택지1</div>-->
-<!--<div class = 'testBtn2'>-->
-<!--    <a href="/test_main_page_1.php" class="btn btn-secondary" value="1">선택지1</a>-->
-<!--</div>-->
-<!--<div>-->
-<!--    <ul>-->
-<!--        <li>1</li>-->
-<!--    </ul>-->
-<!--    <ul>-->
-<!--        <li>2</li>-->
-<!--    </ul>-->
-<!--</div>-->
 </body>
 </html>

@@ -88,9 +88,9 @@ $id = $_REQUEST['id'];
     <br>
     <form action="page_3-2.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">정치 견해가 다른 사람들과는 하루도 함께 할 수 없다. </button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">이 곳엔 다른 곳보다도 시설이 좋기 때문에, <br>불만이 있더라도 그냥 조용히 이 우주선에 탈 것이다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">이 곳엔 다른 곳보다도 지적인 사람들이 모여있으므로, 이들이 말하는 것이 옳을지도 모른다. <br>나는 이들과 함께하기 위해 나는 정치적 입장도 바꿀 수 있다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">정치 견해가 다른 사람들과는 하루도 함께 할 수 없다. </button><br><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">이 곳엔 다른 곳보다도 시설이 좋기 때문에, <br>불만이 있더라도 그냥 조용히 이 우주선에 탈 것이다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">이 곳엔 다른 곳보다도 지적인 사람들이 모여있으므로, 이들이 말하는 것이 옳을지도 모른다. <br>나는 이들과 함께하기 위해 나는 정치적 입장도 바꿀 수 있다.</button><br><br>
             <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">나는 이들과 토론을 통해 정치적 견해를 좁히고, <br>함께 잘 살아갈 자신이 있다.</button><br>
         </div>
     </form>

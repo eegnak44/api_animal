@@ -78,11 +78,6 @@ $result = $conn->query($query) or die($this->_connect->error);
         그러나 이들에게 치명적인 바이러스가 있어 면역이 없는 인류는 바이러스가 옮을 경우 며칠 내로 죽고 만다.
     </p>
     <br>
-    <!--    <div id = 'imgDiv' style = 'border-top: 1px solid; border-bottom: 1px solid;'>-->
-    <!--        이미지영역-->
-    <!--        <img src="/img/dog021.gif">-->
-    <!---->
-    <!--    </div>-->
     <br>
     <br>
     <form action="page_result.php" method="get">
