@@ -1,58 +1,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
-/**
- * Created by PhpStorm.
- * User: chris
- * Date: 2019-11-14
- * Time: 오후 2:24
- */
-
-function isDevDebug()
-{
-
-    $dev_ip = array("211.52.72.51",
-        "211.52.72.56",
-        "211.52.72.59" );
-
-    return true;//in_array( $_SERVER["REMOTE_ADDR"], $dev_ip);
-}
-function debug_var($var = '')
-{
-
-    if(isDevDebug())
-    {
-        echo _before();
-        if (is_array($var))
-        {
-            print_r($var);
-        }
-        elseif (is_object($var))
-        {
-            print_r($var);
-        }
-        else
-        {
-            echo $var;
-        }
-        echo _after();
-    }
-}
-
-function _before()
-{
-    $before = '<div style="position:relative; z-index:999999; padding:10px 20px 10px 20px; background-color:#fbe6f2; border:1px solid #d893a1; color: #000; font-size: 12px;" class="Debug">'."\n";
-    $before .= '<h5 style="font-family:verdana,sans-serif; font-weight:bold; font-size:18px; margin:0px 0px 10px 0px;">Debug Helper Output</h5>'."\n";
-    $before .= '<xmp style="font-weight: bold;">'."\n";
-    return $before;
-}
-
-function _after()
-{
-    $after = '</xmp>'."\n";
-    $after .= '<h5 style="font-family:verdana,sans-serif; font-weight:bold; font-size:18px; margin:0px 0px 10px 0px;">END</h5>'."\n";
-    $after .= '</div>'."\n";
-    return $after;
-}
 
 $id = $_REQUEST['id'];
 $value = $_REQUEST['value'];
@@ -159,77 +106,44 @@ $gradeArr[4] = $resObj['chapter_five'];
 
 if($gradeArr[0] == 'C'){
     $tmpQuery1 = "select one_to_one, one_to_two, one_to_three from play_dataTB where chapter_one = '{$resObj['chapter_one']}' and ID = '{$id}'";
-//    echo $tmpQuery1;
     $res1 = $conn->query($tmpQuery1) or die($this->_connect->error);
     while($row1 = $res1->fetch_array())
     {
         $resObj1 = $row1;
     }
-//    $tmpObj1 = countFourFunc($resObj1);
 }
 if($gradeArr[1] == 'C'){
     $tmpQuery2 = "select two_to_one, two_to_two, two_to_three from play_dataTB where chapter_two = '{$resObj['chapter_two']}' and ID = '{$id}'";
-//    echo $tmpQuery2;
     $res2 = $conn->query($tmpQuery2) or die($this->_connect->error);
     while($row2 = $res2->fetch_array())
     {
         $resObj2 = $row2;
     }
-//    $tmpObj2 = countFourFunc($resObj2);
 }
 if($gradeArr[2] == 'C'){
     $tmpQuery3 = "select three_to_one, three_to_two, three_to_three from play_dataTB where chapter_three = '{$resObj['chapter_three']}' and ID = '{$id}'";
-//    echo $tmpQuery3;
     $res3 = $conn->query($tmpQuery3) or die($this->_connect->error);
     while($row3 = $res3->fetch_array())
     {
         $resObj3 = $row3;
     }
-//    $tmpObj3 = countFourFunc($resObj3);
 }
 if($gradeArr[3] == 'C'){
     $tmpQuery4 = "select four_to_one, four_to_two, four_to_three from play_dataTB where chapter_four = '{$resObj['chapter_four']}' and ID = '{$id}'";
-//    echo $tmpQuery4;
     $res4 = $conn->query($tmpQuery4) or die($this->_connect->error);
     while($row4 = $res4->fetch_array())
     {
         $resObj4 = $row4;
     }
-//    $tmpObj4 = countFourFunc($resObj4);
 }
 if($gradeArr[4] == 'C'){
     $tmpQuery5 = "select five_to_one, five_to_two, five_to_three from play_dataTB where chapter_five = '{$resObj['chapter_five']}' and ID = '{$id}'";
-//    echo $tmpQuery5;
     $res5 = $conn->query($tmpQuery5) or die($this->_connect->error);
     while($row5 = $res5->fetch_array())
     {
         $resObj5 = $row5;
     }
-//    $tmpObj5 = countFourFunc($resObj5);
 }
-//debug_var($resObj1);
-//debug_var($resObj2);
-//debug_var($resObj3);
-//debug_var($resObj4);
-//debug_var($resObj5);
-//
-//
-//
-//while($row1 = $res->fetch_array())
-//{
-//    $resObj1 = $row1;
-//}
-//
-//debug_var($resObj1);
-//debug_var($resObj2);
-//debug_var($resObj3);
-//debug_var($resObj4);
-//debug_var($resObj5);
-//
-//for($i = 0; $i < 3; $i++){
-//    $tmpObj1[$i] = $resObj1[$i]
-//}
-
 
 function countFourFunc($arr){
     $tmpFourCountVal = 0;
@@ -243,34 +157,17 @@ function countFourFunc($arr){
     return $result;
 }
 
-//$varTmpTmp = countFourFunc($resObj1);
-//debug_var($varTmpTmp);
-//debug_var($resObj1);
-
-//debug_var($tmpObj1);
-//debug_var($tmpObj2);
-//debug_var($tmpObj3);
-//debug_var($tmpObj4);
-//debug_var($tmpObj5);
 
 $gradeACnt = 0;
 $gradeBCnt = 0;
 $gradeCCnt = 0;
 $res_style = '';
 
-//debugging echo
-//for($i = 0;$i < sizeof($gradeArr); $i++){
-//    echo ($i+1)."챕터의 값 = ".$gradeArr[$i]."<br>";
-//}
 
 foreach ($gradeArr as $key => $value){
     if($value == 'C'){
         $tmpVal = $gradeArr[$key];
-//        echo ($key+1)."챕터 is C<br>";
-//        ${'chapterVal'.$key} = $key+1;
     }
-
-//    echo $key."=".$value."<br>";
 }
 
 
@@ -282,9 +179,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
     $gradeBCnt = 0;
     $gradeCCnt = 0;
     $resultStyle = ['고독한 여행자','버려진 외곽의 수호자','소외당한 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그','평범한 일반인','이상적 반려인'];
-//    $rdResultStyle = ['버려진 외곽의 수호자','소외당한 이들의 동반자','광장의 경청자','작은방의 생태학자','용감한 사이보그'];
     $rdResultStyle = ['2','3','4','5','6']; //[1,2,3,4,5]
-//    $tmpResultArr = ['0','0','0','0','0'];
     $rdArr = Array(5);
     $j = 0;
 
@@ -299,34 +194,14 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
             if($tmpObj[$i+1] == 3){
                 $tmpChapterNo[$i] = $i+1;    //4의 갯수가 3일 때 챕터 번호
             }
-
-
-//            $tmpObj_[$arr[$i]] = countFourFunc(${'resObj'.($i+1)});
-//            $tmpResultArr[$i] = '1';
             $gradeCCnt++;
             $rdArr[$j] = $rdResultStyle[$i];
-//            debug_var($rdResultStyle[$i]);
             $j++;
         }
     }
 
-//    debug_var($gradeCCnt);
-//    debug_var($rdArr);
-//    debug_var($tmpObj1);
-//    debug_var($tmpObj2);
-//    debug_var($tmpObj3);
-//    debug_var($tmpObj4);
-//    debug_var($tmpObj5);
-
-//    $tmpObj1 = countFourFunc($resObj1);
-//    $tmpObj2 = countFourFunc($resObj2);
-//    $tmpObj3 = countFourFunc($resObj3);
-//    $tmpObj4 = countFourFunc($resObj4);
-//    $tmpObj5 = countFourFunc($resObj5);
-
     if($resVal == 0){
         if($gradeCCnt == 5){
-//        debug_var($gradeCCnt);
             if($value1 == 'C' && $value2 == 'C' && $value3 == 'C' && $value4 == 'C' && $value5 == 'C'){ // all C
                 $res_style = $resultStyle[7];
                 $resVal = 8;
@@ -334,17 +209,7 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
         }
     }
     if($resVal == 0){
-//        if ($gradeCCnt < 5 || $gradeCCnt > 1) { //C 인 결과 가 5개 이하일 때 1개 이상일때
         if ($gradeCCnt == 2) { //C 인 결과 가 2개일 때
-//            for($i = 0; $i<sizeof($tmpObj); $i++){
-//                if($tmpObj[$i+1] == 3){
-//                    $tmpObj[]
-//                }
-//            }
-//            for($i = 0; $i < 5; $i++){
-//                debug_var($tmpObj[$tmpChapterNo[$i]]);
-//
-//            }
 
             if($tmpObj[$tmpChapterNo[0]] > $tmpObj[$tmpChapterNo[1]]){
                 $resVal = 2;
@@ -588,17 +453,12 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
     }
 
     if($resVal == 0){
-//        debug_var($resVal);
-        if (($gradeCCnt == 0 && $gradeACnt >= 1) && $gradeBCnt >= 1){ // C 가 하나도 없을 때
-//            debug_var($gradeCCnt);
+        if (($gradeCCnt == 0) && ($gradeACnt >= 1 || $gradeBCnt >= 1)){ // C 가 하나도 없을 때
             $num = array_count_values($arr);
             foreach ($num as $key => $value_){
-//        echo $key." = ". $value_.'<br>';
-//            if($key !== 'C' && $value_ == 0){
                 if(($key == 'A' && $value_ >= 5) || ($key == 'B' && $value_ <= 3)){
                     $res_style = $resultStyle[6];
                     $resVal = 1;
-//                    debug_var($resVal);
                 } else {
                     $res_style = $resultStyle[0];
                     $resVal = 7;
@@ -616,8 +476,6 @@ function getResultGrade($value1, $value2, $value3, $value4, $value5, $arr, $resO
 
 
 $resGrade = getResultGrade($gradeArr[0],$gradeArr[1],$gradeArr[2],$gradeArr[3],$gradeArr[4],$gradeArr, $resObj1, $resObj2, $resObj3, $resObj4, $resObj5);
-//debug_var($resGrade);
-
 
 $res_style = $resultStyle[$resGrade-1];
 
@@ -668,11 +526,9 @@ $result3 = $conn->query($query3) or die($this->_connect->error);
 
         <div id = 'resName' style="font-weight: bold; font-size: 20px;">
             <p>결과 : <?=$resultStyle[$resGrade-1];?></p>
-<!--            <p>결과 : --><?//=$resGrade;?><!--</p>-->
         </div>
         <div id = 'resDesc'>
             <p><?=$resultDesc[$resGrade-1];?></p>
-<!--            <p>--><?//=$resGrade;?><!--</p>-->
         </div>
         <div id = 'imgDiv'>
             <img src="/img/result/ed<?=$resGrade;?>.jpg" style="width: 700px;">
