@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_statics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="343" column="69" selection-start-line="343" selection-start-column="69" selection-end-line="343" selection-end-column="69" />
+            <state relative-caret-position="793">
+              <caret line="354" column="6" lean-forward="true" selection-start-line="354" selection-start-column="6" selection-end-line="354" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -63,8 +63,11 @@
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#12207#12213#0#HTML" expanded="true" />
                 <element signature="e#12208#12214#0#HTML" expanded="true" />
+                <element signature="e#12219#12225#0#HTML" expanded="true" />
                 <element signature="e#12222#12228#0#HTML" expanded="true" />
+                <element signature="e#12240#12246#0#HTML" expanded="true" />
                 <element signature="e#12227#12233#0#HTML" expanded="true" />
+                <element signature="e#12268#12274#0#HTML" expanded="true" />
                 <element signature="e#12244#12250#0#HTML" expanded="true" />
                 <element signature="e#12244#12250#0#HTML" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -300,21 +303,7 @@
       <workItem from="1572915938734" duration="2878000" />
       <workItem from="1574036239356" duration="92482000" />
       <workItem from="1574639919588" duration="383000" />
-      <workItem from="1574815583015" duration="7149000" />
-    </task>
-    <task id="LOCAL-00311" summary="결과 도출 수정">
-      <created>1574224592241</created>
-      <option name="number" value="00311" />
-      <option name="presentableId" value="LOCAL-00311" />
-      <option name="project" value="LOCAL" />
-      <updated>1574224592241</updated>
-    </task>
-    <task id="LOCAL-00312" summary="결과 도출 수정">
-      <created>1574224626861</created>
-      <option name="number" value="00312" />
-      <option name="presentableId" value="LOCAL-00312" />
-      <option name="project" value="LOCAL" />
-      <updated>1574224626861</updated>
+      <workItem from="1574815583015" duration="7488000" />
     </task>
     <task id="LOCAL-00313" summary="결과 도출 수정">
       <created>1574232497248</created>
@@ -645,11 +634,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574852929511</updated>
     </task>
-    <option name="localTasksCounter" value="360" />
+    <task id="LOCAL-00360" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574853063096</created>
+      <option name="number" value="00360" />
+      <option name="presentableId" value="LOCAL-00360" />
+      <option name="project" value="LOCAL" />
+      <updated>1574853063096</updated>
+    </task>
+    <task id="LOCAL-00361" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574853239465</created>
+      <option name="number" value="00361" />
+      <option name="presentableId" value="LOCAL-00361" />
+      <option name="project" value="LOCAL" />
+      <updated>1574853239465</updated>
+    </task>
+    <option name="localTasksCounter" value="362" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153801000" />
+    <option name="totallyTimeSpent" value="154140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -942,8 +945,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_statics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="343" column="69" selection-start-line="343" selection-start-column="69" selection-end-line="343" selection-end-column="69" />
+        <state relative-caret-position="793">
+          <caret line="354" column="6" lean-forward="true" selection-start-line="354" selection-start-column="6" selection-end-line="354" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
@@ -954,8 +957,11 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#12207#12213#0#HTML" expanded="true" />
             <element signature="e#12208#12214#0#HTML" expanded="true" />
+            <element signature="e#12219#12225#0#HTML" expanded="true" />
             <element signature="e#12222#12228#0#HTML" expanded="true" />
+            <element signature="e#12240#12246#0#HTML" expanded="true" />
             <element signature="e#12227#12233#0#HTML" expanded="true" />
+            <element signature="e#12268#12274#0#HTML" expanded="true" />
             <element signature="e#12244#12250#0#HTML" expanded="true" />
             <element signature="e#12244#12250#0#HTML" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
