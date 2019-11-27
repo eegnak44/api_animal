@@ -51,20 +51,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_statics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="345" column="40" selection-start-line="345" selection-start-column="40" selection-end-line="345" selection-end-column="40" />
+            <state relative-caret-position="572">
+              <caret line="341" column="72" selection-start-line="341" selection-start-column="72" selection-end-line="341" selection-end-column="72" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -291,28 +292,7 @@
       <workItem from="1572915938734" duration="2878000" />
       <workItem from="1574036239356" duration="92482000" />
       <workItem from="1574639919588" duration="383000" />
-      <workItem from="1574815583015" duration="6566000" />
-    </task>
-    <task id="LOCAL-00305" summary="결과 도출 수정">
-      <created>1574223768304</created>
-      <option name="number" value="00305" />
-      <option name="presentableId" value="LOCAL-00305" />
-      <option name="project" value="LOCAL" />
-      <updated>1574223768304</updated>
-    </task>
-    <task id="LOCAL-00306" summary="결과 도출 수정">
-      <created>1574224146649</created>
-      <option name="number" value="00306" />
-      <option name="presentableId" value="LOCAL-00306" />
-      <option name="project" value="LOCAL" />
-      <updated>1574224146649</updated>
-    </task>
-    <task id="LOCAL-00307" summary="결과 도출 수정">
-      <created>1574224177529</created>
-      <option name="number" value="00307" />
-      <option name="presentableId" value="LOCAL-00307" />
-      <option name="project" value="LOCAL" />
-      <updated>1574224177529</updated>
+      <workItem from="1574815583015" duration="6875000" />
     </task>
     <task id="LOCAL-00308" summary="결과 도출 수정">
       <created>1574224283073</created>
@@ -636,11 +616,32 @@
       <option name="project" value="LOCAL" />
       <updated>1574852228613</updated>
     </task>
-    <option name="localTasksCounter" value="354" />
+    <task id="LOCAL-00354" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574852496856</created>
+      <option name="number" value="00354" />
+      <option name="presentableId" value="LOCAL-00354" />
+      <option name="project" value="LOCAL" />
+      <updated>1574852496856</updated>
+    </task>
+    <task id="LOCAL-00355" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574852555423</created>
+      <option name="number" value="00355" />
+      <option name="presentableId" value="LOCAL-00355" />
+      <option name="project" value="LOCAL" />
+      <updated>1574852555423</updated>
+    </task>
+    <task id="LOCAL-00356" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574852708868</created>
+      <option name="number" value="00356" />
+      <option name="presentableId" value="LOCAL-00356" />
+      <option name="project" value="LOCAL" />
+      <updated>1574852708868</updated>
+    </task>
+    <option name="localTasksCounter" value="357" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153218000" />
+    <option name="totallyTimeSpent" value="153527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -933,20 +934,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_statics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="345" column="40" selection-start-line="345" selection-start-column="40" selection-end-line="345" selection-end-column="40" />
+        <state relative-caret-position="572">
+          <caret line="341" column="72" selection-start-line="341" selection-start-column="72" selection-end-line="341" selection-end-column="72" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
