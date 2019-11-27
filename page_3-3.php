@@ -87,9 +87,9 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <form action="page_4.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">나는 이들과 절대 함께하지 않을 것이다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">이런 분위기는 마음에 들지 않지만, <br>여기서 지내다 보면 언젠가 내가 이들을 다스리는 권력자가 될 수 있을 것 같다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">시설이 좋지 않더라도, 마음이 맞는 사람들과 함께라면 잘 살아갈 수 있을 것이다. <br>이들이 만든 나름의 규칙에 순응하며 살아간다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">나는 이들과 절대 함께하지 않을 것이다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">이런 분위기는 마음에 들지 않지만, <br>여기서 지내다 보면 언젠가 내가 이들을 다스리는 권력자가 될 수 있을 것 같다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">시설이 좋지 않더라도, 마음이 맞는 사람들과 함께라면 잘 살아갈 수 있을 것이다. <br>이들이 만든 나름의 규칙에 순응하며 살아간다.</button><br><br>
             <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">우주선C의 세상에 적극적으로 개입하여 함께 오래 살아남을 방법을 민주적으로 모색한다.</button><br>
         </div>
     </form>

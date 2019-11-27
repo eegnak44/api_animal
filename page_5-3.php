@@ -82,9 +82,9 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <form action="page_result.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">외계인과 절대 소통하지 않는다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">과학기술이 없는 불편함을 참지 못하기 때문에, <br>외계인의 제안을 바로 받아들인다.</button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">제적으로 불리한 조건이더라도, 외계인과 중개인을 두고 교류한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">외계인과 절대 소통하지 않는다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">과학기술이 없는 불편함을 참지 못하기 때문에, <br>외계인의 제안을 바로 받아들인다.</button><br><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">제적으로 불리한 조건이더라도, 외계인과 중개인을 두고 교류한다.</button><br><br>
             <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">외계인과 교류하기 전, 그들과 충분한 대화를 통해 목적을 파악하고 <br>인류에게 백신을 제공할 때까지 시간을 번다.</button><br>
         </div>
     </form>

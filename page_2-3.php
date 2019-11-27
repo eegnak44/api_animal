@@ -89,9 +89,9 @@ $result = $conn->query($query) or die($this->_connect->error);
     <br>
     <form action="page_3.php" method="get">
         <div class = 'choice_div'>
-            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">이들이 자신의 종교 말씀에 따라 살아갈 수 있도록 관여하지 않고 떠난다. </button><br>
-            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">정보는 줄 수 있지만, <br>종교에 대해 이들의 심기를 건드리지 않도록 조심한다. </button><br>
-            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">종교가 무엇이든, 누군가 위험에 빠져 있다면 <br>그로부터 이들을 구하고 함께 해야 한다고 생각한다.</button><br>
+            <button type="button" name="button" id = 'choiceBtn1' value="1" style="text-align: left">이들이 자신의 종교 말씀에 따라 살아갈 수 있도록 관여하지 않고 떠난다. </button><br><br>
+            <button type="button" name="button" id = 'choiceBtn2' value="2" style="text-align: left">정보는 줄 수 있지만, <br>종교에 대해 이들의 심기를 건드리지 않도록 조심한다. </button><br><br>
+            <button type="button" name="button" id = 'choiceBtn3' value="3" style="text-align: left">종교가 무엇이든, 누군가 위험에 빠져 있다면 <br>그로부터 이들을 구하고 함께 해야 한다고 생각한다.</button><br><br>
             <button type="button" name="button" id = 'choiceBtn4' value="4" style="text-align: left">열린 마음으로 이들과 동행하면서,<br> 종교에 대해 존중하며 귀를 기울여보고, 필요하다면 믿을 수도 있을 것 같다. </button><br>
         </div>
     </form>
