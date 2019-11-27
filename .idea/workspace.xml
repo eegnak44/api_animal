@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Common.php" beforeDir="false" afterPath="$PROJECT_DIR$/Common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_result.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_statics.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_statics.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,15 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page_4-1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="90" column="162" selection-start-line="90" selection-start-column="162" selection-end-line="90" selection-end-column="162" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_4-2.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,15 +44,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_statics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="347" column="25" selection-start-line="347" selection-start-column="25" selection-end-line="347" selection-end-column="25" />
+            <state relative-caret-position="572">
+              <caret line="260" column="40" selection-start-line="260" selection-start-column="40" selection-end-line="260" selection-end-column="40" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#font#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#12555#12561#0#HTML" expanded="true" />
                 <element signature="e#12559#12565#0#HTML" expanded="true" />
@@ -73,6 +63,15 @@
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DB/mysqli_CONN.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -126,7 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1-1</find>
       <find>center</find>
       <find>accountTB</find>
       <find>testBtn2</find>
@@ -146,7 +144,6 @@
       <find>tmpChapterNo2</find>
       <find>$resultNameCheck</find>
       <find>$tmp1_1</find>
-      <find>debug</find>
       <find>$replaceArrayList1</find>
       <find>$stageResNameKr1</find>
       <find>$resObj1</find>
@@ -156,6 +153,8 @@
       <find>$gradeCCnt</find>
       <find>contentsDiv</find>
       <find>새끼를</find>
+      <find>고도의</find>
+      <find>debug</find>
     </findStrings>
     <replaceStrings>
       <replace>1-2</replace>
@@ -183,7 +182,6 @@
         <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/page_1.php" />
         <option value="$PROJECT_DIR$/page_credit.php" />
-        <option value="$PROJECT_DIR$/page_result.php" />
         <option value="$PROJECT_DIR$/page_1-1.php" />
         <option value="$PROJECT_DIR$/page_1-2.php" />
         <option value="$PROJECT_DIR$/page_1-3.php" />
@@ -199,6 +197,8 @@
         <option value="$PROJECT_DIR$/page_3-3.php" />
         <option value="$PROJECT_DIR$/page_4-3.php" />
         <option value="$PROJECT_DIR$/page_5-3.php" />
+        <option value="$PROJECT_DIR$/Common.php" />
+        <option value="$PROJECT_DIR$/page_result.php" />
         <option value="$PROJECT_DIR$/page_statics.php" />
       </list>
     </option>
@@ -298,28 +298,7 @@
       <workItem from="1572915938734" duration="2878000" />
       <workItem from="1574036239356" duration="92482000" />
       <workItem from="1574639919588" duration="383000" />
-      <workItem from="1574815583015" duration="9046000" />
-    </task>
-    <task id="LOCAL-00322" summary="각 스테이지 스트링 수정">
-      <created>1574296035949</created>
-      <option name="number" value="00322" />
-      <option name="presentableId" value="LOCAL-00322" />
-      <option name="project" value="LOCAL" />
-      <updated>1574296035949</updated>
-    </task>
-    <task id="LOCAL-00323" summary="각 스테이지 스트링 수정">
-      <created>1574299752757</created>
-      <option name="number" value="00323" />
-      <option name="presentableId" value="LOCAL-00323" />
-      <option name="project" value="LOCAL" />
-      <updated>1574299752757</updated>
-    </task>
-    <task id="LOCAL-00324" summary="각 스테이지 스트링 수정">
-      <created>1574308501774</created>
-      <option name="number" value="00324" />
-      <option name="presentableId" value="LOCAL-00324" />
-      <option name="project" value="LOCAL" />
-      <updated>1574308501774</updated>
+      <workItem from="1574815583015" duration="9823000" />
     </task>
     <task id="LOCAL-00325" summary="각 스테이지 스트링 수정">
       <created>1574308583490</created>
@@ -643,11 +622,32 @@
       <option name="project" value="LOCAL" />
       <updated>1574854904543</updated>
     </task>
-    <option name="localTasksCounter" value="371" />
+    <task id="LOCAL-00371" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574854961708</created>
+      <option name="number" value="00371" />
+      <option name="presentableId" value="LOCAL-00371" />
+      <option name="project" value="LOCAL" />
+      <updated>1574854961708</updated>
+    </task>
+    <task id="LOCAL-00372" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574855023832</created>
+      <option name="number" value="00372" />
+      <option name="presentableId" value="LOCAL-00372" />
+      <option name="project" value="LOCAL" />
+      <updated>1574855023832</updated>
+    </task>
+    <task id="LOCAL-00373" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574855133808</created>
+      <option name="number" value="00373" />
+      <option name="presentableId" value="LOCAL-00373" />
+      <option name="project" value="LOCAL" />
+      <updated>1574855133808</updated>
+    </task>
+    <option name="localTasksCounter" value="374" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155698000" />
+    <option name="totallyTimeSpent" value="156475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -712,13 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="101" selection-start-line="29" selection-start-column="101" selection-end-line="29" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/mysqli_CONN.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -938,17 +931,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DB/mysqli_CONN.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/page_statics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="347" column="25" selection-start-line="347" selection-start-column="25" selection-end-line="347" selection-end-column="25" />
+        <state relative-caret-position="572">
+          <caret line="260" column="40" selection-start-line="260" selection-start-column="40" selection-end-line="260" selection-end-column="40" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#font#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#12555#12561#0#HTML" expanded="true" />
             <element signature="e#12559#12565#0#HTML" expanded="true" />
