@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/logo/gaenyeom_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/logo/logo_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/logo/logo_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/logo/logo_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/logo/logo_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page_credit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_1-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_1-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_1-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_1-2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_1-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_1-3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_2-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_2-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_2-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_2-2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_3-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_3-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_3-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_3-2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_4-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_4-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_4-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_4-2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_5-1.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_5-1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_5-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_5-2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_5-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_5-3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_result.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_statics.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_statics.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,20 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_5-2.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="776">
               <caret line="101" column="7" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page_1-3.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="92" column="198" selection-start-line="92" selection-start-column="198" selection-end-line="92" selection-end-column="198" />
             </state>
           </provider>
         </entry>
@@ -115,6 +84,25 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page_statics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="309" column="12" lean-forward="true" selection-start-line="309" selection-start-column="12" selection-end-line="309" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_3-2.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -128,7 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1-</find>
       <find>1-1</find>
       <find>center</find>
       <find>accountTB</find>
@@ -158,6 +145,7 @@
       <find>$gradeBCnt</find>
       <find>$gradeCCnt</find>
       <find>contentsDiv</find>
+      <find>새끼를</find>
     </findStrings>
     <replaceStrings>
       <replace>1-2</replace>
@@ -190,7 +178,6 @@
         <option value="$PROJECT_DIR$/page_1.php" />
         <option value="$PROJECT_DIR$/page_credit.php" />
         <option value="$PROJECT_DIR$/page_result.php" />
-        <option value="$PROJECT_DIR$/page_statics.php" />
         <option value="$PROJECT_DIR$/page_1-1.php" />
         <option value="$PROJECT_DIR$/page_1-2.php" />
         <option value="$PROJECT_DIR$/page_1-3.php" />
@@ -202,6 +189,7 @@
         <option value="$PROJECT_DIR$/page_4-2.php" />
         <option value="$PROJECT_DIR$/page_5-1.php" />
         <option value="$PROJECT_DIR$/page_5-2.php" />
+        <option value="$PROJECT_DIR$/page_statics.php" />
       </list>
     </option>
   </component>
@@ -300,28 +288,7 @@
       <workItem from="1572915938734" duration="2878000" />
       <workItem from="1574036239356" duration="92482000" />
       <workItem from="1574639919588" duration="383000" />
-      <workItem from="1574815583015" duration="3516000" />
-    </task>
-    <task id="LOCAL-00294" summary="결과 도출 수정">
-      <created>1574217321843</created>
-      <option name="number" value="00294" />
-      <option name="presentableId" value="LOCAL-00294" />
-      <option name="project" value="LOCAL" />
-      <updated>1574217321843</updated>
-    </task>
-    <task id="LOCAL-00295" summary="결과 도출 수정">
-      <created>1574217603878</created>
-      <option name="number" value="00295" />
-      <option name="presentableId" value="LOCAL-00295" />
-      <option name="project" value="LOCAL" />
-      <updated>1574217603878</updated>
-    </task>
-    <task id="LOCAL-00296" summary="결과 도출 수정">
-      <created>1574217666364</created>
-      <option name="number" value="00296" />
-      <option name="presentableId" value="LOCAL-00296" />
-      <option name="project" value="LOCAL" />
-      <updated>1574217666364</updated>
+      <workItem from="1574815583015" duration="4869000" />
     </task>
     <task id="LOCAL-00297" summary="결과 도출 수정">
       <created>1574217733529</created>
@@ -645,11 +612,32 @@
       <option name="project" value="LOCAL" />
       <updated>1574848513012</updated>
     </task>
-    <option name="localTasksCounter" value="343" />
+    <task id="LOCAL-00343" summary="선택지 버튼 사이 간격&#10;로고이미지 추가">
+      <created>1574849445026</created>
+      <option name="number" value="00343" />
+      <option name="presentableId" value="LOCAL-00343" />
+      <option name="project" value="LOCAL" />
+      <updated>1574849445026</updated>
+    </task>
+    <task id="LOCAL-00344" summary="선택지 버튼 사이 간격&#10;로고이미지 추가">
+      <created>1574849633566</created>
+      <option name="number" value="00344" />
+      <option name="presentableId" value="LOCAL-00344" />
+      <option name="project" value="LOCAL" />
+      <updated>1574849633567</updated>
+    </task>
+    <task id="LOCAL-00345" summary="선택지 버튼 사이 간격&#10;로고이미지 추가">
+      <created>1574850405068</created>
+      <option name="number" value="00345" />
+      <option name="presentableId" value="LOCAL-00345" />
+      <option name="project" value="LOCAL" />
+      <updated>1574850405068</updated>
+    </task>
+    <option name="localTasksCounter" value="346" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150168000" />
+    <option name="totallyTimeSpent" value="151521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -698,7 +686,8 @@
     <MESSAGE value="챕터 1 &#10;스트링 변경" />
     <MESSAGE value="결과 도출 수정" />
     <MESSAGE value="각 스테이지 스트링 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="각 스테이지 스트링 수정" />
+    <MESSAGE value="선택지 버튼 사이 간격&#10;로고이미지 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="선택지 버튼 사이 간격&#10;로고이미지 추가" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_commit.php" />
@@ -854,23 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page_statics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="787">
-          <caret line="345" column="10" lean-forward="true" selection-start-line="345" selection-start-column="10" selection-end-line="345" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page_1-1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="657">
@@ -952,6 +924,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="776">
           <caret line="101" column="7" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_statics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="309" column="12" lean-forward="true" selection-start-line="309" selection-start-column="12" selection-end-line="309" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#xmp#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
