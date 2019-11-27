@@ -252,7 +252,7 @@ while($row_15 = $result_15->fetch_array()){
 
 
 $stageResNameKr1 = ["병든<br>떠돌이개", "다른 역사", "다른 정치관","초파리","고도의지능과<br>감정을<br>지닌 로봇"];
-$stageResNameKr2 = ["새끼를<br>밴<br>길고양이", "다른 민족","전통주의","거미","유전자<br>변형<br>괴생명체"];
+$stageResNameKr2 = ["새끼를 밴<br>길고양이", "다른 민족","전통주의","거미","유전자<br>변형<br>괴생명체"];
 $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바퀴벌레","과학기술과<br>특이바이러스를<br>가진 외계인"];
 
 //$stageResNameKr1 = ["병든<br>떠돌이개","새끼를<br>밴<br>길고양이","방사능<br>피폭자"];
@@ -340,10 +340,11 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
     </form>
     <br>
 </div>
-<div id = 'creditDiv' style="width: 1000px;">
+<div id = 'creditDiv' style="width: 1000px; margin: auto; padding-left:250px; padding-top: 150px;">
     <?
     for($i=1;$i<5;$i++){?>
-        <div style="float: left;"><img src="img/logo/logo_<?=$i;?>.png" style="width: 91px; margin: 0px;"></div>
+        <div style="float: left; margin: auto;"><img src="img/logo/logo_<?=$i;?>.png" style="width: 91px; margin: 0px;"></div>
+        <div style="width: 150px;"></div>
     <?}
     ?>
 </div>
