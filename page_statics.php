@@ -338,9 +338,7 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
             <input type="submit" value="다시하기"><br>
         </div>
     </form>
-    <br>
 </div>
-<br>
 <div id = 'creditDiv' style="width: 900px; margin: auto; padding-left:150px;">
     <div style="width:655px; float: left;">기획/스토리 : 안가영  이미지 : 김미래  프로그래밍 : 김인환, 홍강의  프로젝트명 : 개념프로젝트</div>
     <div style="float: left;"><img src="img/logo/gaenyeom_logo.png" style="width:90px;"></div>
@@ -351,7 +349,7 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
     <?}
     ?>
     <br>
-    <div>이 게임은 테스트 버전입니다.</div>
+    <div style="width: 500px; margin: auto; padding: 100px;">이 게임은 테스트 버전입니다.</div>
 </div>
 </body>
 </html>
