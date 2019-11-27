@@ -345,7 +345,7 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
     ?>
 
 <!--    <div style="width:655px; float: left;">기획/스토리 : 안가영&nbsp; &nbsp; &nbsp; 이미지 : 김미래&nbsp; &nbsp; &nbsp; 프로그래밍 : 김인환, 홍강의   &nbsp;&nbsp;&nbsp;프로젝트명 : 개념프로젝트</div>-->
-    <div style="width:728px; float: left;">
+    <div style="width:732px; float: left;">
         <?for($i=0;$i<4;$i++){?>
             <font style="font-weight: bold;"><?=$creditArr[$i];?></font>&nbsp; : &nbsp;<font><?=$creditArr1[$i];?>&nbsp; &nbsp;</font>
         <?}?></div>
