@@ -268,7 +268,8 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
     ?>
     </div>
     <br>
-    <div style="width: 500px; margin: auto; padding: 100px;"><p>이 게임은 테스트 버전입니다.</p></div>
+    <br>
+    <div style="width: 500px; margin: auto; padding: 100px;">이 게임은 테스트 버전입니다.</div>
 </div>
 </body>
 </html>
