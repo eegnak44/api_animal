@@ -259,7 +259,7 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
             <font style="font-weight: bold;"><?=$creditArr[$i];?></font>&nbsp; : &nbsp;<font><?=$creditArr1[$i];?>&nbsp; &nbsp;</font>
         <?}?></div>
     <div style="float: left;width:150px;"><img src="img/logo/gaenyeom_logo.png" style="width:90px;"></div>
-    <div style="margin: auto; width: 500px;">
+    <div style="margin: auto; width: 600px;">
     <?
     for($i=1;$i<5;$i++){?>
         <div style="float: left; margin: auto;"><img src="img/logo/logo_<?=$i;?>.png" style="height:20px; margin: 0px;"></div>
