@@ -248,7 +248,7 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
         </div>
     </form>
 </div>
-<div id = 'creditDiv' style="width: 1000px; margin: auto; padding-left:70px;">
+<div id = 'creditDiv' style="width: 1000px; margin: auto; padding-left:40px;">
     <?$creditArr = ['기획/스토리','이미지','프로그래밍', '프로젝트명'];
         $creditArr1 = ['안가영','김미래','김인환, 홍강의','개념프로젝트'];
     ?>
