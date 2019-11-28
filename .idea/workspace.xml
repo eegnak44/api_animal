@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22527c9e-e197-49cf-9aa7-c4e24a602e41" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/page_statics.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_statics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_statics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="267" column="6" lean-forward="true" selection-start-line="267" selection-start-column="6" selection-end-line="267" selection-end-column="6" />
+            <state relative-caret-position="742">
+              <caret line="270" column="8" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -296,28 +296,7 @@
       <workItem from="1572915938734" duration="2878000" />
       <workItem from="1574036239356" duration="92482000" />
       <workItem from="1574639919588" duration="383000" />
-      <workItem from="1574815583015" duration="10220000" />
-    </task>
-    <task id="LOCAL-00328" summary="각 스테이지 스트링 수정">
-      <created>1574309105654</created>
-      <option name="number" value="00328" />
-      <option name="presentableId" value="LOCAL-00328" />
-      <option name="project" value="LOCAL" />
-      <updated>1574309105654</updated>
-    </task>
-    <task id="LOCAL-00329" summary="각 스테이지 스트링 수정">
-      <created>1574309534773</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1574309534773</updated>
-    </task>
-    <task id="LOCAL-00330" summary="각 스테이지 스트링 수정">
-      <created>1574310601280</created>
-      <option name="number" value="00330" />
-      <option name="presentableId" value="LOCAL-00330" />
-      <option name="project" value="LOCAL" />
-      <updated>1574310601280</updated>
+      <workItem from="1574815583015" duration="11040000" />
     </task>
     <task id="LOCAL-00331" summary="각 스테이지 스트링 수정">
       <created>1574310638615</created>
@@ -641,14 +620,35 @@
       <option name="project" value="LOCAL" />
       <updated>1574855959530</updated>
     </task>
-    <option name="localTasksCounter" value="377" />
+    <task id="LOCAL-00377" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574856136822</created>
+      <option name="number" value="00377" />
+      <option name="presentableId" value="LOCAL-00377" />
+      <option name="project" value="LOCAL" />
+      <updated>1574856136822</updated>
+    </task>
+    <task id="LOCAL-00378" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574856316134</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1574856316134</updated>
+    </task>
+    <task id="LOCAL-00379" summary="선택지 버튼 사이 간격&#10;        로고이미지 추가">
+      <created>1574856353300</created>
+      <option name="number" value="00379" />
+      <option name="presentableId" value="LOCAL-00379" />
+      <option name="project" value="LOCAL" />
+      <updated>1574856353300</updated>
+    </task>
+    <option name="localTasksCounter" value="380" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156872000" />
+    <option name="totallyTimeSpent" value="157692000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
@@ -938,8 +938,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_statics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="267" column="6" lean-forward="true" selection-start-line="267" selection-start-column="6" selection-end-line="267" selection-end-column="6" />
+        <state relative-caret-position="742">
+          <caret line="270" column="8" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
