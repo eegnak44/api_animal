@@ -262,7 +262,7 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
     <div style="margin: auto; width: 500px;">
     <?
     for($i=1;$i<5;$i++){?>
-        <div style="float: left; margin: auto;"><img src="img/logo/logo_<?=$i;?>.png" style="width: 91px; margin: 0px;"></div>
+        <div style="float: left; margin: auto;"><img src="img/logo/logo_<?=$i;?>.png" style="height:113px; margin: 0px;"></div>
         <div style="width: 30px; height: 1px; float: left;"></div>
     <?}
     ?>
