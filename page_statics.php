@@ -212,7 +212,7 @@ $stageResNameKr3 = ["방사능<br>피폭자","다른 종교","진보주의","바
 </title>
 <body>
 
-<div id = 'StaticsContentsDiv' style = "margin: auto; padding-top: 70px;width:1000px;">
+<div id = 'StaticsContentsDiv' style = "margin: auto; padding-top: 70px;width:1100px; padding-left: 70px;">
 
     <div id = 'resName' style="font-weight: bold; font-size: 20px;">
         <p style="font-size: 30px; font-weight: bold;"><?=$resultName;?></p>
