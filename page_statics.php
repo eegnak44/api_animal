@@ -55,7 +55,6 @@ while($row1 = $result->fetch_array()) {
     $list2[4] = $row1[13];
     $list3[4] = $row1[14];
     $resultName = $row1[15];
-//    debug_var($row1);
 }
 
 $replaceArr = ["격리제거", "혐오공존", "긍정공존","반려"];

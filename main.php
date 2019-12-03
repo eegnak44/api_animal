@@ -73,13 +73,11 @@ $conn->close();
 
         // $(".testBtn2").click(function(){
         //     var index = $(this).attr('value');
-        //     console.log(index);
         //     $("#contentsDiv").text('1');
         // });
         //
         // $(".choice_div button").click(function () {
         //     index = $(this).attr('value');
-        //     // console.log(index);
         //
         //     // if(index == 1){
         //     //     // alert('1');
